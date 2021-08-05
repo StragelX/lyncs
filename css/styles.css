@@ -969,6 +969,25 @@ a h6 {
   }
 }
 
+.btn {
+  width: 276px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #ff3233;
+  background-color: #ffffff;
+  color: #242424;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,6 +1034,63 @@ main {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   min-height: auto;
+}
+
+.form_btn {
+  position: relative;
+}
+
+.form_btn .btn_arrow {
+  position: absolute;
+  left: 233px;
+  top: 18px;
+}
+
+.form_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form_inner input,
+.form_inner textarea {
+  width: 260px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  background-color: #ffffff;
+  opacity: 0.3;
+  margin-top: 10px;
+}
+
+.form_inner textarea {
+  width: 536px;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 footer {
