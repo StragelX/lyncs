@@ -4,7 +4,7 @@ $l: #{"(min-width: 1001px) and (max-width: 1025px)"};
 $xl: #{"(min-width: 1025px)"};
 
 $grid-count: 12;
-$grid-padding: 16px;
+$grid-padding: 0px;
 $col-name: col;
 $grid-prefix: xs s sm m;
 
@@ -34,8 +34,8 @@ $grid-prefix: xs s sm m;
   min-height: 1px;
   flex-grow: 0;
   flex-shrink: 1;
-  padding-left: $grid-padding;
-  padding-right: $grid-padding;
+  // padding-left: $grid-padding;
+  // padding-right: $grid-padding;
   box-sizing: border-box;
 }
 
