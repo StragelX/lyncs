@@ -8,6 +8,7 @@
   <title></title>
 
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/item-card.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +31,87 @@
   </header>
 
   <main>
+    <section class="about_our_work">
+      <div class="container">
+        <div class="row">
+          <div class="col_xl_12">
+            <div class="wrap_text">
+
+              <p>Новини</p>
+              <h2>Коротко про те,<br>
+                що ми робимо</h2>
+
+            </div>
+          </div>
+
+          <div class="col_xl_10 xl_offset_1">
+            <div class="img_container">
+
+              <a href="#" class="link">
+                <div class="inner_img">
+                  <img src="img/raghav.jpg" alt="">
+                </div>
+
+                <div class="inner_text">
+                  <div class="box">
+                    <p class="date">31.05.2021</p>
+                    <h4 class="title">Зустрічайте новинку, засоби для <br> дезінфекції STERILIO</h4>
+                    <div class="box_arrow">
+                      <p class="text">Читати далі</p>
+                      <img src="img/Icon_feather-arrow-right.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="link">
+                <div class="inner_img">
+                  <img src="img/happy.jpg" alt="">
+                </div>
+
+                <div class="inner_text">
+                  <div class="box">
+                    <p class="date">31.05.2021</p>
+                    <h4 class="title">Загальні рекомендації щодо вибору <br> омивача.</h4>
+                    <div class="box_arrow">
+                      <p class="text">Читати далі</p>
+                      <img src="img/Icon_feather-arrow-right.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              <a href="#" class="link">
+                <div class="inner_img">
+                  <img src="img/portrait-young.jpg" alt="">
+                </div>
+
+                <div class="inner_text">
+                  <div class="box">
+                    <p class="date">31.05.2021</p>
+                    <h4 class="title">Нова лінійка побутової хімії ТМ PORADA.</h4>
+                    <div class="box_arrow">
+                      <p class="text">Читати далі</p>
+                      <img src="img/Icon_feather-arrow-right.svg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="forms">
       <div class="container">
         <div class="row">
           <div class="col_xl_5 xl_offset_2">
             <div class="form_text">
 
-              <p class="title">Зв'яжіться з нами</p>
-              <h2 class="h2_smaller">Залиште свою заявку</h2>
+              <p class="text_above">Зв'яжіться з нами</p>
+              <h2 class="title">Залиште свою заявку</h2>
               <p class="text">Ми з радістю дамо відповідь на усі Ваші питання. Заповніть будь ласка форму і ми незабаром
                 зв’яжемось з Вами.</p>
 
@@ -45,42 +119,44 @@
           </div>
 
           <div class="col_xl_4">
-            <form action="" method="post">
+            <div class="form">
+              <form action="" method="post">
 
-              <div class="form_wrap">
-                <div class="form_inner">
-                  <label for="username">Ім'я:</label>
-                  <input type="text" name="username" id="username">
+                <div class="form_wrap">
+                  <div class="form_inner">
+                    <label for="username">Ім'я:</label>
+                    <input type="text" name="username" id="username">
+                  </div>
+
+                  <div class="form_inner">
+                    <label for="surname">Прізвище:</label>
+                    <input type="text" name="surname" id="surname">
+                  </div>
+                </div>
+
+                <div class="form_wrap">
+                  <div class="form_inner">
+                    <label for="email">Електронна адреса:</label>
+                    <input type="email" name="email" id="email" required>
+                  </div>
+
+                  <div class="form_inner">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" name="phone" id="phone" required>
+                  </div>
                 </div>
 
                 <div class="form_inner">
-                  <label for="surname">Прізвище:</label>
-                  <input type="text" name="surname" id="surname">
-                </div>
-              </div>
-
-              <div class="form_wrap">
-                <div class="form_inner">
-                  <label for="email">Електронна адреса:</label>
-                  <input type="email" name="email" id="email" required>
+                  <label for="msg">Ваше повідомлення:</label>
+                  <textarea id="msg" name="user_message"></textarea>
                 </div>
 
-                <div class="form_inner">
-                  <label for="phone">Телефон:</label>
-                  <input type="tel" name="phone" id="phone" required>
+                <div class="form_btn">
+                  <input class="btn" type="submit" value="Надіслати">
+                  <img class="btn_arrow" src="img/Icon_feather-arrow-right.svg" alt="">
                 </div>
-              </div>
-
-              <div class="form_inner">
-                <label for="msg">Ваше повідомлення:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </div>
-
-              <div class="form_btn">
-                <input class="btn" type="submit" value="Надіслати">
-                <img class="btn_arrow" src="img/Icon_feather-arrow-right.svg" alt="">
-              </div>
-            </form>
+              </form>
+            </div>
           </div>
         </div>
       </div>

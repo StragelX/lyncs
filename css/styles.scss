@@ -42,9 +42,6 @@
   letter-spacing: normal;
   line-height: 35px;
   text-align: center;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
 }
 
 body {
@@ -87,12 +84,59 @@ main {
   min-height: auto;
 }
 
+.forms {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.form_text {
+  .text_above {
+    color: #242424;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding-bottom: 11px;
+  }
+
+  .title {
+    color: #242424;
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 75px;
+    text-align: left;
+    padding-bottom: 34px;
+  }
+
+  .text {
+    max-width: 464px;
+    color: #242424;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+  }
+}
+
 .form_btn {
   position: relative;
+  margin-top: 60px;
+
+  .btn {
+    float: right;
+  }
 
   .btn_arrow {
     position: absolute;
-    left: 233px;
+    right: 30px;
     top: 18px;
   }
 }
@@ -100,15 +144,23 @@ main {
 .form_wrap {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .form_inner {
   display: flex;
   flex-direction: column;
 
+  input {
+    width: 250px;
+  }
+
+  textarea {
+    width: 510px;
+  }
+
   input,
   textarea {
-    width: 260px;
     height: 50px;
     border-radius: 5px;
     border: 1px solid #242424;
@@ -117,15 +169,21 @@ main {
     margin-top: 10px;
   }
 
-  textarea {
-    width: 536px;
+  label {
+    color: #242424;
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 75px;
+    text-align: left;
   }
 }
 
 form {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 }
 
 footer {
@@ -166,9 +224,6 @@ footer {
         letter-spacing: normal;
         line-height: 75px;
         text-align: left;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
       }
     }
   }
@@ -186,9 +241,6 @@ footer {
         letter-spacing: normal;
         line-height: normal;
         text-align: left;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
         cursor: pointer;
       }
     }
@@ -210,9 +262,6 @@ footer {
         letter-spacing: normal;
         line-height: normal;
         text-align: left;
-        font-style: normal;
-        letter-spacing: normal;
-        line-height: normal;
       }
     }
   }
@@ -231,9 +280,6 @@ footer {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
   }
 }
 
@@ -269,9 +315,6 @@ footer {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
   }
 
   .text_bigger {
@@ -283,8 +326,5 @@ footer {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
   }
 }

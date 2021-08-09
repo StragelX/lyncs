@@ -1,0 +1,95 @@
+.about_our_work {
+  background-color: #242424;
+  padding-top: 130px;
+  padding-bottom: 240px;
+}
+
+.img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.img_container .link {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+.wrap_text {
+  padding-bottom: 140px;
+}
+
+.wrap_text p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.wrap_text h2 {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.inner_text .box {
+  padding: 10px;
+}
+
+.inner_text .box .date {
+  color: #242424;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.inner_text .box .title {
+  color: #242424;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.inner_text .box_arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.inner_text .box_arrow .text {
+  color: #242424;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=item-card.css.map */
