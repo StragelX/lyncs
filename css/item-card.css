@@ -1,3 +1,103 @@
+.also_buy {
+  padding: 130px 0 130px;
+  background-color: #f5f5f5;
+}
+
+.buy_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.buy_title {
+  padding-bottom: 70px;
+}
+
+.buy_title .above_title {
+  color: #242424;
+  text-align: center;
+  padding-bottom: 11px;
+}
+
+.buy_title .title_h2 {
+  color: #242424;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product_wrap .product_inner {
+  background-color: #ffffff;
+}
+
+.product_wrap .name_box {
+  border: 1px solid #707070;
+  background-color: #242424;
+  margin-top: 10px;
+  padding: 16px;
+}
+
+.main_name {
+  padding-bottom: 5px;
+}
+
+.name_text {
+  opacity: 0.8;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+.volume_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.volume_box p {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: center;
+}
+
+.volume_box .exol::after {
+  content: "";
+  border: 1px solid #ffffff;
+  height: 100%;
+  width: 1px;
+  margin-left: 110px;
+}
+
+.product_btn {
+  text-align: center;
+  padding-top: 130px;
+}
+
 .about_our_work {
   background-color: #242424;
   padding-top: 130px;
@@ -23,31 +123,28 @@
   padding-bottom: 140px;
 }
 
-.wrap_text p {
+.wrap_text .above_title {
   color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
+  padding-bottom: 11px;
 }
 
-.wrap_text h2 {
+.wrap_text .title_h2 {
   color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 45px;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-align: left;
   text-transform: uppercase;
 }
 
 .inner_text .box {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .inner_text .box .date {

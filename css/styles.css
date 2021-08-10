@@ -985,6 +985,44 @@ a h6 {
   text-align: center;
 }
 
+.btn_inner {
+  display: inline-block;
+  position: relative;
+}
+
+.btn_inner .btn_arrow {
+  position: absolute;
+  right: 32px;
+  top: 18px;
+}
+
+.above_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.above_title::before {
+  content: "";
+  height: 95%;
+  width: 2px;
+  border: 1px solid #f2312a;
+  background-color: #f2312a;
+  margin-right: 5px;
+}
+
+.title_h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1038,25 +1076,14 @@ main {
   padding-bottom: 70px;
 }
 
-.form_text .text_above {
+.form_text .above_text {
   color: #242424;
-  font-family: "Montserrat", sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
+  text-align: left;
   padding-bottom: 11px;
 }
 
-.form_text .title {
+.form_text .title_h2 {
   color: #242424;
-  font-family: "Roboto", sans-serif;
-  font-size: 45px;
-  font-weight: 500;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: 75px;
   text-align: left;
   padding-bottom: 34px;
 }
@@ -1074,18 +1101,11 @@ main {
 }
 
 .form_btn {
-  position: relative;
   margin-top: 60px;
 }
 
-.form_btn .btn {
+.form_btn .btn_inner {
   float: right;
-}
-
-.form_btn .btn_arrow {
-  position: absolute;
-  right: 30px;
-  top: 18px;
 }
 
 .form_wrap {
@@ -1114,6 +1134,7 @@ main {
 
 .form_inner textarea {
   width: 510px;
+  min-height: 115px;
 }
 
 .form_inner input,
@@ -1133,7 +1154,6 @@ main {
   font-weight: 300;
   font-style: normal;
   letter-spacing: normal;
-  line-height: 75px;
   text-align: left;
 }
 

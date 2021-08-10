@@ -44,6 +44,44 @@
   text-align: center;
 }
 
+.btn_inner {
+  display: inline-block;
+  position: relative;
+
+  .btn_arrow {
+    position: absolute;
+    right: 32px;
+    top: 18px;
+  }
+}
+
+.above_title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+  &::before {
+    content: "";
+    height: 95%;
+    width: 2px;
+    border: 1px solid #f2312a;
+    background-color: #f2312a;
+    margin-right: 5px;
+  }
+}
+
+.title_h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -90,25 +128,14 @@ main {
 }
 
 .form_text {
-  .text_above {
+  .above_text {
     color: #242424;
-    font-family: "Montserrat", sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: normal;
+    text-align: left;
     padding-bottom: 11px;
   }
 
-  .title {
+  .title_h2 {
     color: #242424;
-    font-family: "Roboto", sans-serif;
-    font-size: 45px;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 75px;
     text-align: left;
     padding-bottom: 34px;
   }
@@ -127,17 +154,10 @@ main {
 }
 
 .form_btn {
-  position: relative;
   margin-top: 60px;
 
-  .btn {
+  .btn_inner {
     float: right;
-  }
-
-  .btn_arrow {
-    position: absolute;
-    right: 30px;
-    top: 18px;
   }
 }
 
@@ -157,6 +177,7 @@ main {
 
   textarea {
     width: 510px;
+    min-height: 115px;
   }
 
   input,
@@ -176,7 +197,6 @@ main {
     font-weight: 300;
     font-style: normal;
     letter-spacing: normal;
-    line-height: 75px;
     text-align: left;
   }
 }
