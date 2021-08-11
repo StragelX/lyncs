@@ -1,0 +1,208 @@
+.stores_top {
+  min-height: 814px;
+  background-color: #242424;
+}
+
+.stores_top_wrap {
+  position: absolute;
+  top: 228px;
+  z-index: 1;
+
+  .subtitle {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 46px;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 43px;
+  }
+
+  .main_title {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 109px;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 2.73px;
+    line-height: 102px;
+    text-align: left;
+    padding-bottom: 13px;
+  }
+
+  .box_about {
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+
+    .box_about_img {
+      max-width: 727px;
+    }
+  }
+
+  .box_about_text {
+    max-width: 637px;
+    background-color: #ffffff;
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .text_wrap {
+      .above_title {
+        color: #242424;
+        padding-bottom: 11px;
+      }
+
+      .title_h2 {
+        color: #242424;
+        text-transform: uppercase;
+        padding-bottom: 25px;
+      }
+
+      .text {
+        text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        color: #242424;
+        font-family: "Montserrat", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 29px;
+      }
+    }
+  }
+}
+
+.franchise {
+  background-color: #f5f5f5;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.franchise_wrap {
+  .above_title {
+    color: #242424;
+    text-align: center;
+    padding-bottom: 11px;
+  }
+
+  .title_h2 {
+    color: #242424;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 120px;
+
+    .inner {
+      max-width: 414px;
+      box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+      border-radius: 15px;
+      background-color: #ffffff;
+      padding: 30px;
+      margin-bottom: 120px;
+
+      .box_logo {
+        display: flex;
+
+        img {
+          padding-right: 20px;
+        }
+
+        .title {
+          padding-top: 10px;
+          color: #242424;
+          font-family: "Lato", sans-serif;
+          font-size: 20px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          text-transform: uppercase;
+        }
+      }
+
+      .text {
+        color: #242424;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .franchise_btn {
+    text-align: center;
+  }
+}
+
+.cooperation_top {
+  padding: 126px 0 200px 0;
+  background-color: #242424;
+}
+.cooperation_wrap {
+  padding-bottom: 140px;
+
+  .above_title {
+    color: #ffffff;
+  }
+
+  .title_h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+}
+
+.image_wrap {
+  display: flex;
+  justify-content: space-between;
+
+  .image_inner1,
+  .image_inner2,
+  .image_inner3,
+  .image_inner4 {
+    width: 398px;
+    height: 528px;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .text {
+      color: #ffffff;
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+    }
+  }
+
+  .image_inner1 {
+    background-image: url("../img/img1.jpg");
+  }
+
+  .image_inner2 {
+    background-image: url("../img/img2.jpg");
+  }
+
+  .image_inner3 {
+    background-image: url("../img/img3.jpg");
+  }
+
+  .image_inner4 {
+    background-image: url("../img/img4.jpg");
+  }
+}
