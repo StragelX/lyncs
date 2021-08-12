@@ -1,3 +1,7 @@
+.header {
+  background-color: #242424;
+}
+
 .stores_top {
   min-height: 814px;
   background-color: #242424;
@@ -205,4 +209,88 @@
   .image_inner4 {
     background-image: url("../img/img4.jpg");
   }
+}
+
+.cooperation_bottom {
+  background-color: #f5f5f5;
+  padding: 100px 0 150px 0;
+}
+
+.cooperation_box {
+  .above_title {
+    color: #242424;
+    text-align: center;
+    padding-bottom: 11px;
+  }
+
+  .title_h2 {
+    color: #242424;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 150px;
+  }
+}
+
+.wrapper_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  padding-bottom: 150px;
+
+  .stand {
+    max-width: 398px;
+
+    .stand_title_wrap {
+      padding-bottom: 54px;
+      .number1 {
+        position: absolute;
+        top: -45px;
+        left: 75px;
+      }
+
+      .number2 {
+        position: absolute;
+        top: -45px;
+        left: 180px;
+      }
+
+      .number3 {
+        position: absolute;
+        top: -45px;
+        left: 245px;
+      }
+
+      h4 {
+        color: #242424;
+        font-family: "Lato", sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+        z-index: 1;
+      }
+    }
+
+    .box_img {
+      max-width: 398px;
+    }
+
+    .text {
+      color: #242424;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 24px;
+      text-align: left;
+      padding: 20px;
+    }
+  }
+}
+
+.stores_btn {
+  text-align: center;
 }

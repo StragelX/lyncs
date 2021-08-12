@@ -1037,10 +1037,6 @@ body.no_scroll {
   overflow: hidden;
 }
 
-.header {
-  background-color: #242424;
-}
-
 .container {
   max-width: 1640px;
   width: 100%;
