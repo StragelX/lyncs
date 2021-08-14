@@ -232,6 +232,11 @@
   padding-bottom: 130px;
 }
 
+.about_our_work .wrap_text .above_title,
+.about_our_work .wrap_text .title_h2 {
+  color: #fff;
+}
+
 .img_container {
   display: flex;
   justify-content: space-between;
