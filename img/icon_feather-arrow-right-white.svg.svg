@@ -3,15 +3,15 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 10.9 10.9" style="enable-background:new 0 0 10.9 10.9;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#242424;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:20;}
+	.st0{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:20;}
 </style>
 <g>
-	<g transform="rotate(-45 9.6 6)">
+	<g transform="rotate(-45 6 6)">
 		<g>
-			<path class="st0" d="M0.1,2.7h14"/>
+			<path class="st0" d="M-1,5.2h14"/>
 		</g>
 		<g>
-			<path class="st0" d="M7.1-4.3L7.1-4.3l7,7l0,0l-7,7l0,0"/>
+			<path class="st0" d="M6-1.8L6-1.8l7,7l0,0l-7,7l0,0"/>
 		</g>
 	</g>
 </g>

@@ -132,6 +132,7 @@
           position: absolute;
           top: 3px;
           right: 15px;
+          width: 15px;
         }
       }
     }
@@ -235,7 +236,7 @@
 .about_our_work {
   background-color: #242424;
   padding-top: 130px;
-  padding-bottom: 240px;
+  padding-bottom: 130px;
 }
 
 .img_container {
@@ -270,7 +271,7 @@
 .inner_text {
   .box {
     min-height: 157px;
-    padding: 10px;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -287,6 +288,7 @@
     }
 
     .title {
+      margin-top: 10px;
       color: #242424;
       font-family: "Roboto", sans-serif;
       font-size: 20px;
@@ -301,6 +303,8 @@
   .box_arrow {
     display: flex;
     align-items: center;
+    margin-top: 25px;
+    height: 10px;
 
     .text {
       color: #242424;
@@ -311,7 +315,11 @@
       letter-spacing: normal;
       line-height: 35px;
       text-align: center;
-      margin-right: 15px;
+      margin-right: 25px;
+    }
+
+    img {
+      height: 10px;
     }
   }
 }
