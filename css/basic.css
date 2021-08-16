@@ -1,13 +1,7 @@
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular/OpenSans-Regular.eot");
-  src: url("../fonts/OpenSans-Regular/OpenSans-Regular?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/OpenSans-Regular/OpenSans-Regular.svg#Plumb-Black")
-      format("svg"),
-    url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"),
-    url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"),
-    url("../fonts/OpenSans-Regular/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-Regular/OpenSans-Regular?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.svg#Plumb-Black") format("svg"), url("../fonts/OpenSans-Regular/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans-Regular/OpenSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
