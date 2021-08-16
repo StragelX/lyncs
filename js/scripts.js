@@ -85,6 +85,25 @@ $( document ).ready(function() {
         });
     }
 
+    if ( $('.products_carousel') ) {
+        $(".products_carousel.owl-carousel").owlCarousel({
+            items: 3,
+            margin: 0,
+            loop: true,
+            nav: true,
+            navText: ['', ''],
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
     $('.call_mob_menu').click(function(){
         $('.mob_menu').toggleClass('active');
         $('body').toggleClass('no_scroll');

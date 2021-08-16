@@ -775,6 +775,191 @@ main {
   }
 }
 
+.products {
+  padding-top: 275px;
+  padding-bottom: 150px;
+  overflow: hidden;
+
+  .above_title,
+  .title_h2 {
+    text-align: center;
+  }
+
+  .title_h2 {
+    margin-bottom: 140px;
+  }
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    background: url("../img/form_bg.png") no-repeat center / contain;
+  }
+
+  &:before {
+    width: 262px;
+    height: 260px;
+    left: 0;
+    bottom: 0;
+    transform: rotate(346deg);
+  }
+
+  &:after {
+    top: 0;
+    right: 0;
+    width: 282px;
+    height: 245px;
+    transform: rotate(95deg);
+  }
+
+  .products_carousel {
+    .owl-nav {
+      position: absolute;
+      left: -31px;
+      top: 230px;
+      display: flex;
+      justify-content: space-between;
+      width: calc(100% + 62px);
+      pointer-events: none;
+
+      button {
+        pointer-events: all;
+        border-radius: 50%;
+        width: 61px;
+        height: 62px;
+        box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
+        background: #ffffff url("../img/rad_arrow.png") no-repeat center;
+        opacity: 0.9;
+        transition: opacity 180ms;
+
+        &:hover {
+          opacity: 1;
+          transition: opacity 180ms;
+        }
+
+        &.disabled {
+          opacity: 0;
+          pointer-events: none;
+          transition: opacity 180ms;
+
+          &:hover {
+            opacity: 0;
+            transition: opacity 180ms;
+          }
+        }
+      }
+
+      .owl-next {
+        transform: rotate(180deg);
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn_inner2 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+
+    .capacity {
+      color: #f2312a;
+      font-family: Montserrat;
+      font-size: 45px;
+      font-weight: 700;
+      padding-right: 17px;
+      border-right: 2px solid #f2312a;
+      margin-right: 14px;
+    }
+
+    p {
+      color: #242424;
+      font-family: Roboto;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+
+      span {
+        font-size: 16px;
+        display: block;
+      }
+    }
+
+    .img {
+      height: 650px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        bottom: 15px;
+        z-index: 0;
+        background: url("../img/product_shadow.png") no-repeat center / contain;
+        left: 32%;
+      }
+
+      img {
+        height: 550px;
+        z-index: 1;
+        transform: rotate(0deg);
+        transition: transform 180ms;
+      }
+    }
+
+    .owl-item {
+      opacity: 0.5;
+      transition: opacity 180ms, transform 180ms;
+      transform: scale(0.5);
+
+      &.active {
+        opacity: 0.5;
+        transition: opacity 180ms, transform 180ms;
+        transform: scale(0.5);
+
+        & + .active {
+          opacity: 1;
+          transition: opacity 180ms, transform 180ms;
+          transform: scale(1);
+
+          .img {
+            img {
+              transform: rotate(-10deg);
+              transition: transform 180ms;
+            }
+
+            &:after {
+              left: 37%;
+            }
+          }
+
+          & + .active {
+            opacity: 0.5;
+            transition: opacity 180ms, transform 180ms;
+            transform: scale(0.5);
+
+            .img {
+              img {
+                transform: rotate(0deg);
+                transition: transform 180ms;
+              }
+
+              &:after {
+                left: 32%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 .forms {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -1279,6 +1464,15 @@ footer {
 
     .link {
       margin-bottom: 60px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+      background-color: transparent;
+      transition: box-shadow 180ms, background-color 180ms;
+
+      &:hover {
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+        transition: box-shadow 180ms, background-color 180ms;
+      }
 
       .inner_img {
         max-width: 414px;
