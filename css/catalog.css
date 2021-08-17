@@ -14,7 +14,6 @@
 .product_title_box .above_title {
   color: #242424;
   text-align: center;
-  padding-bottom: 11px;
 }
 
 .product_title_box .title_h2 {
@@ -24,17 +23,10 @@
 }
 
 .product_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .product_container .product_inner {

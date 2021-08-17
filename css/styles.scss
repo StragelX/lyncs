@@ -126,7 +126,8 @@ h6 {
     height: 12px;
     top: 18px;
     right: 42px;
-    background: url("../img/Icon_feather-arrow-right.svg") no-repeat center / contain;
+    background: url("../img/Icon_feather-arrow-right.svg") no-repeat center /
+      contain;
     transition: transform 180ms;
     transform: rotate(0);
   }
@@ -142,7 +143,8 @@ h6 {
     color: #ffffff;
 
     &:after {
-      background: url("../img/button_arrow_white.png") no-repeat center / contain;
+      background: url("../img/button_arrow_white.png") no-repeat center /
+        contain;
     }
   }
 }
@@ -154,6 +156,7 @@ h6 {
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
+  margin-bottom: 10px;
 
   &::before {
     content: "";
@@ -213,7 +216,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 2;
-  background-image: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.3) 50%, rgba(36, 36, 36, 0) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #242424 0%,
+    rgba(36, 36, 36, 0.3) 50%,
+    rgba(36, 36, 36, 0) 100%
+  );
 
   .header_logo {
     img {
@@ -479,7 +487,8 @@ main {
         margin-left: 25px;
         width: 10px;
         height: 10px;
-        background: url("../img/Icon_feather-arrow-right.svg") no-repeat center/contain;
+        background: url("../img/Icon_feather-arrow-right.svg") no-repeat
+          center/contain;
       }
     }
 
@@ -570,6 +579,96 @@ main {
   }
 }
 
+.block_with_bottom_hover {
+  display: block;
+  overflow: hidden;
+
+  .img_wrap {
+    height: 528px;
+    z-index: 0;
+
+    img {
+      filter: blur(0);
+      transition: filter 180ms;
+    }
+  }
+
+  .content {
+    z-index: 2;
+    margin-left: 50px;
+    margin-right: 50px;
+    position: absolute;
+    top: 87%;
+    transition: top 180ms;
+
+    h6 {
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(
+      180deg,
+      rgba(36, 36, 36, 0) 0%,
+      rgba(36, 36, 36, 0.75) 100%
+    );
+    opacity: 1;
+    transition: opacity 180ms;
+  }
+
+  &:after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(36, 36, 36, 0.96);
+    opacity: 0;
+    transition: opacity 180ms;
+  }
+
+  &:hover {
+    .img_wrap {
+      img {
+        filter: blur(5px);
+        transition: filter 180ms;
+      }
+    }
+
+    &:before {
+      opacity: 0;
+      transition: opacity 180ms;
+    }
+
+    &:after {
+      opacity: 0.8;
+      transition: opacity 180ms;
+    }
+
+    .content {
+      top: 30%;
+      transition: top 180ms;
+    }
+  }
+}
+
 .strategy {
   background: #f5f5f5;
   padding-top: 280px;
@@ -609,92 +708,6 @@ main {
   }
 
   .strategy_gallery {
-    .one_slide {
-      display: block;
-      overflow: hidden;
-
-      .img_wrap {
-        height: 528px;
-        z-index: 0;
-
-        img {
-          filter: blur(0);
-          transition: filter 180ms;
-        }
-      }
-
-      .content {
-        z-index: 2;
-        margin-left: 50px;
-        margin-right: 50px;
-        position: absolute;
-        top: 87%;
-        transition: top 180ms;
-
-        h6 {
-          text-transform: uppercase;
-          margin-bottom: 50px;
-          color: #fff;
-        }
-
-        p {
-          color: #ffffff;
-          font-size: 18px;
-          font-weight: 400;
-        }
-      }
-
-      &:before {
-        position: absolute;
-        content: "";
-        z-index: 1;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-image: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 0.75) 100%);
-        opacity: 1;
-        transition: opacity 180ms;
-      }
-
-      &:after {
-        content: "";
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        background-color: rgba(36, 36, 36, 0.96);
-        opacity: 0;
-        transition: opacity 180ms;
-      }
-
-      &:hover {
-        .img_wrap {
-          img {
-            filter: blur(5px);
-            transition: filter 180ms;
-          }
-        }
-
-        &:before {
-          opacity: 0;
-          transition: opacity 180ms;
-        }
-
-        &:after {
-          opacity: 0.8;
-          transition: opacity 180ms;
-        }
-
-        .content {
-          top: 30%;
-          transition: top 180ms;
-        }
-      }
-    }
-
     .owl-dots {
       margin-top: 80px;
       display: flex;
@@ -951,10 +964,10 @@ main {
 .forms {
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #fff;
-  background: url("../img/Path_38353.svg") no-repeat top 160px left 250px / 220px auto,
+  background: url("../img/Path_38353.svg") no-repeat top 160px left 250px /
+      220px auto,
     url("../img/form_bg_blur.png") no-repeat bottom 39px left 55%,
-    url("../img/form_bg.png") no-repeat right 80px top 60px;
+    url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
 }
 
 .form_text {
@@ -1422,17 +1435,20 @@ footer {
       height: 12px;
       margin-left: 24px;
       content: "";
-      background: url("../img/Icon_feather-arrow-right.svg") no-repeat center / contain;
+      background: url("../img/Icon_feather-arrow-right.svg") no-repeat center /
+        contain;
     }
   }
 }
 
 .ua_map {
-  background: url("../img/map_of_Ukraine.png") no-repeat top 320px center / contain;
+  background: url("../img/map_of_Ukraine.png") no-repeat top 320px center /
+    contain;
 }
 
 .by_map {
-  background: url("../img/map_of_Belarus.png") no-repeat top 320px center / 670px auto;
+  background: url("../img/map_of_Belarus.png") no-repeat top 320px center /
+    670px auto;
 }
 
 .about_our_work {
