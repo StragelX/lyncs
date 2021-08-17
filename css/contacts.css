@@ -16,8 +16,46 @@
   padding-bottom: 106px;
 }
 
+.office::after {
+  content: "";
+  position: absolute;
+  width: 266px;
+  height: 259px;
+  top: 71px;
+  left: 160px;
+  background: url(../img/form_bg_blur2.png) no-repeat center/300px auto;
+  z-index: 0;
+}
+
 .contacts_block {
   padding-top: 220px;
+  background-color: #f5f5f5;
+}
+
+.contacts_block:before, .contacts_block:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+}
+
+.contacts_block:before {
+  width: 423px;
+  height: 387px;
+  bottom: 125px;
+  left: -48px;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  background: url(../img/form_bg.png) no-repeat center/250px auto;
+}
+
+.contacts_block:after {
+  width: 340px;
+  height: 349px;
+  right: -64px;
+  bottom: 472px;
+  -webkit-transform: rotate(346deg);
+          transform: rotate(346deg);
+  background: url(../img/form_bg.png) no-repeat center/250px auto;
 }
 
 .one_contact .wrap {
