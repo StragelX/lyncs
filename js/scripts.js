@@ -113,4 +113,10 @@ $( document ).ready(function() {
             $('body').removeClass('no_scroll');
         }
     })
+
+    $('.one_year').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+        
+    })
 });
