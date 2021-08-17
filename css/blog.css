@@ -11,7 +11,8 @@
 }
 
 .container_info {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
   padding: 60px;
   position: absolute;
@@ -38,7 +39,8 @@
 .container_info .line_red {
   width: 120px;
   height: 2px;
-  transform: rotate(-180deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
   border: 1px solid #f2312a;
   background-color: #f2312a;
 }
