@@ -63,5 +63,9 @@ body {
 
   .white {
     border: 2px solid white;
+
+    &:hover {
+      border: 2px solid #ff3233;
+    }
   }
 }

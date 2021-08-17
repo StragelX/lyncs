@@ -20,24 +20,16 @@
 }
 
 .franchise_wrap .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
   margin-top: 120px;
 }
 
 .franchise_wrap .wrapper .inner {
   max-width: 414px;
-  -webkit-box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
-          box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+  box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
   border-radius: 15px;
   background-color: #ffffff;
   padding: 30px;
@@ -45,8 +37,6 @@
 }
 
 .franchise_wrap .wrapper .inner .box_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -78,8 +68,9 @@
   border-left: 2px solid #f2312a;
 }
 
-.franchise_wrap .franchise_btn {
-  text-align: center;
+.franchise_wrap .franchise_btn .btn_inner2 {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cooperation_top {
@@ -101,12 +92,8 @@
 }
 
 .image_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .image_wrap .image_inner1,
@@ -116,15 +103,9 @@
   width: 398px;
   height: 528px;
   background-color: #242424;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .image_wrap .image_inner1 .text,
@@ -176,15 +157,9 @@
 }
 
 .wrapper_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
   padding-bottom: 150px;
 }
 
@@ -242,7 +217,8 @@
   padding: 20px;
 }
 
-.stores_btn {
-  text-align: center;
+.stores_btn .btn_inner2 {
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=stores.css.map */

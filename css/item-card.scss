@@ -162,38 +162,7 @@
   justify-content: space-between;
   align-items: stretch;
 
-  .product_inner {
-    background-color: #ffffff;
-    transition: box-shadow 180ms;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
-    line-height: 0;
-
-    .product_img {
-      max-width: 330px;
-      line-height: 0;
-      overflow: hidden;
-      height: 350px;
-
-      img {
-        line-height: 0;
-        transform: scale(1);
-        transition: transform 180ms;
-      }
-    }
-
-    &:hover {
-      transition: box-shadow 180ms;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
-
-      .product_img {
-        img {
-          line-height: 0;
-          transform: scale(1.2);
-          transition: transform 180ms;
-        }
-      }
-    }
-  }
+  
 
   .name_box {
     border: 1px solid #707070;
@@ -247,6 +216,11 @@
 .product_btn {
   text-align: center;
   padding-top: 130px;
+
+  .btn_inner2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .about_our_work {

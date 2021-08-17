@@ -70,7 +70,10 @@
   }
 
   .franchise_btn {
-    text-align: center;
+    .btn_inner2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
@@ -216,5 +219,8 @@
 }
 
 .stores_btn {
-  text-align: center;
+  .btn_inner2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
