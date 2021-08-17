@@ -164,9 +164,16 @@
 
   .product_inner {
     background-color: #ffffff;
+    transition: box-shadow 180ms;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
 
     .product_img {
       max-width: 330px;
+    }
+
+    &:hover {
+      transition: box-shadow 180ms;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
     }
   }
 
@@ -238,17 +245,19 @@
   }
 }
 
-.img_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+.about_our_work {
+  .img_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 
-  .link {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
-    background-color: #ffffff;
+    .link {
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+      background-color: #ffffff;
 
-    .inner_img {
-      max-width: 414px;
+      .inner_img {
+        max-width: 414px;
+      }
     }
   }
 }

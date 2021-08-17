@@ -160,10 +160,17 @@
 
 .product_wrap .product_inner {
   background-color: #ffffff;
+  transition: box-shadow 180ms;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
 }
 
 .product_wrap .product_inner .product_img {
   max-width: 330px;
+}
+
+.product_wrap .product_inner:hover {
+  transition: box-shadow 180ms;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
 }
 
 .product_wrap .name_box {
@@ -229,18 +236,18 @@
   color: #fff;
 }
 
-.img_container {
+.about_our_work .img_container {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
 }
 
-.img_container .link {
+.about_our_work .img_container .link {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
   background-color: #ffffff;
 }
 
-.img_container .link .inner_img {
+.about_our_work .img_container .link .inner_img {
   max-width: 414px;
 }
 
