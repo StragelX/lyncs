@@ -44,7 +44,8 @@
   height: 387px;
   bottom: 125px;
   left: -48px;
-  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
   background: url(../img/form_bg.png) no-repeat center/250px auto;
 }
 
@@ -53,7 +54,8 @@
   height: 349px;
   right: -64px;
   bottom: 472px;
-  transform: rotate(346deg);
+  -webkit-transform: rotate(346deg);
+          transform: rotate(346deg);
   background: url(../img/form_bg.png) no-repeat center/250px auto;
 }
 
@@ -71,8 +73,12 @@
 }
 
 .one_contact .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   color: #242424;
   font-family: "Montserrat", sans-serif;
@@ -97,8 +103,12 @@
 }
 
 .one_contact .mailto {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   color: #242424;
   font-family: "Montserrat", sans-serif;
@@ -111,8 +121,12 @@
 }
 
 .one_contact .map {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #242424;
   font-family: "Roboto", sans-serif;
   font-size: 14px;

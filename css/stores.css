@@ -27,7 +27,8 @@
 .franchise::after {
   width: 231px;
   height: 289px;
-  transform: rotate(-165deg);
+  -webkit-transform: rotate(-165deg);
+          transform: rotate(-165deg);
   top: 215px;
   right: 160px;
 }
@@ -48,16 +49,24 @@
 }
 
 .franchise_wrap .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   margin-top: 120px;
 }
 
 .franchise_wrap .wrapper .inner {
   max-width: 414px;
-  box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+  -webkit-box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+          box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
   border-radius: 15px;
   background-color: #ffffff;
   padding: 30px;
@@ -65,6 +74,8 @@
 }
 
 .franchise_wrap .wrapper .inner .box_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -146,7 +157,8 @@
 .cooperation_bottom:after {
   width: 231px;
   height: 289px;
-  transform: rotate(188deg);
+  -webkit-transform: rotate(188deg);
+          transform: rotate(188deg);
   top: 990px;
   right: 110px;
 }
@@ -164,9 +176,15 @@
 }
 
 .wrapper_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding-bottom: 150px;
 }
 
