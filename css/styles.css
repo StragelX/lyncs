@@ -1234,6 +1234,35 @@ h6 {
   transition: color 180ms;
 }
 
+.rad_under_hover span {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -7px;
+}
+
+.rad_under_hover span:after {
+  content: "";
+  margin-top: 5px;
+  width: 0;
+  transition: width 180ms;
+  left: 0;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 2px solid #f2312a;
+}
+
+.rad_under_hover span:hover:after {
+  width: 100%;
+  transition: width 180ms;
+}
+
+.rad_under_hover.active span::after {
+  width: 100%;
+}
+
 .above_title {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;

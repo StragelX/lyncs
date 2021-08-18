@@ -73,6 +73,15 @@
         font-size: 15px;
         font-weight: 500;
 
+        span {
+          &:after {
+            content: "";
+            bottom: -5px;
+            width: 199%;
+            border-bottom: 1px solid #f2312a;
+          }
+        }
+
         & + a {
           margin-top: 37px;
         }
