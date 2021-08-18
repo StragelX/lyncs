@@ -1528,7 +1528,9 @@ menu .menu_links {
   padding-left: 50px;
 }
 
-menu .menu_links a {
+menu .menu_links > a,
+menu .menu_links .submenu {
+  z-index: 1;
   display: block;
   font-size: 45px;
   color: #ffffff;
@@ -1539,7 +1541,8 @@ menu .menu_links a {
   transition: color 180ms;
 }
 
-menu .menu_links a:after {
+menu .menu_links > a:after,
+menu .menu_links .submenu:after {
   bottom: -4px;
   content: "";
   position: absolute;
@@ -1549,18 +1552,62 @@ menu .menu_links a:after {
   transition: width 180ms;
 }
 
-menu .menu_links a:hover {
+menu .menu_links > a:hover,
+menu .menu_links .submenu:hover {
   color: #f2312a;
   transition: color 180ms;
 }
 
-menu .menu_links a:hover:after {
+menu .menu_links > a:hover:after,
+menu .menu_links .submenu:hover:after {
   width: 100%;
   transition: width 180ms;
 }
 
-menu .menu_links a + a {
+menu .menu_links > a + a,
+menu .menu_links > a + .submenu,
+menu .menu_links .submenu + a,
+menu .menu_links .submenu + .submenu {
   margin-top: 25px;
+}
+
+menu .menu_links .submenu {
+  cursor: default;
+}
+
+menu .menu_links .submenu .sub_drop {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 0;
+  text-align: right;
+  opacity: 0;
+  transition: opacity 180ms, padding-top 180ms;
+  pointer-events: none;
+}
+
+menu .menu_links .submenu .sub_drop a {
+  display: block;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+menu .menu_links .submenu .sub_drop a + a {
+  margin-top: 15px;
+}
+
+menu .menu_links .submenu:hover {
+  z-index: 2;
+}
+
+menu .menu_links .submenu:hover .sub_drop {
+  padding-top: 75px;
+  opacity: 1;
+  transition: opacity 180ms, padding-top 180ms;
+  pointer-events: all;
 }
 
 menu .menu_socials {

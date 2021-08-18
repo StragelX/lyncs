@@ -525,7 +525,6 @@ menu {
 
     & > a,
     .submenu {
-      z-index: 1;
       display: block;
       font-size: 45px;
       color: #ffffff;
@@ -568,10 +567,10 @@ menu {
         position: absolute;
         right: 0;
         top: 0;
-        padding-top: 0;
+        padding-top: 75px;
         text-align: right;
         opacity: 0;
-        transition: opacity 180ms, padding-top 180ms;
+        transition: opacity 180ms;
         pointer-events: none;
 
         a {
@@ -581,20 +580,13 @@ menu {
           font-size: 26px;
           font-weight: 700;
           text-transform: uppercase;
-
-          & + a {
-            margin-top: 15px;
-          }
         }
       }
 
       &:hover {
-        z-index: 2;
-
         .sub_drop {
-          padding-top: 75px;
           opacity: 1;
-          transition: opacity 180ms, padding-top 180ms;
+          transition: opacity 180ms;
           pointer-events: all;
         }
       }
