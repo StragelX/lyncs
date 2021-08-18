@@ -176,6 +176,8 @@ $( document ).ready(function() {
     $('.desctop_burger').click(function(){
         $(this).toggleClass('active');
         $('menu').toggleClass('active');
+        $('body').toggleClass('no_scroll');
+        
     })
     
 });
