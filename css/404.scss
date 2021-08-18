@@ -3,15 +3,18 @@ body {
 }
 
 .mistake {
-  padding-top: 370px;
+  padding-top: 310px;
   padding-left: 20px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
-    background: url("../img/form_bg_large.png") no-repeat center / 200px auto;
+    top: 100px;
+    left: 140px;
+    background: url("../img/form_bg_large.png") no-repeat center / contain;
     z-index: 0;
+    width: 667px;
+    height: 901px;
   }
 }
 

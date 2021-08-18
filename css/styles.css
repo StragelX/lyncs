@@ -2079,6 +2079,19 @@ main {
   background-color: #ffffff;
   opacity: 0.3;
   margin-top: 10px;
+  color: #242424;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 20px;
+  transition: opacity 180ms, background-color 180ms;
+}
+
+.form_inner input.filled,
+.form_inner textarea.filled {
+  opacity: 1;
+  background-color: #ffffff;
+  transition: opacity 180ms, background-color 180ms;
 }
 
 .form_inner label {

@@ -123,4 +123,16 @@ $( document ).ready(function() {
         $(this).siblings().removeClass('active');
         $(this).toggleClass('active');
     })
+
+    $('input, textarea').focus(function(){
+        $(this).addClass('filled');
+    })
+
+    $('input, textarea').blur(function(){
+        if ($(this).val() != '') {
+            $(this).addClass('filled');
+        } else {
+            $(this).removeClass('filled');
+        }
+    })
 });
