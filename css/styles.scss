@@ -182,6 +182,20 @@ h6 {
   }
 }
 
+.read_more {
+  color: #242424;
+  transition: color 180ms;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 35px;
+
+  &:hover {
+    color: #f2312a;
+    transition: color 180ms;
+  }
+}
+
 .above_title {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -1277,9 +1291,12 @@ footer {
 }
 
 .sign_for_updates {
-  background-color: #242424;
   padding-top: 60px;
   padding-bottom: 60px;
+  background: url("../img/sign_up_bg_blur.png") no-repeat top 50px center /
+      200px auto,
+    #242424;
+  overflow: hidden;
 
   &:before {
     content: "";
@@ -1291,6 +1308,17 @@ footer {
     background: url("../img/big_logo_white.svg") no-repeat center / contain;
   }
 
+  &:after {
+    content: "";
+    position: absolute;
+    top: 112px;
+    right: -59px;
+    width: 202px;
+    height: 155px;
+    transform: rotate(3deg);
+    background: url("../img/sign_ul_right_logo.png") no-repeat center / contain;
+  }
+
   .above_title,
   .title_h2 {
     color: #fff;
@@ -1298,6 +1326,7 @@ footer {
 
   .title_h2 {
     margin-bottom: 36px;
+    text-transform: none;
   }
 }
 
@@ -1343,7 +1372,6 @@ footer {
   .line {
     border-top: 1px solid #c5c5c5;
     padding-top: 36px;
-    padding-bottom: 36px;
     cursor: pointer;
 
     &:last-child {
@@ -1363,6 +1391,34 @@ footer {
       height: 30px;
       content: "";
       background: url("../img/cros_icon.svg") no-repeat center / contain;
+    }
+
+    .inner {
+      p {
+        opacity: 0;
+        max-height: 0;
+        margin-bottom: 0;
+        transition: opacity 180ms, max-height 180ms, margin-bottom 180ms;
+        margin-top: 30px;
+        padding-left: 17px;
+        border-left: 1px solid #e20015;
+        color: #242424;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
+    &.active {
+      .inner {
+        p {
+          opacity: 1;
+          max-height: 350px;
+          margin-bottom: 36px;
+          transition: opacity 180ms, max-height 180ms, margin-bottom 180ms;
+        }
+      }
     }
   }
 }
@@ -1630,6 +1686,13 @@ footer {
     .box_about_img {
       max-width: 727px;
       line-height: 0;
+      flex: none;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
     }
   }
 
@@ -1658,6 +1721,10 @@ footer {
       .title_h2 {
         color: #242424;
         padding-bottom: 25px;
+
+        &.blog_list {
+          text-transform: none;
+        }
       }
 
       .text {
@@ -1670,6 +1737,10 @@ footer {
         letter-spacing: normal;
         line-height: 29px;
       }
+    }
+
+    .read_more {
+      text-align: right;
     }
   }
 }

@@ -117,6 +117,10 @@ $( document ).ready(function() {
     $('.one_year').click(function(){
         $(this).siblings().removeClass('active');
         $(this).toggleClass('active');
-        
+    })
+
+    $('.most_popular .line').click(function(){
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
     })
 });

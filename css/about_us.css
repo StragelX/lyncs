@@ -13,12 +13,6 @@
   flex: none;
 }
 
-.stores_top_wrap .box_about .box_about_img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
 .stores_top_wrap .box_about_text {
   padding: 60px 75px;
 }
