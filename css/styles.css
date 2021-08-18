@@ -1263,6 +1263,10 @@ h6 {
   width: 100%;
 }
 
+footer .rad_under_hover span:after {
+  border-bottom: 2px solid #fff;
+}
+
 .above_title {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
