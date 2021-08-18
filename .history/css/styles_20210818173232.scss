@@ -309,7 +309,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 20;
+  z-index: 3;
   background-image: linear-gradient(
     180deg,
     #242424 0%,
@@ -415,161 +415,12 @@ header {
 }
 
 menu {
-  padding-top: 160px;
-  z-index: 10;
+  z-index: 2;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #242424 url("../img/menu_bg.svg") no-repeat top 180px right 95px/770px
-    auto;
-  opacity: 0;
-  transition: opacity 180ms;
-  pointer-events: none;
-
-  &.active {
-    opacity: 1;
-    transition: opacity 180ms;
-    pointer-events: all;
-  }
-
-  .order {
-    display: block;
-    height: 469px;
-    margin-bottom: 25px;
-    background: url("../img/menu_link_1.jpg") no-repeat center / cover;
-    padding-top: 313px;
-    padding-left: 50px;
-
-    p {
-      cursor: pointer;
-      color: #242424;
-      font-family: Roboto;
-      font-size: 45px;
-      font-weight: 700;
-      text-transform: uppercase;
-      z-index: 2;
-    }
-
-    &:before {
-      z-index: 0;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      background-color: rgba(255, 255, 255, 0.3);
-    }
-
-    &:after {
-      z-index: 1;
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 674px;
-      left: 0;
-      background-image: linear-gradient(
-        270deg,
-        rgba(36, 36, 36, 0) 0%,
-        #ffffff 100%
-      );
-    }
-  }
-
-  .privat_label,
-  .own_shop {
-    display: block;
-    height: 180px;
-    margin-bottom: 25px;
-    padding-top: 60px;
-    padding-left: 50px;
-    background: url("../img/menu_link_2.jpg") no-repeat center / cover;
-
-    &::before {
-      z-index: 0;
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      width: 674px;
-      background-image: linear-gradient(
-        270deg,
-        rgba(36, 36, 36, 0) 0%,
-        #242424 100%
-      );
-    }
-
-    p {
-      cursor: pointer;
-      color: #ffffff;
-      font-family: Roboto;
-      font-size: 30px;
-      font-weight: 500;
-      text-transform: uppercase;
-    }
-  }
-
-  .own_shop {
-    background: url("../img/menu_link_3.jpg") no-repeat center / cover;
-    margin-bottom: 0;
-  }
-
-  .menu_links {
-    padding-left: 50px;
-
-    a {
-      display: block;
-      font-size: 45px;
-      color: #ffffff;
-      font-family: Roboto;
-      font-weight: 700;
-      text-align: left;
-      text-transform: uppercase;
-      transition: color 180ms;
-
-      &:after {
-        bottom: -4px;
-        content: "";
-        position: absolute;
-        width: 0;
-        display: block;
-        border-bottom: 1px solid #fff;
-        transition: width 180ms;
-      }
-
-      &:hover {
-        color: #f2312a;
-        transition: color 180ms;
-
-        &:after {
-          width: 100%;
-          transition: width 180ms;
-        }
-      }
-
-      & + a {
-        margin-top: 25px;
-      }
-    }
-  }
-
-  .menu_socials {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-
-    a {
-      & + a {
-        margin-left: 30px;
-      }
-    }
-  }
 }
 
 main {

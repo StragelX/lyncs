@@ -172,4 +172,10 @@ $( document ).ready(function() {
             $(this).removeClass('filled');
         }
     })
+
+    $('.desctop_burger').click(function(){
+        $(this).toggleClass('active');
+        $('menu').toggleClass('active');
+    })
+    
 });
