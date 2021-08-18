@@ -885,7 +885,6 @@ main {
         background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
         opacity: 0.9;
         transition: opacity 180ms;
-        transform: rotate(90deg);
 
         &:hover {
           opacity: 1;
@@ -905,7 +904,7 @@ main {
       }
 
       .owl-next {
-        transform: rotate(-90deg);
+        transform: rotate(180deg);
       }
     }
 

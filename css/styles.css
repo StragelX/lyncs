@@ -1171,7 +1171,7 @@ h6 {
 }
 
 .btn_inner2.white:after {
-  background: url("../img/button_arrow_white.png") no-repeat center/contain;
+  background: url("../img/button_arrow_white.svg") no-repeat center/contain;
 }
 
 .btn_inner2 > * {
@@ -1339,7 +1339,7 @@ header .menu {
 header .menu .desctop_burger {
   height: 36px;
   width: 36px;
-  background: url("../img/menu_icon.png") no-repeat center/contain;
+  background: url("../img/top_menu_burger.svg") no-repeat center/contain;
 }
 
 header .header_underline {
@@ -1806,7 +1806,8 @@ main {
   width: 61px;
   height: 62px;
   box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-  background: #ffffff url("../img/rad_arrow.png") no-repeat center;
+  background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
+  transform: rotate(90deg);
   opacity: 0.9;
   transition: opacity 180ms;
 }
@@ -1828,7 +1829,7 @@ main {
 }
 
 .strategy .strategy_gallery .owl-nav .owl-next {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .products {
@@ -1885,9 +1886,10 @@ main {
   width: 61px;
   height: 62px;
   box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-  background: #ffffff url("../img/rad_arrow.png") no-repeat center;
+  background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
   opacity: 0.9;
   transition: opacity 180ms;
+  transform: rotate(90deg);
 }
 
 .products .products_carousel .owl-nav button:hover {
@@ -1907,7 +1909,7 @@ main {
 }
 
 .products .products_carousel .owl-nav .owl-next {
-  transform: rotate(180deg);
+  transform: rotate(-90deg);
 }
 
 .products .products_carousel .info {
@@ -2371,7 +2373,7 @@ footer .footer_logo {
   width: 30px;
   height: 30px;
   content: "";
-  background: url("../img/cros_icon.svg") no-repeat center/contain;
+  background: url("../img/plus_icon.svg") no-repeat center/contain;
 }
 
 .most_popular .line .inner p {
@@ -2394,6 +2396,10 @@ footer .footer_logo {
   max-height: 350px;
   margin-bottom: 36px;
   transition: opacity 180ms, max-height 180ms, margin-bottom 180ms;
+}
+
+.most_popular .line.active .show {
+  background: url("../img/minus_icon.svg") no-repeat center/contain;
 }
 
 .location {

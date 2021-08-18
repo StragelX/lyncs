@@ -306,7 +306,7 @@ header {
     .desctop_burger {
       height: 36px;
       width: 36px;
-      background: url("../img/top_menu_burger.svg") no-repeat center / contain;
+      background: url("../img/menu_icon.png") no-repeat center / contain;
     }
   }
 
@@ -799,8 +799,7 @@ main {
         width: 61px;
         height: 62px;
         box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-        background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
-        transform: rotate(90deg);
+        background: #ffffff url("../img/rad_arrow.png") no-repeat center;
         opacity: 0.9;
         transition: opacity 180ms;
 
@@ -822,7 +821,7 @@ main {
       }
 
       .owl-next {
-        transform: rotate(-90deg);
+        transform: rotate(180deg);
       }
     }
   }
@@ -882,10 +881,9 @@ main {
         width: 61px;
         height: 62px;
         box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-        background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
+        background: #ffffff url("../img/rad_arrow.png") no-repeat center;
         opacity: 0.9;
         transition: opacity 180ms;
-        transform: rotate(90deg);
 
         &:hover {
           opacity: 1;
@@ -905,7 +903,7 @@ main {
       }
 
       .owl-next {
-        transform: rotate(-90deg);
+        transform: rotate(180deg);
       }
     }
 
@@ -1404,7 +1402,7 @@ footer {
       width: 30px;
       height: 30px;
       content: "";
-      background: url("../img/plus_icon.svg") no-repeat center / contain;
+      background: url("../img/cros_icon.svg") no-repeat center / contain;
     }
 
     .inner {
@@ -1432,10 +1430,6 @@ footer {
           margin-bottom: 36px;
           transition: opacity 180ms, max-height 180ms, margin-bottom 180ms;
         }
-      }
-
-      .show {
-        background: url("../img/minus_icon.svg") no-repeat center / contain;
       }
     }
   }

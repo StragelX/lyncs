@@ -104,25 +104,6 @@ $( document ).ready(function() {
         });
     }
 
-    if ( $('.private_carousel') ) {
-        $(".private_carousel.owl-carousel").owlCarousel({
-            items: 3,
-            margin: 0,
-            loop: true,
-            nav: true,
-            navText: ['', ''],
-
-            responsive:{
-                0:{
-                },
-                600:{
-                },
-                1000:{
-                }
-            }
-        });
-    }
-
     if ( $('.year_partners_carousel') ) {
         $(".year_partners_carousel.owl-carousel").owlCarousel({
             items: 3,
