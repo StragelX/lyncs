@@ -2586,7 +2586,6 @@ footer .footer_logo {
 
 .about_our_work .wrap_text .above_title {
   color: #242424;
-  padding-bottom: 11px;
   text-align: center;
 }
 
@@ -2651,7 +2650,7 @@ footer .footer_logo {
 .stores_top_wrap .box_about_text {
   max-width: 637px;
   background-color: #ffffff;
-  padding: 44px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2667,7 +2666,6 @@ footer .footer_logo {
 
 .stores_top_wrap .box_about_text .text_wrap .above_title {
   color: #242424;
-  padding-bottom: 11px;
 }
 
 .stores_top_wrap .box_about_text .text_wrap .title_h2 {

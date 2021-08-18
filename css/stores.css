@@ -4,6 +4,34 @@
   padding-bottom: 200px;
 }
 
+.franchise::before, .franchise:after {
+  z-index: 0;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  display: block;
+  background: url("../img/form_bg_blur.png") no-repeat center/contain;
+}
+
+.franchise > * {
+  z-index: 2;
+}
+
+.franchise::before {
+  width: 136px;
+  height: 130px;
+  top: 560px;
+  left: 105px;
+}
+
+.franchise::after {
+  width: 231px;
+  height: 289px;
+  transform: rotate(-165deg);
+  top: 215px;
+  right: 160px;
+}
+
 .stores_top_wrap .box_about_text .text_wrap .title_h2 {
   text-transform: uppercase;
 }
@@ -91,57 +119,36 @@
   text-transform: uppercase;
 }
 
-.image_wrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.image_wrap .image_inner1,
-.image_wrap .image_inner2,
-.image_wrap .image_inner3,
-.image_wrap .image_inner4 {
-  width: 398px;
-  height: 528px;
-  background-color: #242424;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.image_wrap .image_inner1 .text,
-.image_wrap .image_inner2 .text,
-.image_wrap .image_inner3 .text,
-.image_wrap .image_inner4 .text {
-  color: #ffffff;
-  font-family: "Lato", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  font-style: normal;
-  letter-spacing: normal;
-  line-height: normal;
-  text-transform: uppercase;
-  padding-bottom: 30px;
-}
-
-.image_wrap .image_inner1 {
-  background-image: url("../img/img1.jpg");
-}
-
-.image_wrap .image_inner2 {
-  background-image: url("../img/img2.jpg");
-}
-
-.image_wrap .image_inner3 {
-  background-image: url("../img/img3.jpg");
-}
-
-.image_wrap .image_inner4 {
-  background-image: url("../img/img4.jpg");
-}
-
 .cooperation_bottom {
   background-color: #f5f5f5;
   padding: 100px 0 150px 0;
+}
+
+.cooperation_bottom:before, .cooperation_bottom:after {
+  z-index: 0;
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  background: url("../img/form_bg_blur.png") no-repeat center/contain;
+}
+
+.cooperation_bottom > * {
+  z-index: 2;
+}
+
+.cooperation_bottom:before {
+  width: 229px;
+  height: 221px;
+  top: 128px;
+  left: 128px;
+}
+
+.cooperation_bottom:after {
+  width: 231px;
+  height: 289px;
+  transform: rotate(188deg);
+  top: 990px;
+  right: 110px;
 }
 
 .cooperation_box .above_title {
