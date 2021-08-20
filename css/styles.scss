@@ -2147,8 +2147,19 @@ footer {
   .modal {
     background-color: #242424;
     padding: 25px 25px 50px;
+    opacity: 0;
+    transition: opacity 180ms;
+    pointer-events: none;
+    display: none;
 
-    .close {
+    &.active {
+      display: block;
+      opacity: 1;
+      transition: opacity 180ms;
+      pointer-events: all;
+    }
+
+    .close_btn {
       z-index: 10;
       position: absolute;
       top: 45px;
