@@ -141,6 +141,24 @@ $( document ).ready(function() {
         });
     }
 
+    if ($('.small_picture_box') && $('.small_picture_box .img').length > 2) {
+        $(".small_picture_box.owl-carousel").owlCarousel({
+            items: 2,
+            margin: 10,
+            nav: true,
+            navText: ['', ''],
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
+        });
+    }
+
     $('.call_mob_menu').click(function(){
         $('.mob_menu').toggleClass('active');
         $('body').toggleClass('no_scroll');
@@ -180,4 +198,5 @@ $( document ).ready(function() {
         
     })
     
+    Fancybox.bind("[data-fancybox]", {});
 });
