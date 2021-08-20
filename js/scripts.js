@@ -3,17 +3,6 @@ $( document ).ready(function() {
         $(this).closest('.shop_group').toggleClass('active');
     })
 
-    var agrotem_cookies = localStorage.getItem('agrotem_cookies');
-
-    if (agrotem_cookies != 'checked') {
-        $(".cookies_wrap").addClass('active');
-    }
-
-    $('.cookies_wrap .ok').click(function(){
-        $(this).closest('.cookies_wrap').removeClass('active');
-        localStorage.setItem('agrotem_cookies', 'checked')
-    })
-
     if($('.counter_number').length){
         $('.counter_number').appear(function () {
             $('.counter_number').countTo();
@@ -31,11 +20,10 @@ $( document ).ready(function() {
         })
     });
 
-    $('.modal_overlay .close, .modal_overlay .color_btn').click(function(e){
+    $('.modal_overlay .close, .modal_overlay .color_btn').click(function(){
         $(this).closest('.modal_overlay').removeClass('active');
         $(this).closest('.modal').removeClass('active');
         $('body').removeClass('no_scroll');
-        e.stopPropagation();
     });
 
     $(".input_wrap input").click(function(){
@@ -199,5 +187,9 @@ $( document ).ready(function() {
         
     })
     
-    Fancybox.bind("[data-fancybox]", {});
+    
+
+    $('.filter_wrap .line').click(function(){
+        $(this).toggleClass('active');
+    })
 });

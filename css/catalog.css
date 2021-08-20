@@ -94,6 +94,12 @@
   background: url("../img/plus_icon.svg") no-repeat center/contain;
 }
 
+.filter_wrap .line .inner {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 180ms;
+}
+
 .filter_wrap .line .inner a {
   display: block;
   color: #000000;
@@ -120,6 +126,11 @@
 
 .filter_wrap .line.active .top_line:after {
   background: url("../img/minus_icon.svg") no-repeat center/contain;
+}
+
+.filter_wrap .line.active .inner {
+  transition: max-height 180ms;
+  max-height: 500px;
 }
 
 .bottom_text_block {
