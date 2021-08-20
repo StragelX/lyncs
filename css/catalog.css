@@ -94,4 +94,78 @@
 .filter_wrap .line.active .top_line:after {
   background: url("../img/minus_icon.svg") no-repeat center/contain;
 }
+
+.bottom_text_block {
+  padding-bottom: 150px;
+}
+
+.bottom_text_block p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  color: #242424;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.bottom_text_block h3 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #000000;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.bottom_text_block h2 {
+  margin-bottom: 63px;
+  color: #242424;
+  font-family: Roboto;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.bottom_text_block h2:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: #f2312a;
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+}
+
+.bottom_text_block ul {
+  list-style: none;
+  padding-left: 113px;
+  counter-reset: ul;
+}
+
+.bottom_text_block ul li {
+  text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+  color: #242424;
+  font-family: Montserrat;
+  padding-right: 138px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 29px;
+  counter-increment: ul;
+}
+
+.bottom_text_block ul li::before {
+  content: counter(ul) ".";
+  font-size: 20px;
+  color: #f2312a;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 0;
+  left: -46px;
+}
+
+.bottom_text_block ul li + li {
+  margin-top: 30px;
+}
 /*# sourceMappingURL=catalog.css.map */
