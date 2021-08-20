@@ -1159,7 +1159,7 @@ h6 {
   text-align: center;
   line-height: 48px;
   overflow: hidden;
-  transition: border 180ms;
+  transition: border 180ms, box-shadow 0ms 180ms;
 }
 
 .btn_inner2 span {
@@ -1183,10 +1183,10 @@ h6 {
   content: "";
   z-index: 0;
   pointer-events: none;
-  top: 0;
-  bottom: 0;
-  right: -1px;
-  left: -1px;
+  top: -2px;
+  bottom: -2px;
+  right: -2px;
+  left: -2px;
   transform: translateX(-100%);
   transition: transform 180ms;
   position: absolute;
@@ -1206,8 +1206,9 @@ h6 {
 }
 
 .btn_inner2:hover {
-  transition: border 180ms;
+  transition: border 180ms, box-shadow 0ms 180ms;
   border: 2px solid #ff3233;
+  box-shadow: inset 0px 0px 15px #ff3233;
 }
 
 .btn_inner2:hover::before {
@@ -1335,6 +1336,8 @@ header {
   width: 100%;
   z-index: 20;
   background-image: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0.3) 50%, rgba(36, 36, 36, 0) 100%);
+  background-color: transparent;
+  transition: background-color 180ms;
 }
 
 header .header_logo img {
@@ -1422,6 +1425,12 @@ header .menu .desctop_burger.active:hover:after {
 header .header_underline {
   margin-top: 20px;
   border-bottom: 1px solid #fff;
+}
+
+header.active {
+  background-color: #fff;
+  background-image: none;
+  transition: background-color 180ms;
 }
 
 menu {
