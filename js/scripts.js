@@ -31,10 +31,11 @@ $( document ).ready(function() {
         })
     });
 
-    $('.modal_overlay .close, .modal_overlay .color_btn').click(function(){
+    $('.modal_overlay .close, .modal_overlay .color_btn').click(function(e){
         $(this).closest('.modal_overlay').removeClass('active');
         $(this).closest('.modal').removeClass('active');
         $('body').removeClass('no_scroll');
+        e.stopPropagation();
     });
 
     $(".input_wrap input").click(function(){

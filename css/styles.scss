@@ -1381,6 +1381,28 @@ main {
   padding-bottom: 20px;
 }
 
+input,
+textarea {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  background-color: #ffffff;
+  opacity: 0.3;
+  margin-top: 10px;
+  color: #242424;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 15px 20px;
+  transition: opacity 180ms, background-color 180ms;
+
+  &.filled {
+    opacity: 1;
+    background-color: #ffffff;
+    transition: opacity 180ms, background-color 180ms;
+  }
+}
+
 .form_inner {
   display: flex;
   flex-direction: column;
@@ -1392,28 +1414,6 @@ main {
   textarea {
     width: 510px;
     min-height: 115px;
-  }
-
-  input,
-  textarea {
-    height: 50px;
-    border-radius: 5px;
-    border: 1px solid #242424;
-    background-color: #ffffff;
-    opacity: 0.3;
-    margin-top: 10px;
-    color: #242424;
-    font-family: Roboto;
-    font-size: 15px;
-    font-weight: 400;
-    padding: 15px 20px;
-    transition: opacity 180ms, background-color 180ms;
-
-    &.filled {
-      opacity: 1;
-      background-color: #ffffff;
-      transition: opacity 180ms, background-color 180ms;
-    }
   }
 
   label {
@@ -2113,6 +2113,116 @@ footer {
         transform: scale(1.2);
         transition: transform 180ms;
       }
+    }
+  }
+}
+
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 30;
+  opacity: 0;
+  transition: opacity 180ms;
+  pointer-events: none;
+
+  &.active {
+    opacity: 1;
+    transition: opacity 180ms;
+    pointer-events: all;
+  }
+
+  .modal_inner {
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal {
+    background-color: #242424;
+    padding: 25px 25px 50px;
+
+    .close {
+      z-index: 10;
+      position: absolute;
+      top: 45px;
+      right: 25px;
+      width: 15px;
+      height: 15px;
+      opacity: 0.15;
+      transition: opacity 180ms;
+      background: url("../img/modal_close_icon.svg") no-repeat center / contain;
+
+      &:hover {
+        opacity: 1;
+        transition: opacity 180ms;
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      color: #ffffff;
+      font-family: Roboto;
+      font-weight: 500;
+      line-height: 75px;
+    }
+
+    .subtitle {
+      text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 19px;
+      margin-bottom: 45px;
+    }
+
+    .line {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & + .line {
+        margin-top: 26px;
+      }
+    }
+
+    .input_line {
+      flex: 1 1 100%;
+
+      input {
+        min-width: 230px;
+        margin-top: 0;
+        width: 100%;
+        margin-right: 0;
+        color: #242424;
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 400;
+        background-color: #fff;
+      }
+
+      textarea {
+        width: 100%;
+        resize: vertical;
+        min-height: 115px;
+      }
+
+      & + .input_line {
+        margin-left: 25px;
+      }
+    }
+
+    .btn_inner2 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
     }
   }
 }
