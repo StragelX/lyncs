@@ -3255,4 +3255,45 @@ footer .footer_logo {
   margin-bottom: 50px;
   width: 100%;
 }
+
+.site_map {
+  padding-top: 160px;
+  padding-bottom: 150px;
+}
+
+.site_map .title {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.site_map .wrap {
+  margin-bottom: 50px;
+}
+
+.site_map a {
+  color: #242424;
+  font-family: Montserrat;
+  display: block;
+  margin-bottom: 31px;
+  white-space: nowrap;
+}
+
+.site_map .link {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.site_map .title_link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.site_map .title_link span {
+  border-bottom: 2px solid #000;
+}
+
+.site_map .rad_under_hover span:after {
+  border-bottom: 2px solid #000;
+}
 /*# sourceMappingURL=styles.css.map */
