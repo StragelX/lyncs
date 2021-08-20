@@ -1,6 +1,32 @@
 .buy_products {
   background-color: #f5f5f5;
   padding-top: 128px;
+  overflow: hidden;
+}
+
+.buy_products:before, .buy_products:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.buy_products:before {
+  top: 650px;
+  left: -40px;
+  width: 230px;
+  height: 224px;
+  transform: rotate(260deg);
+  background: url("../img/form_bg.png") no-repeat center/contain;
+}
+
+.buy_products:after {
+  width: 259px;
+  height: 267px;
+  top: 260px;
+  right: -90px;
+  transform: rotate(160deg);
+  background: url("../img/form_bg_blur.png") no-repeat center/contain;
 }
 
 .breadcrumbs {
@@ -222,6 +248,36 @@
 .also_buy {
   padding: 130px 0 130px;
   background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.also_buy:before, .also_buy:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.also_buy > * {
+  z-index: 1;
+}
+
+.also_buy:before {
+  top: 320px;
+  left: -20px;
+  width: 259px;
+  height: 267px;
+  transform: rotate(170deg);
+  background: url("../img/form_bg_blur.png") no-repeat center/contain;
+}
+
+.also_buy:after {
+  width: 144px;
+  height: 178px;
+  top: 70px;
+  left: 1050px;
+  transform: rotate(180deg);
+  background: url("../img/form_bg.png") no-repeat center/contain;
 }
 
 .buy_container {
