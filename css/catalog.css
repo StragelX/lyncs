@@ -125,6 +125,7 @@
   font-family: Roboto;
   font-weight: 500;
   text-transform: none;
+  line-height: normal;
 }
 
 .bottom_text_block h2:after {
