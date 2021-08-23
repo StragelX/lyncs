@@ -1152,11 +1152,13 @@ h6 {
   width: 276px;
   height: 54px;
   border-radius: 25px;
+  border: none;
+  background: url("../img/round_btn_white_border.svg") no-repeat center/contain;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
-  line-height: 48px;
+  line-height: 54px;
   overflow: hidden;
   transition: border 180ms;
 }
@@ -1173,14 +1175,8 @@ h6 {
   background: url("../img/button_arrow_white.svg") no-repeat center/contain;
 }
 
-.btn_inner2.test {
-  padding-top: 2px;
-  border: none;
-  background: url("../img/round_btn_white_border.svg") no-repeat center/contain;
-}
-
-.btn_inner2.test:after {
-  top: 20px;
+.btn_inner2.rad {
+  background: url("../img/round_btn_rad_border.svg") no-repeat center/contain;
 }
 
 .btn_inner2 > * {
@@ -1207,7 +1203,7 @@ h6 {
   position: absolute;
   width: 12px;
   height: 12px;
-  top: 18px;
+  top: 20px;
   right: 42px;
   background: url("../img/Icon_feather-arrow-right.svg") no-repeat center/contain;
   transition: transform 180ms;
@@ -1216,11 +1212,6 @@ h6 {
 
 .btn_inner2:hover {
   transition: border 180ms;
-  border: 2px solid #ff3233;
-}
-
-.btn_inner2:hover.test {
-  border: none;
   background: url("../img/round_btn_rad_border.svg") no-repeat center/contain;
 }
 

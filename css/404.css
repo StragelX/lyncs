@@ -63,12 +63,4 @@ body {
   padding-left: 19px;
   border-left: 1px solid #fff;
 }
-
-.mistake_wrap .white {
-  border: 2px solid white;
-}
-
-.mistake_wrap .white:hover {
-  border: 2px solid #ff3233;
-}
 /*# sourceMappingURL=404.css.map */
