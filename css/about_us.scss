@@ -79,6 +79,7 @@
 .years {
   padding-top: 200px;
   padding-bottom: 120px;
+  overflow: hidden;
 
   .above_title,
   .title_h2 {
@@ -100,6 +101,31 @@
     height: 259px;
     transform: rotate(-113deg);
     background: url("../img/form_bg_blur.png") no-repeat center / contain;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: 820px;
+    z-index: 0;
+    pointer-events: none;
+    width: 340px;
+    height: 349px;
+    transform: rotate(-20deg);
+    background: url("../img/form_bg.png") no-repeat center / contain;
+  }
+
+  .bottom_bg {
+    width: 295px;
+    height: 321px;
+    transform: rotate(60deg);
+    position: absolute;
+    left: -80px;
+    bottom: 265px;
+    z-index: 0;
+    pointer-events: none;
+    background: url("../img/form_bg.png") no-repeat center / contain;
   }
 
   .years_wrap {

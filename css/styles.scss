@@ -190,9 +190,32 @@ h6 {
   font-weight: 400;
   line-height: 35px;
 
+  svg {
+    width: 10px;
+    height: 10px;
+    margin-left: 15px;
+    transform: rotate(0deg);
+    transition: transform 180ms;
+
+    .st0 {
+      stroke: #242424;
+      transition: stroke 180ms;
+    }
+  }
+
   &:hover {
     color: #f2312a;
-    transition: color 180ms;
+    transition: opacity 180ms, color 180ms;
+
+    svg {
+      transform: rotate(45deg);
+      transition: transform 180ms;
+
+      .st0 {
+        stroke: #f2312a;
+        transition: stroke 180ms;
+      }
+    }
   }
 }
 
@@ -845,15 +868,34 @@ main {
       font-weight: 400;
       line-height: 35px;
       opacity: 0;
-      transition: opacity 180ms;
+      transition: opacity 180ms, color 180ms;
 
-      &:after {
-        content: "";
-        margin-left: 25px;
+      svg {
         width: 10px;
         height: 10px;
-        background: url("../img/Icon_feather-arrow-right.svg") no-repeat
-          center/contain;
+        margin-left: 15px;
+        transform: rotate(0deg);
+        transition: transform 180ms;
+
+        .st0 {
+          stroke: #242424;
+          transition: stroke 180ms;
+        }
+      }
+
+      &:hover {
+        color: #f2312a;
+        transition: opacity 180ms, color 180ms;
+
+        svg {
+          transform: rotate(45deg);
+          transition: transform 180ms;
+
+          .st0 {
+            stroke: #f2312a;
+            transition: stroke 180ms;
+          }
+        }
       }
     }
 
@@ -890,7 +932,7 @@ main {
 
       .link {
         opacity: 1;
-        transition: opacity 180ms;
+        transition: opacity 180ms, color 180ms;
       }
     }
   }
@@ -1335,6 +1377,13 @@ main {
       220px auto,
     url("../img/form_bg_blur.png") no-repeat bottom 39px left 55%,
     url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
+
+  @media all and (max-width: 1400px) {
+    background: url("../img/Path_38353.svg") no-repeat top 160px left 90px /
+        220px auto,
+      url("../img/form_bg_blur.png") no-repeat bottom 39px left 49%,
+      url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
+  }
 }
 
 .form_text {
@@ -1370,7 +1419,7 @@ main {
 .form_btn {
   margin-top: 60px;
 
-  .btn_inner {
+  .btn_inner2 {
     float: right;
   }
 }
@@ -1597,6 +1646,7 @@ footer {
     height: 33px;
     border: 2px solid #8c8c8c;
     border-radius: 50%;
+    transition: border 180ms;
 
     &.arrow {
       border: none;
@@ -1614,6 +1664,11 @@ footer {
       color: #fff;
       border: 2px solid #f2312a;
       background-color: #f2312a;
+    }
+
+    &:not(.active):not(.arrow):hover {
+      border: 2px solid #f2312a;
+      transition: border 180ms;
     }
   }
 }
@@ -1855,13 +1910,8 @@ footer {
     line-height: 35px;
     margin-bottom: 100px;
 
-    &:after {
-      width: 12px;
-      height: 12px;
-      margin-left: 24px;
-      content: "";
-      background: url("../img/Icon_feather-arrow-right.svg") no-repeat center /
-        contain;
+    &:hover {
+      color: #f2312a;
     }
   }
 }

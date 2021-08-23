@@ -1229,9 +1229,32 @@ h6 {
   line-height: 35px;
 }
 
+.read_more svg {
+  width: 10px;
+  height: 10px;
+  margin-left: 15px;
+  transform: rotate(0deg);
+  transition: transform 180ms;
+}
+
+.read_more svg .st0 {
+  stroke: #242424;
+  transition: stroke 180ms;
+}
+
 .read_more:hover {
   color: #f2312a;
-  transition: color 180ms;
+  transition: opacity 180ms, color 180ms;
+}
+
+.read_more:hover svg {
+  transform: rotate(45deg);
+  transition: transform 180ms;
+}
+
+.read_more:hover svg .st0 {
+  stroke: #f2312a;
+  transition: stroke 180ms;
 }
 
 .rad_under_hover span {
@@ -1861,15 +1884,35 @@ main {
   font-weight: 400;
   line-height: 35px;
   opacity: 0;
-  transition: opacity 180ms;
+  transition: opacity 180ms, color 180ms;
 }
 
-.ukr_prod .one_link .link:after {
-  content: "";
-  margin-left: 25px;
+.ukr_prod .one_link .link svg {
   width: 10px;
   height: 10px;
-  background: url("../img/Icon_feather-arrow-right.svg") no-repeat center/contain;
+  margin-left: 15px;
+  transform: rotate(0deg);
+  transition: transform 180ms;
+}
+
+.ukr_prod .one_link .link svg .st0 {
+  stroke: #242424;
+  transition: stroke 180ms;
+}
+
+.ukr_prod .one_link .link:hover {
+  color: #f2312a;
+  transition: opacity 180ms, color 180ms;
+}
+
+.ukr_prod .one_link .link:hover svg {
+  transform: rotate(45deg);
+  transition: transform 180ms;
+}
+
+.ukr_prod .one_link .link:hover svg .st0 {
+  stroke: #f2312a;
+  transition: stroke 180ms;
 }
 
 .ukr_prod .one_link .text,
@@ -1900,7 +1943,7 @@ main {
 
 .ukr_prod .one_link:hover .link {
   opacity: 1;
-  transition: opacity 180ms;
+  transition: opacity 180ms, color 180ms;
 }
 
 .ukr_prod .btn_inner2 {
@@ -2318,6 +2361,12 @@ main {
   background: url("../img/Path_38353.svg") no-repeat top 160px left 250px/220px auto, url("../img/form_bg_blur.png") no-repeat bottom 39px left 55%, url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
 }
 
+@media all and (max-width: 1400px) {
+  .forms {
+    background: url("../img/Path_38353.svg") no-repeat top 160px left 90px/220px auto, url("../img/form_bg_blur.png") no-repeat bottom 39px left 49%, url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
+  }
+}
+
 .form_text .above_title {
   color: #242424;
 }
@@ -2350,7 +2399,7 @@ main {
   margin-top: 60px;
 }
 
-.form_btn .btn_inner {
+.form_btn .btn_inner2 {
   float: right;
 }
 
@@ -2556,6 +2605,7 @@ footer .footer_logo {
   height: 33px;
   border: 2px solid #8c8c8c;
   border-radius: 50%;
+  transition: border 180ms;
 }
 
 .pagination a.arrow {
@@ -2574,6 +2624,11 @@ footer .footer_logo {
   color: #fff;
   border: 2px solid #f2312a;
   background-color: #f2312a;
+}
+
+.pagination a:not(.active):not(.arrow):hover {
+  border: 2px solid #f2312a;
+  transition: border 180ms;
 }
 
 .sign_for_updates {
@@ -2801,12 +2856,8 @@ footer .footer_logo {
   margin-bottom: 100px;
 }
 
-.location .map:after {
-  width: 12px;
-  height: 12px;
-  margin-left: 24px;
-  content: "";
-  background: url("../img/Icon_feather-arrow-right.svg") no-repeat center/contain;
+.location .map:hover {
+  color: #f2312a;
 }
 
 .ua_map {

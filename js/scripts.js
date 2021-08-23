@@ -187,7 +187,9 @@ $( document ).ready(function() {
         
     })
     
-    
+    if ( $('.phone') ){
+        $('.phone').mask('+38 000 000 00 00');
+    }
 
     $('.filter_wrap .line').click(function(){
         $(this).toggleClass('active');

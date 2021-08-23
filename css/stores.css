@@ -221,7 +221,10 @@
   letter-spacing: normal;
   line-height: 24px;
   text-align: left;
-  padding: 20px;
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-left: 2px solid #f2312a;
 }
 
 .stores_btn .btn_inner2 {

@@ -126,13 +126,8 @@
     line-height: 35px;
     margin-bottom: 100px;
 
-    &:after {
-      width: 12px;
-      height: 12px;
-      margin-left: 24px;
-      content: "";
-      background: url("../img/Icon_feather-arrow-right.svg") no-repeat center /
-        contain;
+    &:hover {
+      color: #f2312a;
     }
   }
 }

@@ -41,19 +41,88 @@
           </div>
         </div>
 
-        <div class="col_xl_2"></div>
-
-        <div class="col_xl_5"></div>
-
-        <div class="col_xl_12">
-          <div class="header_line">
-            <a href="/">
-              <img src="img/Rectangle_4361.png" alt=""></a>
+        <div class="col_xl_2">
+          <div class="product">
+            <button class="hover_op">
+              <img src="img/top_catalog_icon.svg" alt="">
+              Продукція
+            </button>
           </div>
+        </div>
+
+        <div class="col_xl_5">
+          <div class="menu">
+            <button class="desctop_burger"></button>
+          </div>
+        </div>
+
+        <div class="col_xl_12 col_l_12 col_m_12 col_s_12">
+          <div class="header_underline"></div>
         </div>
       </div>
     </div>
   </header>
+
+  <menu>
+    <div class="inner">
+      <div class="container">
+        <div class="row">
+          <div class="col_xl_7 col_l_7">
+            <a href="catalog.html" class="order">
+              <p>Замовляй <br>
+                НАшу Продукцію</p>
+            </a>
+
+            <a href="privat_label.html" class="privat_label">
+              <p>Створюй <br>
+                Private Label</p>
+            </a>
+
+            <a href="" class="own_shop">
+              <p>Відкривай <br>
+                Власний магазини</p>
+            </a>
+          </div>
+
+          <div class="col_xl_5 col_l_5">
+            <div class="menu_links">
+              <a href="/">Головна</a>
+              <a href="about_us.html">Про нас</a>
+              <a href="catalog.html">Продукція</a>
+              <a href="production.html">Виробництво</a>
+              <div class="submenu">
+                Співпраця
+                <div class="sub_drop">
+                  <a href="privat_label.html" class="hover_op">Private label</a>
+                  <a href="suppliers.html" class="hover_op">Постачальник</a>
+                </div>
+              </div>
+              <a href="blog_list.html">Блог</a>
+              <a href="contacts.html">Контакти</a>
+            </div>
+
+            <div class="menu_socials">
+              <a href="" target="_blank" class="hover_op">
+                <img src="img/fb_icon.svg" alt="">
+              </a>
+
+              <a href="" target="_blank" class="hover_op">
+                <img src="img/yt_icon.svg" alt="">
+              </a>
+
+              <a href="" target="_blank" class="hover_op">
+                <img src="img/is_icon.svg" alt="">
+              </a>
+
+              <a href="" target="_blank" class="hover_op">
+                <img src="img/ln_icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </menu>
 
   <main>
     <section class="main_top">
@@ -447,7 +516,7 @@
 
                   <div class="form_inner">
                     <label for="phone">Телефон:</label>
-                    <input type="tel" name="phone" id="phone" required="">
+                    <input type="tel" name="phone" id="phone" class="phone" required="">
                   </div>
                 </div>
 
@@ -670,7 +739,7 @@
           <div class="input_line">
             <p>Телефон:</p>
 
-            <input type="text">
+            <input type="phone" class="phone">
           </div>
 
           <div class="input_line">
@@ -706,5 +775,6 @@
 <script src="js/counter.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script src="js/owl.navigation.js"></script>
+<script src="js/jquery.mask.js"></script>
 <script src="js/scripts.js"></script>
 </html>
