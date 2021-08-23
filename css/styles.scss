@@ -110,9 +110,9 @@ h6 {
   display: block;
   color: #242424;
   width: 276px;
-  height: 50px;
+  height: 54px;
   border-radius: 25px;
-  border: 2px solid #ff3233;
+  // border: 2px solid #ff3233;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -131,6 +131,17 @@ h6 {
     &:after {
       background: url("../img/button_arrow_white.svg") no-repeat center /
         contain;
+    }
+  }
+
+  &.test {
+    padding-top: 2px;
+    border: none;
+    background: url("../img/round_btn_white_border.svg") no-repeat center /
+      contain;
+
+    &:after {
+      top: 20px;
     }
   }
 
@@ -169,6 +180,12 @@ h6 {
   &:hover {
     transition: border 180ms;
     border: 2px solid #ff3233;
+
+    &.test {
+      border: none;
+      background: url("../img/round_btn_rad_border.svg") no-repeat center /
+        contain;
+    }
 
     &::before {
       transform: translateX(0);
@@ -745,13 +762,13 @@ main {
     font-weight: 500;
   }
 
-  .btn_inner2 {
-    border: 2px solid #fff;
+  // .btn_inner2 {
+  //   border: 2px solid #fff;
 
-    &:hover {
-      border: 2px solid #ff3233;
-    }
-  }
+  //   &:hover {
+  //     border: 2px solid #ff3233;
+  //   }
+  // }
 }
 
 .partners {

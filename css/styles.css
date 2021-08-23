@@ -1150,9 +1150,8 @@ h6 {
   display: block;
   color: #242424;
   width: 276px;
-  height: 50px;
+  height: 54px;
   border-radius: 25px;
-  border: 2px solid #ff3233;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 400;
@@ -1172,6 +1171,16 @@ h6 {
 
 .btn_inner2.white:after {
   background: url("../img/button_arrow_white.svg") no-repeat center/contain;
+}
+
+.btn_inner2.test {
+  padding-top: 2px;
+  border: none;
+  background: url("../img/round_btn_white_border.svg") no-repeat center/contain;
+}
+
+.btn_inner2.test:after {
+  top: 20px;
 }
 
 .btn_inner2 > * {
@@ -1208,6 +1217,11 @@ h6 {
 .btn_inner2:hover {
   transition: border 180ms;
   border: 2px solid #ff3233;
+}
+
+.btn_inner2:hover.test {
+  border: none;
+  background: url("../img/round_btn_rad_border.svg") no-repeat center/contain;
 }
 
 .btn_inner2:hover::before {
@@ -1760,14 +1774,6 @@ main {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
-}
-
-.main_top .btn_inner2 {
-  border: 2px solid #fff;
-}
-
-.main_top .btn_inner2:hover {
-  border: 2px solid #ff3233;
 }
 
 .partners {
