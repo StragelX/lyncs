@@ -2883,15 +2883,13 @@ footer .footer_logo {
 
 .about_our_work .img_container .link {
   margin-bottom: 60px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   background-color: transparent;
-  transition: box-shadow 180ms, background-color 180ms;
+  transition: background-color 180ms;
 }
 
 .about_our_work .img_container .link:hover {
   background-color: #fff;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 180ms, background-color 180ms;
+  transition: background-color 180ms;
 }
 
 .about_our_work .img_container .link .inner_img {
