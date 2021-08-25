@@ -123,7 +123,6 @@
   width: 260px;
   height: 260px;
   box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
-  transition: background 180ms;
   border-radius: 15px;
   background: #ffffff;
   display: block;
@@ -179,8 +178,27 @@
 }
 
 .guaranty .one_download:hover {
-  background-color: #00b6be;
-  transition: background 180ms;
+  background: #00b6be url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
+}
+
+.guaranty .one_download:hover.second {
+  background: #be3300 url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
+}
+
+.guaranty .one_download:hover.third {
+  background: #00be7c url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
+}
+
+.guaranty .one_download:hover.forth {
+  background: #0066be url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
+}
+
+.guaranty .one_download:hover.fifth {
+  background: #be9900 url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
+}
+
+.guaranty .one_download:hover.sixth {
+  background: #be007c url("../img/team_hover_modal.svg") no-repeat center/auto 170px;
 }
 
 .guaranty .one_download:hover span {
