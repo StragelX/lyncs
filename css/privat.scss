@@ -327,6 +327,11 @@
       width: calc(100% + 62px);
       pointer-events: none;
 
+      @media all and (max-width: 1400px) {
+        left: -15px;
+        width: calc(100% + 30px);
+      }
+
       button {
         pointer-events: all;
         border-radius: 50%;

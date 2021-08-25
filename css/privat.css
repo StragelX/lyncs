@@ -327,6 +327,13 @@
   pointer-events: none;
 }
 
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .owl-nav {
+    left: -15px;
+    width: calc(100% + 30px);
+  }
+}
+
 .your_brand_here .private_carousel .owl-nav button {
   pointer-events: all;
   border-radius: 50%;

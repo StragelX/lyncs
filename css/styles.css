@@ -3460,4 +3460,77 @@ footer .footer_logo {
   right: 0;
   bottom: 0;
 }
+
+.our_products {
+  background-color: #f5f5f5;
+  padding-bottom: 150px;
+  padding-bottom: 50px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.our_products.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.our_products h6 {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.our_products a {
+  color: #242424;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+}
+
+.our_products a.big {
+  font-size: 18px;
+}
+
+.our_products a + a {
+  margin-top: 20px;
+}
+
+.our_products a.title {
+  font-size: 20px;
+  color: #242424;
+  font-family: Roboto;
+  font-weight: 500;
+}
+
+.our_products .wrap_link .img_wrap {
+  height: 304px;
+}
+
+.our_products .wrap_link .img_wrap img {
+  transition: transform 180ms;
+  transform: scale(1);
+}
+
+.our_products .wrap_link .img_wrap:hover img {
+  transition: transform 180ms;
+  transform: scale(1.4);
+}
+
+.our_products.menu {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 100%;
+  padding-top: 150px;
+}
+
+.our_products.menu .img_wrap {
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
