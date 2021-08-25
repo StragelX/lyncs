@@ -371,10 +371,18 @@ header {
       font-family: Montserrat;
       font-size: 15px;
       font-weight: 500;
+      transition: color 180ms;
 
       img {
         margin-right: 10px;
         height: 33px;
+      }
+    }
+
+    &:hover {
+      button {
+        color: #000;
+        transition: color 180ms;
       }
     }
   }
@@ -2504,10 +2512,12 @@ footer {
   padding-bottom: 50px;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 180ms;
 
   &.active {
     opacity: 1;
     pointer-events: all;
+    transition: opacity 180ms;
   }
 
   h6 {

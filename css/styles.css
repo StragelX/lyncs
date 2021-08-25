@@ -1387,11 +1387,17 @@ header .product button {
   font-family: Montserrat;
   font-size: 15px;
   font-weight: 500;
+  transition: color 180ms;
 }
 
 header .product button img {
   margin-right: 10px;
   height: 33px;
+}
+
+header .product:hover button {
+  color: #000;
+  transition: color 180ms;
 }
 
 header .menu {
@@ -3468,11 +3474,13 @@ footer .footer_logo {
   padding-bottom: 50px;
   opacity: 0;
   pointer-events: none;
+  transition: opacity 180ms;
 }
 
 .our_products.active {
   opacity: 1;
   pointer-events: all;
+  transition: opacity 180ms;
 }
 
 .our_products h6 {
