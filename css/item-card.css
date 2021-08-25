@@ -280,6 +280,12 @@
   background: url("../img/form_bg.png") no-repeat center/contain;
 }
 
+@media all and (max-width: 1400px) {
+  .also_buy .product_inner:nth-child(4) {
+    display: none;
+  }
+}
+
 .buy_container {
   display: flex;
   flex-direction: column;
@@ -344,12 +350,11 @@
   text-align: center;
 }
 
-.volume_box .exol::after {
-  content: "";
-  border: 1px solid #ffffff;
-  height: 100%;
-  width: 1px;
-  margin-left: 110px;
+.volume_box .exol {
+  text-align: left;
+  flex: 1 1 auto;
+  margin-right: 15px;
+  border-right: 2px solid #fff;
 }
 
 .product_btn {

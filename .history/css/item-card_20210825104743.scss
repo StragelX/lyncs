@@ -288,14 +288,6 @@
     transform: rotate(180deg);
     background: url("../img/form_bg.png") no-repeat center / contain;
   }
-
-  .product_inner {
-    @media all and (max-width: 1400px) {
-      &:nth-child(4) {
-        display: none;
-      }
-    }
-  }
 }
 
 .buy_container {
@@ -362,10 +354,13 @@
   }
 
   .exol {
-    text-align: left;
-    flex: 1 1 auto;
-    margin-right: 15px;
-    border-right: 2px solid #fff;
+    &::after {
+      content: "";
+      border: 1px solid #ffffff;
+      height: 100%;
+      width: 1px;
+      margin-left: 110px;
+    }
   }
 }
 

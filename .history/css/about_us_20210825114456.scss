@@ -405,10 +405,6 @@
       opacity: 0;
       transition: opacity 180ms;
       z-index: 1;
-
-      @media all and (max-width: 1400px) {
-        top: 260px;
-      }
     }
 
     p {
@@ -422,10 +418,6 @@
       bottom: 20px;
       opacity: 0;
       transition: opacity 180ms;
-
-      @media all and (max-width: 1400px) {
-        bottom: 40px;
-      }
     }
 
     button {
@@ -446,10 +438,6 @@
       font-family: Helvetica;
       z-index: 2;
       padding: 100px;
-
-      @media all and (max-width: 1400px) {
-        padding: 50px;
-      }
     }
 
     &:hover {

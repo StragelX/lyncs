@@ -1,9 +1,5 @@
 .main_top {
   background: #afafaf url("../img/production_top_bg.jpg") no-repeat center/cover;
-
-  @media all and (max-width: 1400px) {
-    padding-top: 20px;
-  }
 }
 
 .main_activities {
@@ -173,10 +169,6 @@
       left: 50%;
       transform: translateX(-50%);
       background: url("../img/pdf_icon.svg") no-repeat center / contain;
-
-      @media all and (max-width: 1400px) {
-        top: 50px;
-      }
     }
 
     &:after {
@@ -191,10 +183,6 @@
       left: 50%;
       text-align: center;
       transform: translateX(-50%);
-
-      @media all and (max-width: 1400px) {
-        bottom: 50px;
-      }
     }
 
     &:hover {

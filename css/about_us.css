@@ -13,6 +13,12 @@
   flex: none;
 }
 
+@media all and (max-width: 1400px) {
+  .stores_top_wrap .box_about .box_about_img {
+    flex: auto;
+  }
+}
+
 .stores_top_wrap .box_about_text {
   padding: 60px 75px;
 }
@@ -342,6 +348,14 @@
   margin-bottom: 16px;
 }
 
+@media all and (max-width: 1400px) {
+  .team .one_team {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 36px;
+  }
+}
+
 .team .one_team .img_wrap {
   z-index: 0;
   position: absolute;
@@ -378,6 +392,12 @@
   z-index: 1;
 }
 
+@media all and (max-width: 1400px) {
+  .team .one_team h6 {
+    top: 260px;
+  }
+}
+
 .team .one_team p {
   z-index: 1;
   color: #ffffff;
@@ -389,6 +409,12 @@
   bottom: 20px;
   opacity: 0;
   transition: opacity 180ms;
+}
+
+@media all and (max-width: 1400px) {
+  .team .one_team p {
+    bottom: 40px;
+  }
 }
 
 .team .one_team button {
@@ -409,6 +435,12 @@
   font-family: Helvetica;
   z-index: 2;
   padding: 100px;
+}
+
+@media all and (max-width: 1400px) {
+  .team .one_team button {
+    padding: 50px;
+  }
 }
 
 .team .one_team:hover .img_wrap {

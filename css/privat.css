@@ -2,6 +2,18 @@
   background: url("../img/privat_product_top_bg.jpg") no-repeat center/cover;
 }
 
+@media all and (max-width: 1400px) {
+  .main_top {
+    padding-top: 0;
+  }
+  .main_top h1 {
+    margin-bottom: 30px;
+  }
+  .main_top .text_with_line {
+    margin-bottom: 20px;
+  }
+}
+
 .year_partners {
   padding-top: 50px;
   padding-bottom: 205px;
@@ -74,6 +86,13 @@
   display: flex;
   justify-content: space-between;
   width: 128%;
+}
+
+@media all and (max-width: 1400px) {
+  .year_partners .owl-nav {
+    left: -10%;
+    width: 120%;
+  }
 }
 
 .year_partners .owl-nav button {
@@ -210,6 +229,20 @@
   border: 1px solid #ffffff;
   padding: 50px 40px;
   margin-bottom: 120px;
+}
+
+@media all and (max-width: 1400px) {
+  .your_trademark .mark_benefits .one_benefit {
+    width: auto;
+    flex: 1 1 29%;
+    margin-bottom: 30px;
+  }
+  .your_trademark .mark_benefits .one_benefit + .one_benefit {
+    margin-left: 30px;
+  }
+  .your_trademark .mark_benefits .one_benefit:nth-child(4) {
+    margin-left: 0;
+  }
 }
 
 .your_trademark .mark_benefits .title {

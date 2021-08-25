@@ -707,10 +707,6 @@ main {
     top: 87px;
     left: 0;
     background: url("../img/main_top_bg_logo.svg") no-repeat center / contain;
-
-    @media all and (max-width: 1400px) {
-      height: 80vh;
-    }
   }
 
   .scroll_down {
@@ -2184,7 +2180,6 @@ footer {
         font-style: normal;
         letter-spacing: normal;
         line-height: 29px;
-        margin-bottom: 25px;
       }
     }
 

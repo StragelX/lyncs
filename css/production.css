@@ -3,6 +3,12 @@
   background: #afafaf url("../img/production_top_bg.jpg") no-repeat center/cover;
 }
 
+@media all and (max-width: 1400px) {
+  .main_top {
+    padding-top: 20px;
+  }
+}
+
 .main_activities {
   padding-top: 100px;
   padding-bottom: 130px;
@@ -128,6 +134,13 @@
   display: block;
 }
 
+@media all and (max-width: 1400px) {
+  .guaranty .one_download {
+    width: 100%;
+    height: 192px;
+  }
+}
+
 .guaranty .one_download span {
   cursor: pointer;
   color: #242424;
@@ -144,6 +157,13 @@
   transform: translate(-50%, -50%);
   opacity: 1;
   transition: opacity 180ms;
+}
+
+@media all and (max-width: 1400px) {
+  .guaranty .one_download span {
+    font-size: 17px;
+    padding: 15px;
+  }
 }
 
 .guaranty .one_download:before {
@@ -163,6 +183,12 @@
   background: url("../img/pdf_icon.svg") no-repeat center/contain;
 }
 
+@media all and (max-width: 1400px) {
+  .guaranty .one_download:before {
+    top: 50px;
+  }
+}
+
 .guaranty .one_download:after {
   content: "ЗАВАНТАЖУЙ PDF";
   font-size: 20px;
@@ -175,6 +201,12 @@
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
+}
+
+@media all and (max-width: 1400px) {
+  .guaranty .one_download:after {
+    bottom: 50px;
+  }
 }
 
 .guaranty .one_download:hover {

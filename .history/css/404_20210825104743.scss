@@ -6,10 +6,6 @@ body {
   padding-top: 310px;
   padding-left: 20px;
 
-  @media all and (max-width: 1400px) {
-    padding-top: 150px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -19,10 +15,6 @@ body {
     z-index: 0;
     width: 667px;
     height: 901px;
-
-    @media all and (max-width: 1400px) {
-      height: 80vh;
-    }
   }
 }
 
@@ -52,19 +44,10 @@ body {
     line-height: 195px;
     text-align: left;
     padding-bottom: 60px;
-
-    @media all and (max-width: 1400px) {
-      padding-bottom: 20px;
-    }
   }
 
   .wrap_text {
     padding-bottom: 80px;
-
-    @media all and (max-width: 1400px) {
-      padding-bottom: 30px;
-    }
-
     .text {
       max-width: 375px;
       text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);

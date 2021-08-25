@@ -707,10 +707,6 @@ main {
     top: 87px;
     left: 0;
     background: url("../img/main_top_bg_logo.svg") no-repeat center / contain;
-
-    @media all and (max-width: 1400px) {
-      height: 80vh;
-    }
   }
 
   .scroll_down {
@@ -744,10 +740,6 @@ main {
 
   .main_top_inner {
     padding-top: 280px;
-
-    @media all and (max-width: 1400px) {
-      padding-top: 130px;
-    }
   }
 
   .upper_test {
@@ -826,10 +818,6 @@ main {
     display: block;
     flex: 1 1 30%;
     max-width: 414px;
-
-    @media all and (max-width: 1400px) {
-      max-width: 340px;
-    }
 
     p {
       cursor: pointer;
@@ -1265,11 +1253,6 @@ main {
       width: calc(100% + 62px);
       pointer-events: none;
 
-      @media all and (max-width: 1400px) {
-        left: -15px;
-        width: calc(100% + 30px);
-      }
-
       button {
         pointer-events: all;
         border-radius: 50%;
@@ -1499,8 +1482,7 @@ textarea {
   }
 
   textarea {
-    width: 100%;
-    resize: vertical;
+    width: 510px;
     min-height: 115px;
   }
 
@@ -1728,10 +1710,6 @@ footer {
     width: 198px;
     height: 279px;
     background: url("../img/big_logo_white.svg") no-repeat center / contain;
-
-    @media all and (max-width: 1400px) {
-      left: 20px;
-    }
   }
 
   &:after {
@@ -1978,23 +1956,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-
-    .inner_text {
-      flex: 1 1 100%;
-      display: flex;
-      flex-direction: column;
-    }
+    flex-wrap: wrap;
 
     .link {
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: column;
+      margin-bottom: 60px;
       background-color: transparent;
       transition: background-color 180ms;
-
-      &.read_more {
-        line-height: normal;
-      }
 
       &:hover {
         background-color: #fff;
@@ -2002,25 +1969,13 @@ footer {
       }
 
       .inner_img {
-        flex: none;
-        width: 100%;
-        height: 304px;
-
-        img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-
-      & + .link {
-        margin-left: 60px;
+        max-width: 414px;
       }
     }
 
     .inner_text {
       .box {
-        flex: 1 1 100%;
+        min-height: 157px;
         padding: 20px 10px;
         display: flex;
         flex-direction: column;
@@ -2133,10 +2088,6 @@ footer {
       line-height: 0;
       flex: none;
 
-      @media all and (max-width: 1400px) {
-        flex: auto;
-      }
-
       img {
         height: 100%;
         width: 100%;
@@ -2184,7 +2135,6 @@ footer {
         font-style: normal;
         letter-spacing: normal;
         line-height: 29px;
-        margin-bottom: 25px;
       }
     }
 
@@ -2208,19 +2158,12 @@ footer {
   transition: box-shadow 180ms;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   line-height: 0;
-  display: flex;
-  flex-direction: column;
 
   .product_img {
     max-width: 330px;
     line-height: 0;
     overflow: hidden;
     height: 350px;
-
-    @media all and (max-width: 1400px) {
-      flex: 1 1 auto;
-      height: 300px;
-    }
 
     img {
       line-height: 0;

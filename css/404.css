@@ -7,6 +7,12 @@ body {
   padding-left: 20px;
 }
 
+@media all and (max-width: 1400px) {
+  .mistake {
+    padding-top: 150px;
+  }
+}
+
 .mistake::before {
   content: "";
   position: absolute;
@@ -16,6 +22,12 @@ body {
   z-index: 0;
   width: 667px;
   height: 901px;
+}
+
+@media all and (max-width: 1400px) {
+  .mistake::before {
+    height: 80vh;
+  }
 }
 
 .mistake_wrap .title_small {
@@ -45,8 +57,20 @@ body {
   padding-bottom: 60px;
 }
 
+@media all and (max-width: 1400px) {
+  .mistake_wrap .title_big {
+    padding-bottom: 20px;
+  }
+}
+
 .mistake_wrap .wrap_text {
   padding-bottom: 80px;
+}
+
+@media all and (max-width: 1400px) {
+  .mistake_wrap .wrap_text {
+    padding-bottom: 30px;
+  }
 }
 
 .mistake_wrap .wrap_text .text {

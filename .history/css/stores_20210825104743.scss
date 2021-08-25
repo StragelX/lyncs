@@ -64,19 +64,6 @@
       padding: 30px;
       margin-bottom: 120px;
 
-      @media all and (max-width: 1400px) {
-        flex: 1 1 29%;
-        margin-bottom: 30px;
-
-        & + .inner {
-          margin-left: 30px;
-        }
-
-        &:nth-child(4) {
-          margin-left: 0;
-        }
-      }
-
       .box_logo {
         display: flex;
 
@@ -115,10 +102,6 @@
     .btn_inner2 {
       margin-left: auto;
       margin-right: auto;
-
-      @media all and (max-width: 1400px) {
-        margin-top: 90px;
-      }
     }
   }
 }
@@ -195,17 +178,6 @@
 
   .stand {
     max-width: 398px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    @media all and (max-width: 1400px) {
-      flex: 1 1 29%;
-
-      & + .stand {
-        margin-left: 30px;
-      }
-    }
 
     .stand_title_wrap {
       padding-bottom: 54px;
@@ -242,14 +214,6 @@
 
     .box_img {
       max-width: 398px;
-      height: 460px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center;
-      }
     }
 
     .text {

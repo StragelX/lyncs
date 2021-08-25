@@ -1,8 +1,6 @@
 .blog_top {
   min-height: 986px;
-  background-image: url("../img/blog_main_foto.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../img/blog_main_foto.jpg") no-repeat bottom center/cover;
 }
 
 .info_block {
@@ -17,5 +15,24 @@
   position: absolute;
   top: -442px;
   z-index: 1;
+}
+
+.about_our_work .img_container {
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 1400px) {
+  .about_our_work .img_container .link {
+    max-width: 30%;
+    flex: 1 1 29%;
+    margin-bottom: 60px;
+  }
+  .about_our_work .img_container .link:nth-child(4n) {
+    margin-left: 0 !important;
+  }
+}
+
+.bottom_text_block {
+  padding-bottom: 0;
 }
 /*# sourceMappingURL=blog.css.map */

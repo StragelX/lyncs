@@ -1,6 +1,9 @@
 .blog_top {
   min-height: 986px;
-  background: url("../img/blog_main_foto.jpg") no-repeat bottom center / cover;
+  background: url("../img/blog_main_foto.jpg") no-repeat bottom ;
+  background-image: url("../img/blog_main_foto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .info_block {
@@ -31,8 +34,4 @@
       margin-left: 0 !important;
     }
   }
-}
-
-.bottom_text_block {
-  padding-bottom: 0;
 }
