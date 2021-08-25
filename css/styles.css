@@ -1372,10 +1372,12 @@ header .header_logo img {
 }
 
 header .product {
-  height: 46px;
+  height: 66px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 25px;
+  margin-bottom: -5px;
 }
 
 header .product button {
@@ -1450,7 +1452,6 @@ header .menu .desctop_burger.active:hover:after {
 }
 
 header .header_underline {
-  margin-top: 20px;
   border-bottom: 1px solid #fff;
 }
 
@@ -3528,6 +3529,12 @@ footer .footer_logo {
   z-index: 15;
   width: 100%;
   padding-top: 150px;
+}
+
+@media all and (max-width: 1400px) {
+  .our_products.menu {
+    padding-top: 100px;
+  }
 }
 
 .our_products.menu .img_wrap {
