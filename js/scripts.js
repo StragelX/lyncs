@@ -194,4 +194,8 @@ $( document ).ready(function() {
     $('.filter_wrap .line').click(function(){
         $(this).toggleClass('active');
     })
+
+    particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 });

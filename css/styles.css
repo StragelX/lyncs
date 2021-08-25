@@ -3342,4 +3342,12 @@ footer .footer_logo {
 .site_map .rad_under_hover span:after {
   border-bottom: 2px solid #000;
 }
+
+.particles-js-canvas-el {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
 /*# sourceMappingURL=styles.css.map */
