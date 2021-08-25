@@ -3208,6 +3208,7 @@ footer .footer_logo {
 }
 
 .modal_overlay {
+  overflow-y: auto;
   position: fixed;
   top: 0;
   bottom: 0;
