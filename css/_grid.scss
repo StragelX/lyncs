@@ -102,22 +102,26 @@ $grid-prefix: xs s sm m;
   @include make_grid(s);
   @include offset(s);
   @include col_size(s);
+  @include order(s);
 }
 
 @media #{$m} {
   @include make_grid(m);
   @include offset(m);
   @include col_size(m);
+  @include order(m);
 }
 
 @media #{$l} {
   @include make_grid(l);
   @include offset(l);
   @include col_size(l);
+  @include order(l);
 }
 
 @media #{$xl} {
   @include make_grid(xl);
   @include offset(xl);
   @include col_size(xl);
+  @include order(xl);
 }

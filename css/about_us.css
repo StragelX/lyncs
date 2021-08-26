@@ -10,16 +10,12 @@
 
 .stores_top_wrap .box_about .box_about_img {
   max-width: 828px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
 }
 
 @media all and (max-width: 1400px) {
   .stores_top_wrap .box_about .box_about_img {
-    -webkit-box-flex: 1;
-        -ms-flex: auto;
-            flex: auto;
+    flex: auto;
   }
 }
 
@@ -32,40 +28,22 @@
 }
 
 .about_counter .team_counters_wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_counter .team_counters_wrap .one {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 398px;
   height: 398px;
-  -webkit-box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
-          box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+  box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
   border-radius: 15px;
   background-color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_counter .team_counters_wrap .one + .one {
@@ -123,8 +101,7 @@
   pointer-events: none;
   width: 266px;
   height: 259px;
-  -webkit-transform: rotate(-113deg);
-          transform: rotate(-113deg);
+  transform: rotate(-113deg);
   background: url("../img/form_bg_blur.png") no-repeat center/contain;
 }
 
@@ -137,16 +114,14 @@
   pointer-events: none;
   width: 340px;
   height: 349px;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
   background: url("../img/form_bg.png") no-repeat center/contain;
 }
 
 .years .bottom_bg {
   width: 295px;
   height: 321px;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
   position: absolute;
   left: -80px;
   bottom: 265px;
@@ -169,11 +144,8 @@
 
 .years .years_wrap .year {
   width: 50px;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   opacity: 0.5;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   color: #242424;
   font-family: Montserrat;
@@ -184,7 +156,6 @@
 
 .years .years_wrap .dot {
   opacity: 0.05;
-  -webkit-transition: opacity 180ms, background-color 180ms;
   transition: opacity 180ms, background-color 180ms;
   width: 10px;
   height: 10px;
@@ -207,7 +178,6 @@
 
 .years .years_wrap .info::before {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   content: "";
   display: block;
@@ -240,7 +210,6 @@
 
 .years .years_wrap .inner {
   opacity: 0.05;
-  -webkit-transition: opacity 180ms, padding-bottom 360ms;
   transition: opacity 180ms, padding-bottom 360ms;
   min-height: 150px;
   border-left: 2px solid #242424;
@@ -255,11 +224,9 @@
 .years .years_wrap .info_block {
   display: none;
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   width: 400px;
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.16);
   border-radius: 11px;
   background-color: #ffffff;
   overflow: hidden;
@@ -279,12 +246,8 @@
 }
 
 .years .years_wrap .top_line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -292,13 +255,11 @@
 .years .years_wrap .top_line:hover .dot,
 .years .years_wrap .top_line:hover .info:before {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .years .years_wrap .top_line:hover .dot {
   background-color: transparent;
-  -webkit-transition: opacity 180ms, background-color 180ms;
   transition: opacity 180ms, background-color 180ms;
 }
 
@@ -314,14 +275,12 @@
 .years .years_wrap .top_line.active ~ .inner {
   opacity: 1;
   padding-bottom: 100px;
-  -webkit-transition: opacity 180ms, padding-bottom 180ms;
   transition: opacity 180ms, padding-bottom 180ms;
 }
 
 .years .years_wrap .top_line.active ~ .inner .info_block {
   display: block;
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -330,12 +289,8 @@
 }
 
 .years .years_wrap .one_year.active .top_line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -343,13 +298,11 @@
 .years .years_wrap .one_year.active .top_line .dot,
 .years .years_wrap .one_year.active .top_line .info:before {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .years .years_wrap .one_year.active .top_line .dot {
   background-color: transparent;
-  -webkit-transition: opacity 180ms, background-color 180ms;
   transition: opacity 180ms, background-color 180ms;
 }
 
@@ -365,14 +318,12 @@
 .years .years_wrap .one_year.active .top_line ~ .inner {
   opacity: 1;
   padding-bottom: 100px;
-  -webkit-transition: opacity 180ms, padding-bottom 180ms;
   transition: opacity 180ms, padding-bottom 180ms;
 }
 
 .years .years_wrap .one_year.active .top_line ~ .inner .info_block {
   display: block;
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -412,12 +363,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-  -webkit-transition: -webkit-filter 180ms;
-  transition: -webkit-filter 180ms;
+  filter: grayscale(0);
   transition: filter 180ms;
-  transition: filter 180ms, -webkit-filter 180ms;
 }
 
 .team .one_team .img_wrap:after {
@@ -427,10 +374,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 36, 0)), to(rgba(36, 36, 36, 0.5)));
   background-image: linear-gradient(180deg, rgba(36, 36, 36, 0) 0%, rgba(36, 36, 36, 0.5) 100%);
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -443,7 +388,6 @@
   font-family: Helvetica;
   font-weight: 700;
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   z-index: 1;
 }
@@ -464,7 +408,6 @@
   left: 40px;
   bottom: 20px;
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -480,15 +423,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 20px;
   color: #242424;
   font-weight: 700;
@@ -507,24 +444,18 @@
 }
 
 .team .one_team:hover .img_wrap {
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
-  -webkit-transition: -webkit-filter 180ms;
-  transition: -webkit-filter 180ms;
+  filter: grayscale(1);
   transition: filter 180ms;
-  transition: filter 180ms, -webkit-filter 180ms;
 }
 
 .team .one_team:hover .img_wrap:after {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .team .one_team:hover h6,
 .team .one_team:hover p {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -539,15 +470,9 @@
   bottom: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-size: 20px;
   color: #fff;
   font-weight: 700;
@@ -557,27 +482,22 @@
   font-family: Helvetica;
   pointer-events: none;
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .team .one_team.modal_call .img_wrap {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .team .one_team.modal_call:hover .img_wrap {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 .team .one_team.modal_call:hover:after {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 /*# sourceMappingURL=about_us.css.map */

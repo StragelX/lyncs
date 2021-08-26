@@ -36,8 +36,7 @@
 .year_partners:after {
   width: 231px;
   height: 289px;
-  -webkit-transform: rotate(190deg);
-          transform: rotate(190deg);
+  transform: rotate(190deg);
   bottom: 125px;
   right: 72px;
 }
@@ -58,15 +57,9 @@
 
 .year_partners .owl-dots {
   margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .year_partners .owl-dots .owl-dot {
@@ -74,13 +67,11 @@
   height: 14px;
   background-color: #dddee0;
   border-radius: 50%;
-  -webkit-transition: background-color 180ms;
   transition: background-color 180ms;
 }
 
 .year_partners .owl-dots .owl-dot:hover, .year_partners .owl-dots .owl-dot.active {
   background-color: #f2312a;
-  -webkit-transition: background-color 180ms;
   transition: background-color 180ms;
 }
 
@@ -92,12 +83,8 @@
   position: absolute;
   left: -14%;
   top: 230px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 128%;
 }
 
@@ -113,50 +100,39 @@
   border-radius: 50%;
   width: 61px;
   height: 62px;
-  -webkit-box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-          box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
+  box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
   background: #ffffff url("../img/rad_arrow.svg") no-repeat center !important;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   opacity: 0.9;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .year_partners .owl-nav button:hover {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .year_partners .owl-nav button.disabled {
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .year_partners .owl-nav button.disabled:hover {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .year_partners .owl-nav .owl-next {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .year_partners .year_partners_slide {
   display: block;
   padding-bottom: 30px;
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   background-color: transparent;
-  -webkit-transition: background-color 180ms, -webkit-box-shadow 180ms;
-  transition: background-color 180ms, -webkit-box-shadow 180ms;
   transition: background-color 180ms, box-shadow 180ms;
-  transition: background-color 180ms, box-shadow 180ms, -webkit-box-shadow 180ms;
 }
 
 .year_partners .year_partners_slide .img_wrap {
@@ -175,7 +151,6 @@
 
 .year_partners .year_partners_slide p {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   color: #242424;
   font-family: Roboto;
@@ -190,25 +165,19 @@
 
 .year_partners .year_partners_slide .read_more {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   margin-left: 20px;
 }
 
 .year_partners .year_partners_slide:hover {
-  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
   background-color: #fff;
-  -webkit-transition: background-color 180ms, -webkit-box-shadow 180ms;
-  transition: background-color 180ms, -webkit-box-shadow 180ms;
   transition: background-color 180ms, box-shadow 180ms;
-  transition: background-color 180ms, box-shadow 180ms, -webkit-box-shadow 180ms;
 }
 
 .year_partners .year_partners_slide:hover p,
 .year_partners .year_partners_slide:hover .read_more {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -247,23 +216,14 @@
 }
 
 .your_trademark .mark_benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .your_trademark .mark_benefits .one_benefit {
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
+  flex: none;
   width: 414px;
   border-radius: 15px;
   border: 1px solid #ffffff;
@@ -274,9 +234,7 @@
 @media all and (max-width: 1400px) {
   .your_trademark .mark_benefits .one_benefit {
     width: auto;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
+    flex: 1 1 29%;
     margin-bottom: 30px;
   }
   .your_trademark .mark_benefits .one_benefit + .one_benefit {
@@ -288,8 +246,6 @@
 }
 
 .your_trademark .mark_benefits .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
@@ -339,8 +295,7 @@
 .your_brand_here:before {
   width: 262px;
   height: 260px;
-  -webkit-transform: rotate(-20deg);
-          transform: rotate(-20deg);
+  transform: rotate(-20deg);
   bottom: 275px;
   left: -40px;
 }
@@ -348,8 +303,7 @@
 .your_brand_here:after {
   width: 282px;
   height: 245px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 405px;
   right: -40px;
 }
@@ -367,12 +321,8 @@
   position: absolute;
   left: -31px;
   top: 290px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: calc(100% + 62px);
   pointer-events: none;
 }
@@ -389,38 +339,31 @@
   border-radius: 50%;
   width: 61px;
   height: 62px;
-  -webkit-box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
-          box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
+  box-shadow: 0 -5px 15px rgba(36, 36, 36, 0.25);
   background: #ffffff url("../img/rad_arrow.svg") no-repeat center;
   opacity: 0.9;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .your_brand_here .private_carousel .owl-nav button:hover {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .your_brand_here .private_carousel .owl-nav button.disabled {
   opacity: 0;
   pointer-events: none;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .your_brand_here .private_carousel .owl-nav button.disabled:hover {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .your_brand_here .private_carousel .owl-nav .owl-next {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 
 .your_brand_here .private_carousel .btn_inner2 {
@@ -428,7 +371,6 @@
   margin-right: auto;
   margin-top: 50px;
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
@@ -439,10 +381,7 @@
 .your_brand_here .private_carousel .img img {
   height: 550px;
   z-index: 1;
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
   transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -450,67 +389,43 @@
 
 .your_brand_here .private_carousel .owl-item {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
   transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .your_brand_here .private_carousel .owl-item.active {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
   transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active {
   opacity: 1;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
   transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active .btn_inner2 {
   opacity: 1;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active .img img {
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
   transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active + .active {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
   transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active + .active .btn_inner2 {
   opacity: 0;
-  -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active + .active .img img {
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
   transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
 }
 /*# sourceMappingURL=privat.css.map */
