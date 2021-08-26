@@ -2963,6 +2963,7 @@ footer .footer_logo {
 .footer_line {
   background-color: #5b5b5b;
   height: 1px;
+  margin: 56px 0 56px 0;
 }
 
 .footer_top {
@@ -2971,6 +2972,12 @@ footer .footer_logo {
   display: flex;
   padding-top: 70px;
   padding-bottom: 56px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer_top {
+    padding-bottom: 0;
+  }
 }
 
 .footer_top_link ul li {
@@ -3050,6 +3057,12 @@ footer .footer_logo {
           align-items: center;
   padding-top: 56px;
   padding-bottom: 56px;
+}
+
+@media all and (max-width: 1024px) {
+  .footer_bottom {
+    padding-top: 0;
+  }
 }
 
 .socials a:not(:last-child) {
