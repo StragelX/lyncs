@@ -1408,6 +1408,9 @@ main {
 }
 
 .form_text {
+  @media all and (max-width: 786px) {
+    margin-bottom: 20px;
+  }
   .above_title {
     color: #242424;
   }

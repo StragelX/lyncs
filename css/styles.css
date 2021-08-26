@@ -2841,6 +2841,12 @@ main {
   }
 }
 
+@media all and (max-width: 786px) {
+  .form_text {
+    margin-bottom: 20px;
+  }
+}
+
 .form_text .above_title {
   color: #242424;
 }
