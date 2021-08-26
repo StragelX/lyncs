@@ -270,7 +270,7 @@
 
 .wrapper_info .stand .box_img {
   max-width: 398px;
-  height: 460px;
+  max-height: 460px;
 }
 
 .wrapper_info .stand .box_img img {
