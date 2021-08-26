@@ -295,6 +295,14 @@
         display: none;
       }
     }
+
+    @media all and (max-width: 1025px) {
+      margin-bottom: 30px;
+
+      &:nth-child(4) {
+        display: block;
+      }
+    }
   }
 }
 
@@ -322,6 +330,10 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+
+  @media all and (max-width: 1025px) {
+    flex-wrap: wrap;
+  }
 
   .name_box {
     border: 1px solid #707070;
