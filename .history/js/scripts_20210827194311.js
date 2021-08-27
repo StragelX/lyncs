@@ -148,24 +148,6 @@ $( document ).ready(function() {
         });
     }
 
-    if ($('.main_top_carousel')) {
-        $(".main_top_carousel.owl-carousel").owlCarousel({
-            items: 1,
-            margin: 0,
-
-            responsive:{
-                0:{
-                },
-                600:{
-                },
-                1000:{
-                }
-            }
-        });
-    }
-
-    // main_top_carousel
-
     $('.call_mob_menu').click(function(){
         $('.mob_menu').toggleClass('active');
         $('body').toggleClass('no_scroll');
@@ -213,9 +195,9 @@ $( document ).ready(function() {
         $(this).toggleClass('active');
     })
 
-    // particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
-    //     console.log('callback - particles.js config loaded');
-    // });
+    particlesJS.load('particles-js', 'js/particlesjs-config.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 
     $('.product, .our_products.menu').mouseover(function(){
         $('.our_products.menu, .product').addClass('active');
