@@ -154,6 +154,7 @@ $( document ).ready(function() {
             margin: 0,
             autoplay: true,
             autoplayTimeout: 3000,
+            loop: true
         });
     }
 
