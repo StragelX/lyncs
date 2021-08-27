@@ -2156,6 +2156,7 @@ main {
 }
 
 .main_top .bg_object {
+  pointer-events: none;
   width: 711px;
   height: 970px;
   position: absolute;

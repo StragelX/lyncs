@@ -152,8 +152,9 @@ $( document ).ready(function() {
         $(".main_top_carousel.owl-carousel").owlCarousel({
             items: 1,
             margin: 0,
-            autoplay: true,
+            autoPlay: true,
             autoplayTimeout: 3000,
+            loop: true
         });
     }
 

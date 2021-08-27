@@ -152,10 +152,19 @@ $( document ).ready(function() {
         $(".main_top_carousel.owl-carousel").owlCarousel({
             items: 1,
             margin: 0,
-            autoplay: true,
-            autoplayTimeout: 3000,
+
+            responsive:{
+                0:{
+                },
+                600:{
+                },
+                1000:{
+                }
+            }
         });
     }
+
+    // main_top_carousel
 
     $('.call_mob_menu').click(function(){
         $('.mob_menu').toggleClass('active');
