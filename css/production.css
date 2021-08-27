@@ -147,6 +147,12 @@
   }
 }
 
+@media all and (max-width: 1024px) {
+  .guaranty .one_download {
+    margin-bottom: 16px;
+  }
+}
+
 .guaranty .one_download span {
   cursor: pointer;
   color: #242424;

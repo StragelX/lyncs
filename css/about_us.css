@@ -27,6 +27,12 @@
   padding-top: 185px;
 }
 
+@media all and (max-width: 768px) {
+  .about_counter {
+    padding-top: 570px;
+  }
+}
+
 .about_counter .team_counters_wrap {
   display: flex;
   align-items: center;

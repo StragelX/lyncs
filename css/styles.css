@@ -3548,6 +3548,18 @@ footer .footer_logo {
   z-index: 1;
 }
 
+@media all and (max-width: 1024px) {
+  .stores_top_wrap {
+    position: relative;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .stores_top_wrap {
+    top: 229px;
+  }
+}
+
 .stores_top_wrap .subtitle {
   color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -3571,6 +3583,12 @@ footer .footer_logo {
   display: flex;
   align-items: stretch;
   box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+}
+
+@media all and (max-width: 768px) {
+  .stores_top_wrap .box_about {
+    flex-direction: column;
+  }
 }
 
 .stores_top_wrap .box_about .box_about_img {
@@ -3598,6 +3616,12 @@ footer .footer_logo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media all and (max-width: 768px) {
+  .stores_top_wrap .box_about_text {
+    max-width: 100%;
+  }
 }
 
 .stores_top_wrap .box_about_text .date {

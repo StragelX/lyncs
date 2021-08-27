@@ -2230,6 +2230,14 @@ footer {
   top: 228px;
   z-index: 1;
 
+  @media all and (max-width: 1024px) {
+    position: relative;
+  }
+
+  @media all and (max-width: 768px) {
+    top: 229px;
+  }
+
   .subtitle {
     color: #ffffff;
     font-family: "Roboto", sans-serif;
@@ -2253,6 +2261,10 @@ footer {
     display: flex;
     align-items: stretch;
     box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+
+    @media all and (max-width: 768px) {
+      flex-direction: column;
+    }
 
     .box_about_img {
       max-width: 727px;
@@ -2278,6 +2290,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media all and (max-width: 768px) {
+      max-width: 100%;
+    }
 
     .date {
       color: #242424;
