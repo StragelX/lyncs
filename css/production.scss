@@ -139,6 +139,10 @@
       height: 192px;
     }
 
+    @media all and (max-width: 1024px) {
+      margin-bottom: 16px;
+    }
+
     span {
       cursor: pointer;
       color: #242424;
@@ -202,32 +206,26 @@
     }
 
     &:hover {
-      background: #00b6be url("../img/team_hover_modal.svg") no-repeat center /
-        auto 170px;
+      background: #00b6be url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
 
       &.second {
-        background: #be3300 url("../img/team_hover_modal.svg") no-repeat center /
-          auto 170px;
+        background: #be3300 url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
       }
 
       &.third {
-        background: #00be7c url("../img/team_hover_modal.svg") no-repeat center /
-          auto 170px;
+        background: #00be7c url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
       }
 
       &.forth {
-        background: #0066be url("../img/team_hover_modal.svg") no-repeat center /
-          auto 170px;
+        background: #0066be url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
       }
 
       &.fifth {
-        background: #be9900 url("../img/team_hover_modal.svg") no-repeat center /
-          auto 170px;
+        background: #be9900 url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
       }
 
       &.sixth {
-        background: #be007c url("../img/team_hover_modal.svg") no-repeat center /
-          auto 170px;
+        background: #be007c url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
       }
 
       span {
