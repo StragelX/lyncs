@@ -61,10 +61,11 @@
     margin-bottom: 84px;
 
     @media all and (max-width: 1400px) {
+      margin-bottom: 50px;
       flex: 1 1 29%;
 
       & + .product_inner {
-        margin-left: 50px;
+        margin-left: 20px;
       }
 
       &:nth-child(3n + 1) {

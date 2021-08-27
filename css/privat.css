@@ -331,6 +331,7 @@
   .your_brand_here .private_carousel .owl-nav {
     left: -15px;
     width: calc(100% + 30px);
+    top: 200px;
   }
 }
 
@@ -378,6 +379,12 @@
   height: 650px;
 }
 
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .img {
+    height: 450px;
+  }
+}
+
 .your_brand_here .private_carousel .img img {
   height: 550px;
   z-index: 1;
@@ -385,6 +392,12 @@
   width: auto;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .img img {
+    height: 350px;
+  }
 }
 
 .your_brand_here .private_carousel .owl-item {

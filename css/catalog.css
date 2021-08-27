@@ -63,10 +63,11 @@
 
 @media all and (max-width: 1400px) {
   .product_container .product_inner {
+    margin-bottom: 50px;
     flex: 1 1 29%;
   }
   .product_container .product_inner + .product_inner {
-    margin-left: 50px;
+    margin-left: 20px;
   }
   .product_container .product_inner:nth-child(3n + 1) {
     margin-left: 0;

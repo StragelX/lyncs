@@ -116,6 +116,12 @@
   padding-bottom: 260px;
 }
 
+@media all and (max-width: 1400px) {
+  .guaranty {
+    padding-bottom: 150px;
+  }
+}
+
 .guaranty .above_title,
 .guaranty .title_h2 {
   text-align: center;
