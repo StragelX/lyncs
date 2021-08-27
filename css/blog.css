@@ -18,6 +18,14 @@
   z-index: 1;
 }
 
+@media all and (max-width: 768px) {
+  .container_info {
+    position: relative;
+    top: 0;
+    margin-top: -442px;
+  }
+}
+
 .about_our_work .img_container {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -33,6 +41,16 @@
   }
   .about_our_work .img_container .link:nth-child(4n) {
     margin-left: 0 !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .about_our_work .img_container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .about_our_work .img_container .link {
+    max-width: none;
   }
 }
 
