@@ -86,7 +86,6 @@ $( document ).ready(function() {
 
     if ( $('.products_carousel') ) {
         $(".products_carousel.owl-carousel").owlCarousel({
-            items: 3,
             margin: 0,
             loop: true,
             nav: true,
@@ -97,7 +96,8 @@ $( document ).ready(function() {
                 },
                 600:{
                 },
-                1000:{
+                1300:{
+                    items: 3
                 }
             }
         });

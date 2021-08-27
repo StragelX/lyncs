@@ -3718,7 +3718,7 @@ footer .footer_logo {
 
 @media all and (max-width: 768px) {
   .stores_top_wrap {
-    top: 229px;
+    top: 0;
   }
 }
 
@@ -3762,6 +3762,12 @@ footer .footer_logo {
 @media all and (max-width: 1400px) {
   .stores_top_wrap .box_about .box_about_img {
     flex: auto;
+  }
+}
+
+@media all and (max-width: 770px) {
+  .stores_top_wrap .box_about .box_about_img {
+    max-width: none;
   }
 }
 
@@ -3834,8 +3840,21 @@ footer .footer_logo {
   }
 }
 
+@media all and (max-width: 770px) {
+  .stores_top {
+    min-height: auto;
+    padding-top: 150px;
+  }
+}
+
 .stores_top + .about_our_work {
   padding-top: 200px;
+}
+
+@media all and (max-width: 770px) {
+  .stores_top + .about_our_work {
+    padding-top: 100px;
+  }
 }
 
 .product_inner {

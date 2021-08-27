@@ -2370,7 +2370,7 @@ footer {
   }
 
   @media all and (max-width: 768px) {
-    top: 229px;
+    top: 0;
   }
 
   .subtitle {
@@ -2408,6 +2408,10 @@ footer {
 
       @media all and (max-width: 1400px) {
         flex: auto;
+      }
+
+      @media all and (max-width: 770px) {
+        max-width: none;
       }
 
       img {
@@ -2479,8 +2483,17 @@ footer {
     min-height: 780px;
   }
 
+  @media all and (max-width: 770px) {
+    min-height: auto;
+    padding-top: 150px;
+  }
+
   & + .about_our_work {
     padding-top: 200px;
+
+    @media all and (max-width: 770px) {
+      padding-top: 100px;
+    }
   }
 }
 
