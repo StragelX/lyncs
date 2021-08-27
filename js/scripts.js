@@ -41,16 +41,21 @@ $( document ).ready(function() {
 
     if ( $('.partners_carousel') ) {
         $(".partners_carousel.owl-carousel").owlCarousel({
-            items: 7,
+            
             loop: true,
             margin: 75,
 
             responsive:{
                 0:{
                 },
-                600:{
+                1700:{
+                    items: 3
                 },
                 1000:{
+                    items: 5
+                },
+                1300:{
+                    items: 7
                 }
             }
         });
@@ -58,7 +63,7 @@ $( document ).ready(function() {
 
     if ( $('.strategy_gallery') ) {
         $(".strategy_gallery.owl-carousel").owlCarousel({
-            items: 4,
+            
             margin: 18,
             nav: true,
             navText: ['', ''],
@@ -66,9 +71,14 @@ $( document ).ready(function() {
             responsive:{
                 0:{
                 },
-                600:{
+                700:{
+                    items: 2
                 },
                 1000:{
+                    items: 3
+                },
+                1300:{
+                    items: 4
                 }
             }
         });

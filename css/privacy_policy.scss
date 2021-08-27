@@ -4,6 +4,10 @@
   padding-top: 160px;
   padding-bottom: 260px;
 
+  @media all and (max-width: 1025px) {
+    padding-bottom: 100px;
+  }
+
   &:before,
   &:after {
     content: "";

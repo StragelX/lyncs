@@ -33,8 +33,7 @@
 .franchise::after {
   width: 231px;
   height: 289px;
-  -webkit-transform: rotate(-165deg);
-          transform: rotate(-165deg);
+  transform: rotate(-165deg);
   top: 215px;
   right: 160px;
 }
@@ -55,24 +54,16 @@
 }
 
 .franchise_wrap .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
   margin-top: 120px;
 }
 
 .franchise_wrap .wrapper .inner {
   max-width: 414px;
-  -webkit-box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
-          box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
+  box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
   border-radius: 15px;
   background-color: #ffffff;
   padding: 30px;
@@ -81,9 +72,7 @@
 
 @media all and (max-width: 1400px) {
   .franchise_wrap .wrapper .inner {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
+    flex: 1 1 29%;
     margin-bottom: 30px;
   }
   .franchise_wrap .wrapper .inner + .inner {
@@ -96,9 +85,7 @@
 
 @media all and (max-width: 770px) {
   .franchise_wrap .wrapper .inner {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 35%;
-            flex: 1 1 35%;
+    flex: 1 1 35%;
   }
   .franchise_wrap .wrapper .inner:nth-child(4) {
     margin-left: 30px;
@@ -109,8 +96,6 @@
 }
 
 .franchise_wrap .wrapper .inner .box_logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -158,8 +143,20 @@
   background-color: #242424;
 }
 
+@media all and (max-width: 1025px) {
+  .cooperation_top {
+    padding: 100px 0 100px 0;
+  }
+}
+
 .cooperation_wrap {
   padding-bottom: 140px;
+}
+
+@media all and (max-width: 1025px) {
+  .cooperation_wrap {
+    padding-top: 60px;
+  }
 }
 
 .cooperation_wrap .above_title {
@@ -174,6 +171,12 @@
 .cooperation_bottom {
   background-color: #f5f5f5;
   padding: 100px 0 150px 0;
+}
+
+@media all and (max-width: 1025px) {
+  .cooperation_bottom {
+    padding: 100px 0;
+  }
 }
 
 .cooperation_bottom:before, .cooperation_bottom:after {
@@ -198,8 +201,7 @@
 .cooperation_bottom:after {
   width: 231px;
   height: 289px;
-  -webkit-transform: rotate(188deg);
-          transform: rotate(188deg);
+  transform: rotate(188deg);
   top: 990px;
   right: 110px;
 }
@@ -217,37 +219,22 @@
 }
 
 .wrapper_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  align-items: stretch;
   padding-bottom: 150px;
 }
 
 .wrapper_info .stand {
   max-width: 398px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @media all and (max-width: 1400px) {
   .wrapper_info .stand {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
+    flex: 1 1 29%;
   }
   .wrapper_info .stand + .stand {
     margin-left: 30px;
@@ -276,6 +263,12 @@
   left: 245px;
 }
 
+@media all and (max-width: 1025px) {
+  .wrapper_info .stand .stand_title_wrap .number3 {
+    left: 140px;
+  }
+}
+
 .wrapper_info .stand .stand_title_wrap h4 {
   color: #242424;
   font-family: "Lato", sans-serif;
@@ -296,10 +289,8 @@
 .wrapper_info .stand .box_img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
 }
 
 .wrapper_info .stand .text {

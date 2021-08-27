@@ -143,9 +143,17 @@
 .cooperation_top {
   padding: 126px 0 200px 0;
   background-color: #242424;
+
+  @media all and (max-width: 1025px) {
+    padding: 100px 0 100px 0;
+  }
 }
 .cooperation_wrap {
   padding-bottom: 140px;
+
+  @media all and (max-width: 1025px) {
+    padding-top: 60px;
+  }
 
   .above_title {
     color: #ffffff;
@@ -160,6 +168,10 @@
 .cooperation_bottom {
   background-color: #f5f5f5;
   padding: 100px 0 150px 0;
+
+  @media all and (max-width: 1025px) {
+    padding: 100px 0;
+  }
 
   &:before,
   &:after {
@@ -242,6 +254,10 @@
         position: absolute;
         top: -45px;
         left: 245px;
+
+        @media all and (max-width: 1025px) {
+          left: 140px;
+        }
       }
 
       h4 {

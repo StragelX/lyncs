@@ -10,6 +10,10 @@
   padding-top: 100px;
   padding-bottom: 130px;
 
+  @media all and (max-width: 1025px) {
+    padding-bottom: 100px;
+  }
+
   .above_title,
   .title_h2 {
     text-align: center;
@@ -45,6 +49,11 @@
     text-transform: uppercase;
     font-family: Helvetica;
     font-weight: 700;
+
+    @media all and (max-width: 1400px) {
+      flex: 1 1 auto;
+      height: 385px;
+    }
 
     &:hover {
       box-shadow: 0 8px 15px rgba(36, 36, 36, 0.3);
@@ -99,6 +108,11 @@
   padding-bottom: 200px;
   background-color: #242424;
 
+  @media all and (max-width: 1025px) {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
   .above_title,
   .title_h2 {
     color: #fff;
@@ -115,6 +129,11 @@
 
   @media all and (max-width: 1400px) {
     padding-bottom: 150px;
+  }
+
+  @media all and (max-width: 1025px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .above_title,
@@ -206,26 +225,32 @@
     }
 
     &:hover {
-      background: #00b6be url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+      background: #00b6be url("../img/team_hover_modal.svg") no-repeat center /
+        auto 170px;
 
       &.second {
-        background: #be3300 url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+        background: #be3300 url("../img/team_hover_modal.svg") no-repeat center /
+          auto 170px;
       }
 
       &.third {
-        background: #00be7c url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+        background: #00be7c url("../img/team_hover_modal.svg") no-repeat center /
+          auto 170px;
       }
 
       &.forth {
-        background: #0066be url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+        background: #0066be url("../img/team_hover_modal.svg") no-repeat center /
+          auto 170px;
       }
 
       &.fifth {
-        background: #be9900 url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+        background: #be9900 url("../img/team_hover_modal.svg") no-repeat center /
+          auto 170px;
       }
 
       &.sixth {
-        background: #be007c url("../img/team_hover_modal.svg") no-repeat center / auto 170px;
+        background: #be007c url("../img/team_hover_modal.svg") no-repeat center /
+          auto 170px;
       }
 
       span {
