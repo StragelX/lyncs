@@ -15,6 +15,12 @@
   position: absolute;
   top: -442px;
   z-index: 1;
+
+  @media all and (max-width: 768px) {
+    position: relative;
+    top: 0;
+    margin-top: -442px;
+  }
 }
 
 .about_our_work .img_container {
@@ -29,6 +35,13 @@
 
     .link:nth-child(4n) {
       margin-left: 0 !important;
+    }
+  }
+
+  @media all and (max-width: 768px) {
+    flex-wrap: nowrap;
+    .link {
+      max-width: none;
     }
   }
 }
