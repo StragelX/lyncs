@@ -134,7 +134,7 @@ h6 {
   text-align: center;
   line-height: 54px;
   overflow: hidden;
-  transition: border 180ms, color 180ms;
+  transition: border 180ms;
 
   span {
     cursor: pointer;
@@ -187,8 +187,7 @@ h6 {
   }
 
   &:hover {
-    color: #fff;
-    transition: border 180ms, color 180ms;
+    transition: border 180ms;
     background: url("../img/round_btn_rad_border.svg") no-repeat center /
       contain;
 
@@ -200,7 +199,6 @@ h6 {
     &:after {
       transition: transform 180ms;
       transform: rotate(45deg);
-      background: url("../img/button_arrow_white.svg") no-repeat center/contain;
     }
   }
 }
@@ -2577,26 +2575,8 @@ footer {
     width: 100%;
   }
 
-  blockquote {
+  .blockquote {
     margin-top: 80px;
-    padding-left: 150px;
-    padding-right: 150px;
-    font-size: 20px;
-    color: #000;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    margin-bottom: 30px;
-
-    &:before {
-      content: "«";
-      color: #f2312a;
-      font-family: Lato, sans-serif;
-      font-size: 80px;
-      font-weight: 700;
-      position: absolute;
-      top: -30px;
-      left: 60px;
-    }
   }
 }
 

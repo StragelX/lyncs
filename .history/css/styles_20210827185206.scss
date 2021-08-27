@@ -187,8 +187,7 @@ h6 {
   }
 
   &:hover {
-    color: #fff;
-    transition: border 180ms, color 180ms;
+    transition: border 180ms;
     background: url("../img/round_btn_rad_border.svg") no-repeat center /
       contain;
 
@@ -200,7 +199,13 @@ h6 {
     &:after {
       transition: transform 180ms;
       transform: rotate(45deg);
-      background: url("../img/button_arrow_white.svg") no-repeat center/contain;
+    }
+  }
+
+  &.white_hover {
+    &:hover {
+      color: #fff;
+      transition: border 180ms, color 180ms;
     }
   }
 }
