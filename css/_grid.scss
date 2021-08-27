@@ -1,7 +1,8 @@
 $s: #{"(max-width: 767px)"};
 $m: #{"(min-width: 768px) and (max-width: 1000px)"}; // 768
 $l: #{"(min-width: 1001px) and (max-width: 1025px)"}; // 1024
-$xl: #{"(min-width: 1025px)"};
+$lp: #{"(min-width: 1300px) and (max-width: 1400px)"}; // laptop
+$xl: #{"(min-width: 1401px)"};
 
 $grid-count: 12;
 $grid-padding: 16px;
@@ -117,6 +118,13 @@ $grid-prefix: xs s sm m;
   @include offset(l);
   @include col_size(l);
   @include order(l);
+}
+
+@media #{$lp} {
+  @include make_grid(lp);
+  @include offset(lp);
+  @include col_size(lp);
+  @include order(lp);
 }
 
 @media #{$xl} {

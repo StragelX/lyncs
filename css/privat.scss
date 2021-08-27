@@ -89,8 +89,8 @@
     width: 128%;
 
     @media all and (max-width: 1400px) {
-      left: -10%;
-      width: 120%;
+      left: -75px;
+      width: calc(100% + 150px);
     }
 
     button {
