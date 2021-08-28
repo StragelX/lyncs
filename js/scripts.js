@@ -41,14 +41,13 @@ $( document ).ready(function() {
 
     if ( $('.partners_carousel') ) {
         $(".partners_carousel.owl-carousel").owlCarousel({
-            
             loop: true,
             margin: 75,
 
             responsive:{
                 0:{
                 },
-                1700:{
+                700:{
                     items: 3
                 },
                 1000:{

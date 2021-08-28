@@ -795,7 +795,7 @@ a h6 {
   }
 }
 
-@media (min-width: 1300px) and (max-width: 1400px) {
+@media (min-width: 1026px) and (max-width: 1400px) {
   .lp_hide {
     display: none !important;
   }
