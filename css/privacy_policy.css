@@ -22,7 +22,8 @@
   height: 387px;
   top: 577px;
   left: -58px;
-  transform: rotate(120deg);
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
   background: url(../img/form_bg.png) no-repeat center/250px auto;
 }
 
@@ -31,14 +32,22 @@
   height: 349px;
   right: -64px;
   top: 771px;
-  transform: rotate(346deg);
+  -webkit-transform: rotate(346deg);
+          transform: rotate(346deg);
   background: url(../img/form_bg.png) no-repeat center/250px auto;
 }
 
 .policy_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .policy_wrap:before {
@@ -56,7 +65,9 @@
 }
 
 .policy_wrap .policy_h2 {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 100px;
 }
 
