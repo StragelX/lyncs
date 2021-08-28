@@ -2772,6 +2772,7 @@ main {
   width: 350px;
   height: 462px;
   transform: rotate(0deg);
+  transform-origin: center;
   transition: transform 250ms;
 }
 
@@ -2923,35 +2924,37 @@ main {
 
 .products .products_carousel .owl-item {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 250ms, transform 250ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 250ms, transform 250ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active .bg_logo {
-  transform: rotate(90deg);
+  transform: translate(-220%, -120%);
   transition: transform 250ms;
+  opacity: 0;
 }
 
 .products .products_carousel .owl-item.active + .active {
   opacity: 1;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 250ms, transform 250ms;
   transform: scale(1);
 }
 
 .products .products_carousel .owl-item.active + .active .bg_logo {
-  transform: rotate(0);
-  transition: transform 250ms;
+  opacity: 1;
+  transform: translate(0);
+  transition: transform 250ms, opacity 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img img {
   transform: rotate(-10deg);
-  transition: transform 180ms;
+  transition: transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img:after {
@@ -2966,18 +2969,19 @@ main {
 
 .products .products_carousel .owl-item.active + .active + .active {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 250ms, transform 250ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active + .active + .active .bg_logo {
-  transform: rotate(-90deg);
+  transform: translate(220%, -110%);
   transition: transform 250ms;
+  opacity: 0;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img img {
   transform: rotate(0deg);
-  transition: transform 180ms;
+  transition: transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img:after {
