@@ -1399,16 +1399,28 @@ main {
       transform: rotate(95deg);
     }
 
+    .bg_logo {
+      z-index: 0;
+      position: absolute;
+      top: 10%;
+      left: 25%;
+      width: 350px;
+      height: 462px;
+      transform: rotate(0deg);
+
+      transition: transform 250ms;
+    }
+
     &.translated {
       &:before {
         bottom: 70%;
-        transform: rotate(300deg);
+        transform: rotate(255deg);
         transition: all 250ms;
       }
 
       &:after {
         top: 70%;
-        transform: rotate(50deg);
+        transform: rotate(5deg);
         transition: all 250ms;
       }
     }
@@ -1547,10 +1559,20 @@ main {
         transition: opacity 180ms, transform 180ms;
         transform: scale(0.5);
 
+        .bg_logo {
+          transform: rotate(90deg);
+          transition: transform 250ms;
+        }
+
         & + .active {
           opacity: 1;
           transition: opacity 180ms, transform 180ms;
           transform: scale(1);
+
+          .bg_logo {
+            transform: rotate(0);
+            transition: transform 250ms;
+          }
 
           .img {
             img {
@@ -1571,6 +1593,11 @@ main {
             opacity: 0.5;
             transition: opacity 180ms, transform 180ms;
             transform: scale(0.5);
+
+            .bg_logo {
+              transform: rotate(-90deg);
+              transition: transform 250ms;
+            }
 
             .img {
               img {

@@ -3290,18 +3290,33 @@ main {
           transform: rotate(95deg);
 }
 
+.products .products_carousel .bg_logo {
+  z-index: 0;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 350px;
+  height: 462px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
 .products .products_carousel.translated:before {
   bottom: 70%;
-  -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
+  -webkit-transform: rotate(255deg);
+          transform: rotate(255deg);
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 
 .products .products_carousel.translated:after {
   top: 70%;
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
@@ -3481,6 +3496,15 @@ main {
           transform: scale(0.5);
 }
 
+.products .products_carousel .owl-item.active .bg_logo {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
 .products .products_carousel .owl-item.active + .active {
   opacity: 1;
   -webkit-transition: opacity 180ms, -webkit-transform 180ms;
@@ -3489,6 +3513,15 @@ main {
   transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.products .products_carousel .owl-item.active + .active .bg_logo {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img img {
@@ -3518,6 +3551,15 @@ main {
   transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+}
+
+.products .products_carousel .owl-item.active + .active + .active .bg_logo {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img img {
