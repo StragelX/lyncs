@@ -390,6 +390,10 @@ header {
     padding-bottom: 25px;
     margin-bottom: -5px;
 
+    @media all and (max-width: 767px) {
+      display: none;
+    }
+
     button {
       display: flex;
       align-items: center;

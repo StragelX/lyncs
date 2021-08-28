@@ -1716,6 +1716,12 @@ header .product {
   margin-bottom: -5px;
 }
 
+@media all and (max-width: 767px) {
+  header .product {
+    display: none;
+  }
+}
+
 header .product button {
   display: flex;
   align-items: center;
