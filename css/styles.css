@@ -2935,7 +2935,7 @@ main {
 
 .products .products_carousel .owl-item.active .bg_logo {
   transform: rotate(90deg);
-  transition: transform 180ms;
+  transition: transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active {
@@ -2946,7 +2946,7 @@ main {
 
 .products .products_carousel .owl-item.active + .active .bg_logo {
   transform: rotate(0);
-  transition: transform 180ms;
+  transition: transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img img {
@@ -2972,7 +2972,7 @@ main {
 
 .products .products_carousel .owl-item.active + .active + .active .bg_logo {
   transform: rotate(-90deg);
-  transition: transform 180ms;
+  transition: transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img img {

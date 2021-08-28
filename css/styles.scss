@@ -1581,7 +1581,7 @@ main {
 
         .bg_logo {
           transform: rotate(90deg);
-          transition: transform 180ms;
+          transition: transform 250ms;
         }
 
         & + .active {
@@ -1591,7 +1591,7 @@ main {
 
           .bg_logo {
             transform: rotate(0);
-            transition: transform 180ms;
+            transition: transform 250ms;
           }
 
           .img {
@@ -1616,7 +1616,7 @@ main {
 
             .bg_logo {
               transform: rotate(-90deg);
-              transition: transform 180ms;
+              transition: transform 250ms;
             }
 
             .img {
