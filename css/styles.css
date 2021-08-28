@@ -2739,14 +2739,16 @@ main {
   margin-bottom: 140px;
 }
 
-.products:before, .products:after {
+.products .products_carousel:before, .products .products_carousel:after {
   content: "";
   position: absolute;
   z-index: 0;
   background: url("../img/form_bg.png") no-repeat center/contain;
+  transform: translateY(0);
+  transition: all 250ms;
 }
 
-.products:before {
+.products .products_carousel:before {
   width: 262px;
   height: 260px;
   left: 0;
@@ -2754,12 +2756,24 @@ main {
   transform: rotate(346deg);
 }
 
-.products:after {
+.products .products_carousel:after {
   top: 0;
   right: 0;
   width: 282px;
   height: 245px;
   transform: rotate(95deg);
+}
+
+.products .products_carousel.translated:before {
+  bottom: 70%;
+  transform: rotate(300deg);
+  transition: all 250ms;
+}
+
+.products .products_carousel.translated:after {
+  top: 70%;
+  transform: rotate(50deg);
+  transition: all 250ms;
 }
 
 .products .products_carousel .owl-nav {

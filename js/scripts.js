@@ -90,6 +90,8 @@ $( document ).ready(function() {
             nav: true,
             navText: ['', ''],
 
+            onTranslate: translatedFunc,
+
             responsive:{
                 0:{
                 },
@@ -100,6 +102,10 @@ $( document ).ready(function() {
                 }
             }
         });
+    }
+
+    function translatedFunc() {
+        $('.products_carousel').toggleClass('translated');
     }
 
     if ( $('.private_carousel') ) {

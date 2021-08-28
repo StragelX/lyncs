@@ -1392,31 +1392,47 @@ main {
     margin-bottom: 140px;
   }
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    background: url("../img/form_bg.png") no-repeat center / contain;
-  }
-
-  &:before {
-    width: 262px;
-    height: 260px;
-    left: 0;
-    bottom: 0;
-    transform: rotate(346deg);
-  }
-
-  &:after {
-    top: 0;
-    right: 0;
-    width: 282px;
-    height: 245px;
-    transform: rotate(95deg);
-  }
-
   .products_carousel {
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      background: url("../img/form_bg.png") no-repeat center / contain;
+      transform: translateY(0);
+      transition: all 250ms;
+    }
+
+    &:before {
+      width: 262px;
+      height: 260px;
+      left: 0;
+      bottom: 0;
+      transform: rotate(346deg);
+    }
+
+    &:after {
+      top: 0;
+      right: 0;
+      width: 282px;
+      height: 245px;
+      transform: rotate(95deg);
+    }
+
+    &.translated {
+      &:before {
+        bottom: 70%;
+        transform: rotate(300deg);
+        transition: all 250ms;
+      }
+
+      &:after {
+        top: 70%;
+        transform: rotate(50deg);
+        transition: all 250ms;
+      }
+    }
+
     .owl-nav {
       position: absolute;
       left: -31px;
