@@ -250,6 +250,13 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .your_trademark {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .your_trademark .above_title,
 .your_trademark .title_h2 {
   color: #fff;
@@ -258,6 +265,12 @@
 
 .your_trademark .title_h2 {
   margin-bottom: 70px;
+}
+
+@media all and (max-width: 767px) {
+  .your_trademark .title_h2 {
+    padding-bottom: 40px;
+  }
 }
 
 .your_trademark h5 {
@@ -319,6 +332,19 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .your_trademark .mark_benefits .one_benefit {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .your_trademark .mark_benefits .one_benefit + .one_benefit {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+}
+
 .your_trademark .mark_benefits .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,6 +373,12 @@
   padding-left: 17px;
   margin-left: 68px;
   border-left: 3px solid #f2312a;
+}
+
+@media all and (max-width: 767px) {
+  .your_trademark .mark_benefits .text {
+    margin-left: 0;
+  }
 }
 
 .your_trademark .btn_inner2 {
