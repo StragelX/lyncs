@@ -66,17 +66,12 @@
     @media all and (max-width: 767px) {
       flex: 1 1 100%;
       width: 100%;
-      background-color: transparent;
-      box-shadow: none;
+      background-color: none;
     }
 
     &:hover {
       box-shadow: 0 8px 15px rgba(36, 36, 36, 0.3);
       transition: box-shadow 180ms;
-
-      @media all and (max-width: 767px) {
-        box-shadow: none;
-      }
     }
 
     img {
@@ -87,10 +82,6 @@
 
     & + .one {
       margin-left: 16px;
-
-      @media all and (max-width: 767px) {
-        margin-left: 0;
-      }
     }
   }
 
@@ -136,26 +127,13 @@
     padding-top: 100px;
   }
 
-  @media all and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 70px;
-  }
-
   .above_title,
   .title_h2 {
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      text-align: center;
-    }
   }
 
   .title_h2 {
     margin-bottom: 140px;
-
-    @media all and (max-width: 767px) {
-      margin-bottom: 40px;
-    }
   }
 }
 

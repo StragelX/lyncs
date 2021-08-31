@@ -1655,6 +1655,15 @@ h1 {
   }
 }
 
+@media all and (max-width: 767px) {
+  h1 {
+    text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    font-size: 45px;
+    letter-spacing: 1.13px;
+    line-height: normal;
+  }
+}
+
 h2 {
   color: #242424;
   font-family: Roboto;
@@ -1668,6 +1677,13 @@ h2 {
 @media all and (max-width: 1400px) {
   h2 {
     font-size: 34px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  h2 {
+    font-size: 24px;
+    line-height: normal;
   }
 }
 
@@ -2268,6 +2284,12 @@ menu {
   }
 }
 
+@media all and (max-width: 767px) {
+  menu {
+    overflow-x: auto;
+  }
+}
+
 menu.active {
   opacity: 1;
   -webkit-transition: opacity 180ms;
@@ -2664,9 +2686,24 @@ main {
   }
 }
 
+@media all and (max-width: 767px) {
+  .main_top .upper_test {
+    font-size: 30px;
+    line-height: 43px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
 .main_top h1 {
   margin-bottom: 45px;
   color: #fff;
+}
+
+@media all and (max-width: 767px) {
+  .main_top h1 {
+    margin-bottom: 30px;
+  }
 }
 
 .main_top .text_with_line {
@@ -2679,6 +2716,13 @@ main {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
+}
+
+@media all and (max-width: 767px) {
+  .main_top .text_with_line {
+    font-size: 12px;
+    max-width: 100%;
+  }
 }
 
 .partners {
@@ -2721,6 +2765,13 @@ main {
   }
 }
 
+@media all and (max-width: 767px) {
+  .ukr_prod {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .ukr_prod .above_title,
 .ukr_prod .title_h2 {
   color: #fff;
@@ -2749,6 +2800,13 @@ main {
           justify-content: space-between;
 }
 
+@media all and (max-width: 767px) {
+  .ukr_prod .prod_links_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .ukr_prod .one_link {
   display: block;
   -webkit-box-flex: 1;
@@ -2766,6 +2824,18 @@ main {
 @media all and (max-width: 1025px) {
   .ukr_prod .one_link + .one_link {
     margin-left: 30px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .ukr_prod .one_link {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .ukr_prod .one_link + .one_link {
+    margin-left: 0;
   }
 }
 
@@ -2961,6 +3031,33 @@ main {
   }
 }
 
+@media all and (max-width: 767px) {
+  .counters_wrap {
+    position: relative;
+    top: 0;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .counters_wrap h2,
+  .counters_wrap h5 {
+    text-align: center;
+  }
+  .counters_wrap .one + .one {
+    margin-top: 70px;
+  }
+}
+
 .counters_wrap .counter_number {
   color: #f2312a;
   font-family: Montserrat;
@@ -3106,6 +3203,13 @@ main {
   }
 }
 
+@media all and (max-width: 767px) {
+  .strategy {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+}
+
 .strategy:before, .strategy:after {
   content: "";
   position: absolute;
@@ -3138,6 +3242,12 @@ main {
 
 .strategy .title_h2 {
   margin-bottom: 90px;
+}
+
+@media all and (max-width: 767px) {
+  .strategy .title_h2 {
+    margin-bottom: 45px;
+  }
 }
 
 .strategy .strategy_gallery .owl-dots {
@@ -3299,6 +3409,8 @@ main {
   height: 462px;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
@@ -3478,59 +3590,61 @@ main {
 
 .products .products_carousel .owl-item {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active .bg_logo {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: translate(-220%, -120%);
+          transform: translate(-220%, -120%);
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+  opacity: 0;
 }
 
 .products .products_carousel .owl-item.active + .active {
   opacity: 1;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
 .products .products_carousel .owl-item.active + .active .bg_logo {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-  -webkit-transition: -webkit-transform 250ms;
-  transition: -webkit-transform 250ms;
-  transition: transform 250ms;
-  transition: transform 250ms, -webkit-transform 250ms;
+  opacity: 1;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: transform 250ms, opacity 250ms;
+  transition: transform 250ms, opacity 250ms, -webkit-transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img img {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
-  transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img:after {
@@ -3545,30 +3659,31 @@ main {
 
 .products .products_carousel .owl-item.active + .active + .active {
   opacity: 0.5;
-  -webkit-transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, -webkit-transform 180ms;
-  transition: opacity 180ms, transform 180ms;
-  transition: opacity 180ms, transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, -webkit-transform 250ms;
+  transition: opacity 250ms, transform 250ms;
+  transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active + .active + .active .bg_logo {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: translate(220%, -110%);
+          transform: translate(220%, -110%);
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+  opacity: 0;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img img {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 180ms;
-  transition: -webkit-transform 180ms;
-  transition: transform 180ms;
-  transition: transform 180ms, -webkit-transform 180ms;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img:after {
@@ -3599,9 +3714,18 @@ main {
   }
 }
 
+@media all and (max-width: 767px) {
+  .forms {
+    padding-top: 55px;
+    padding-bottom: 50px;
+  }
+}
+
 @media all and (max-width: 786px) {
   .form_text {
     margin-bottom: 20px;
+    padding-left: 11px;
+    padding-right: 11px;
   }
 }
 
@@ -3651,6 +3775,13 @@ main {
   padding-bottom: 20px;
 }
 
+@media all and (max-width: 767px) {
+  .form_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 input,
 textarea {
   height: 50px;
@@ -3684,6 +3815,9 @@ textarea.filled {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 
 .form_inner input {
@@ -3699,6 +3833,12 @@ textarea.filled {
 @media all and (max-width: 768px) {
   .form_inner input {
     width: 250px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .form_inner input {
+    width: 100%;
   }
 }
 
@@ -3820,7 +3960,7 @@ footer .footer_logo {
   max-width: 276px;
   padding-bottom: 92px;
   padding-top: 15px;
-  color: #ffffff;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 300;
@@ -3828,6 +3968,12 @@ footer .footer_logo {
   letter-spacing: normal;
   line-height: normal;
   text-align: left;
+}
+
+@media all and (max-width: 767px) {
+  .footer_top_text p {
+    max-width: 100%;
+  }
 }
 
 .footer_bottom {
@@ -3865,7 +4011,7 @@ footer .footer_logo {
 }
 
 .footer_bottom_text .text-smaller {
-  color: #ffffff;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -3876,7 +4022,7 @@ footer .footer_logo {
 }
 
 .footer_bottom_text .text_bigger {
-  color: #ffffff;
+  color: #fff;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: 300;
@@ -3992,14 +4138,34 @@ footer .footer_logo {
   color: #fff;
 }
 
+@media all and (max-width: 767px) {
+  .sign_for_updates .above_title,
+  .sign_for_updates .title_h2 {
+    text-align: center;
+  }
+}
+
 .sign_for_updates .title_h2 {
   margin-bottom: 36px;
   text-transform: none;
 }
 
+@media all and (max-width: 767px) {
+  .sign_for_updates .title_h2 {
+    text-transform: uppercase;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .input_line .df {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .input_line p {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #fff;
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 300;
@@ -4017,6 +4183,22 @@ footer .footer_logo {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   color: #fff;
+}
+
+@media all and (max-width: 767px) {
+  .input_line input {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .input_line .btn_inner2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .most_popular {
@@ -4059,6 +4241,12 @@ footer .footer_logo {
   font-size: 20px;
   font-weight: 400;
   cursor: pointer;
+}
+
+@media all and (max-width: 767px) {
+  .most_popular .line .text {
+    max-width: 80%;
+  }
 }
 
 .most_popular .line .show {
@@ -4490,6 +4678,8 @@ footer .footer_logo {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: -9px;
+    width: calc(100% + 18px);
   }
 }
 
@@ -4595,7 +4785,7 @@ footer .footer_logo {
 @media all and (max-width: 770px) {
   .stores_top {
     min-height: auto;
-    padding-top: 150px;
+    padding-top: 180px;
   }
 }
 
@@ -4610,7 +4800,7 @@ footer .footer_logo {
 }
 
 .product_inner {
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-transition: -webkit-box-shadow 180ms;
   transition: -webkit-box-shadow 180ms;
   transition: box-shadow 180ms;
@@ -4640,6 +4830,12 @@ footer .footer_logo {
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
     height: 300px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .product_inner .product_img {
+    max-width: 100%;
   }
 }
 

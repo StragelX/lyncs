@@ -1193,10 +1193,6 @@ main {
     h5 {
       text-align: center;
     }
-
-    .one + .one {
-      margin-top: 70px;
-    }
   }
 
   .counter_number {
@@ -2120,29 +2116,15 @@ footer {
   .above_title,
   .title_h2 {
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      text-align: center;
-    }
   }
 
   .title_h2 {
     margin-bottom: 36px;
     text-transform: none;
-
-    @media all and (max-width: 767px) {
-      text-transform: uppercase;
-    }
   }
 }
 
 .input_line {
-  .df {
-    @media all and (max-width: 767px) {
-      flex-wrap: wrap;
-    }
-  }
-
   p {
     margin-bottom: 10px;
     color: #fff;
@@ -2161,18 +2143,6 @@ footer {
     margin-right: 15px;
     flex: 1 1 auto;
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      flex: 1 1 100%;
-      margin-bottom: 60px;
-    }
-  }
-
-  .btn_inner2 {
-    @media all and (max-width: 767px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
 }
 
@@ -2212,10 +2182,6 @@ footer {
       font-size: 20px;
       font-weight: 400;
       cursor: pointer;
-
-      @media all and (max-width: 767px) {
-        max-width: 80%;
-      }
     }
 
     .show {
@@ -2579,8 +2545,6 @@ footer {
 
     @media all and (max-width: 768px) {
       flex-direction: column;
-      margin-left: -9px;
-      width: calc(100% + 18px);
     }
 
     .box_about_img {
@@ -2667,7 +2631,7 @@ footer {
 
   @media all and (max-width: 770px) {
     min-height: auto;
-    padding-top: 180px;
+    padding-top: 150px;
   }
 
   & + .about_our_work {
@@ -2680,7 +2644,7 @@ footer {
 }
 
 .product_inner {
-  background-color: #fff;
+  background-color: #ffffff;
   transition: box-shadow 180ms;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   line-height: 0;
@@ -2696,10 +2660,6 @@ footer {
     @media all and (max-width: 1400px) {
       flex: 1 1 auto;
       height: 300px;
-    }
-
-    @media all and (max-width: 767px) {
-      max-width: 100%;
     }
 
     img {

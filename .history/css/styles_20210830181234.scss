@@ -17,13 +17,6 @@ h1 {
     font-size: 80px;
     line-height: 82px;
   }
-
-  @media all and (max-width: 767px) {
-    text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    font-size: 45px;
-    letter-spacing: 1.13px;
-    line-height: normal;
-  }
 }
 
 h2 {
@@ -37,11 +30,6 @@ h2 {
 
   @media all and (max-width: 1400px) {
     font-size: 34px;
-  }
-
-  @media all and (max-width: 767px) {
-    font-size: 24px;
-    line-height: normal;
   }
 }
 
@@ -896,22 +884,11 @@ main {
     @media all and (max-width: 1400px) {
       font-size: 35px;
     }
-
-    @media all and (max-width: 767px) {
-      font-size: 30px;
-      line-height: 43px;
-      text-align: left;
-      margin-bottom: 0;
-    }
   }
 
   h1 {
     margin-bottom: 45px;
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      margin-bottom: 30px;
-    }
   }
 
   .text_with_line {
@@ -924,11 +901,6 @@ main {
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
-
-    @media all and (max-width: 767px) {
-      font-size: 12px;
-      max-width: 100%;
-    }
   }
 }
 
@@ -963,11 +935,6 @@ main {
   @media all and (max-width: 1025px) {
     padding-top: 100px;
     padding-bottom: 200px;
-  }
-
-  @media all and (max-width: 767px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 
   .above_title,
@@ -1193,10 +1160,6 @@ main {
     h5 {
       text-align: center;
     }
-
-    .one + .one {
-      margin-top: 70px;
-    }
   }
 
   .counter_number {
@@ -1337,7 +1300,6 @@ main {
 
   @media all and (max-width: 767px) {
     padding-top: 100px;
-    padding-bottom: 120px;
   }
 
   &:before,
@@ -1746,18 +1708,11 @@ main {
     background: url("../img/form_bg_blur.png") no-repeat bottom 39px left 49%,
       url("../img/form_bg.png") no-repeat right 80px top 60px, #fff;
   }
-
-  @media all and (max-width: 767px) {
-    padding-top: 55px;
-    padding-bottom: 50px;
-  }
 }
 
 .form_text {
   @media all and (max-width: 786px) {
     margin-bottom: 20px;
-    padding-left: 11px;
-    padding-right: 11px;
   }
   .above_title {
     color: #242424;
@@ -1800,10 +1755,6 @@ main {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
-
-  @media all and (max-width: 767px) {
-    flex-wrap: wrap;
-  }
 }
 
 input,
@@ -1831,7 +1782,6 @@ textarea {
 .form_inner {
   display: flex;
   flex-direction: column;
-  flex: 1 1 100%;
 
   input {
     width: 250px;
@@ -1842,10 +1792,6 @@ textarea {
 
     @media all and (max-width: 768px) {
       width: 250px;
-    }
-
-    @media all and (max-width: 767px) {
-      width: 100%;
     }
   }
 
@@ -1970,7 +1916,7 @@ footer {
     max-width: 276px;
     padding-bottom: 92px;
     padding-top: 15px;
-    color: #fff;
+    color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 300;
@@ -1978,10 +1924,6 @@ footer {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
-
-    @media all and (max-width: 767px) {
-      max-width: 100%;
-    }
   }
 }
 
@@ -2013,7 +1955,7 @@ footer {
   }
 
   .text-smaller {
-    color: #fff;
+    color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -2024,7 +1966,7 @@ footer {
   }
 
   .text_bigger {
-    color: #fff;
+    color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;
     font-weight: 300;
@@ -2120,32 +2062,18 @@ footer {
   .above_title,
   .title_h2 {
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      text-align: center;
-    }
   }
 
   .title_h2 {
     margin-bottom: 36px;
     text-transform: none;
-
-    @media all and (max-width: 767px) {
-      text-transform: uppercase;
-    }
   }
 }
 
 .input_line {
-  .df {
-    @media all and (max-width: 767px) {
-      flex-wrap: wrap;
-    }
-  }
-
   p {
     margin-bottom: 10px;
-    color: #fff;
+    color: #ffffff;
     font-family: Montserrat;
     font-size: 12px;
     font-weight: 300;
@@ -2161,18 +2089,6 @@ footer {
     margin-right: 15px;
     flex: 1 1 auto;
     color: #fff;
-
-    @media all and (max-width: 767px) {
-      flex: 1 1 100%;
-      margin-bottom: 60px;
-    }
-  }
-
-  .btn_inner2 {
-    @media all and (max-width: 767px) {
-      margin-left: auto;
-      margin-right: auto;
-    }
   }
 }
 
@@ -2212,10 +2128,6 @@ footer {
       font-size: 20px;
       font-weight: 400;
       cursor: pointer;
-
-      @media all and (max-width: 767px) {
-        max-width: 80%;
-      }
     }
 
     .show {
@@ -2579,8 +2491,6 @@ footer {
 
     @media all and (max-width: 768px) {
       flex-direction: column;
-      margin-left: -9px;
-      width: calc(100% + 18px);
     }
 
     .box_about_img {
@@ -2667,7 +2577,7 @@ footer {
 
   @media all and (max-width: 770px) {
     min-height: auto;
-    padding-top: 180px;
+    padding-top: 150px;
   }
 
   & + .about_our_work {
@@ -2680,7 +2590,7 @@ footer {
 }
 
 .product_inner {
-  background-color: #fff;
+  background-color: #ffffff;
   transition: box-shadow 180ms;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   line-height: 0;
@@ -2696,10 +2606,6 @@ footer {
     @media all and (max-width: 1400px) {
       flex: 1 1 auto;
       height: 300px;
-    }
-
-    @media all and (max-width: 767px) {
-      max-width: 100%;
     }
 
     img {

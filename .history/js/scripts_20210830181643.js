@@ -132,19 +132,15 @@ $( document ).ready(function() {
 
     if ( $('.year_partners_carousel') ) {
         $(".year_partners_carousel.owl-carousel").owlCarousel({
-            
+            items: 3,
+            margin: 60,
+            nav: true,
             navText: ['', ''],
 
             responsive:{
                 0:{
-                    items: 1,
-                    nav: false,
-                    margin: 0,
                 },
                 600:{
-                    items: 3,
-                    nav: true,
-                    margin: 60,
                 },
                 1000:{
                 }
