@@ -90,11 +90,6 @@
   display: block;
   padding-bottom: 20px;
   max-width: 800px;
-  line-height: 0;
-
-  @media all and (max-width: 767px) {
-    padding-bottom: 10px;
-  }
 }
 
 .small_picture_box {
@@ -161,11 +156,6 @@
 
   @media all and (max-width: 1025px) {
     padding: 0 30px;
-  }
-
-  @media all and (max-width: 767px) {
-    margin-top: 84px;
-    padding: 0 15px;
   }
 
   .tm {
@@ -268,15 +258,6 @@
           width: 15px;
         }
       }
-    }
-  }
-}
-
-.buy_products_btn {
-  @media all and (max-width: 767px) {
-    .btn_inner2 {
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }
@@ -452,12 +433,6 @@
 
       .inner_img {
         max-width: 414px;
-      }
-
-      & + .link {
-        @media all and (max-width: 767px) {
-          margin-top: 60px;
-        }
       }
     }
   }

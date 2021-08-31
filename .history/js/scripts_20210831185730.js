@@ -98,13 +98,11 @@ $( document ).ready(function() {
 
             responsive:{
                 0:{
-                    items: 1
                 },
                 600:{
-                    items: 3
                 },
                 1300:{
-                   
+                    items: 3
                 }
             }
         });

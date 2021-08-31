@@ -63,12 +63,13 @@ $( document ).ready(function() {
 
     if ( $('.strategy_gallery') ) {
         $(".strategy_gallery.owl-carousel").owlCarousel({
+            
             responsive:{
                 0:{
-                    items: 1.1,
+                    items: 1,
                     nav: false,
                     dots: false,
-                    margin: 16
+                    margin: 0
                 },
                 700:{
                     items: 2,
@@ -98,13 +99,11 @@ $( document ).ready(function() {
 
             responsive:{
                 0:{
-                    items: 1
                 },
                 600:{
-                    items: 3
                 },
                 1300:{
-                   
+                    items: 3
                 }
             }
         });
