@@ -1292,10 +1292,6 @@ main {
     img {
       filter: blur(0);
       transition: filter 180ms;
-
-      @media all and (max-width: 767px) {
-        filter: none;
-      }
     }
   }
 
@@ -1392,10 +1388,6 @@ main {
     .content {
       top: 30%;
       transition: top 180ms;
-
-      @media all and (max-width: 767px) {
-        top: 0;
-      }
     }
   }
 }
@@ -1457,10 +1449,6 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @media all and (max-width: 767px) {
-        display: none;
-      }
 
       .owl-dot {
         width: 14px;
