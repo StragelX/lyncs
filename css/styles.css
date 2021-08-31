@@ -4178,6 +4178,12 @@ footer .footer_logo {
   }
 }
 
+@media all and (max-width: 767px) {
+  .pagination {
+    margin-bottom: 150px;
+  }
+}
+
 .pagination a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5005,6 +5011,12 @@ footer .footer_logo {
 }
 
 .product_inner .product_img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
   line-height: 0;
   -webkit-transform: scale(1);
           transform: scale(1);

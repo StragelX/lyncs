@@ -76,7 +76,7 @@
 }
 
 .product_container .product_inner {
-  background-color: #ffffff;
+  background-color: #fff;
   margin-bottom: 84px;
 }
 
@@ -104,6 +104,20 @@
   }
   .product_container .product_inner:nth-child(3n + 1) {
     margin-left: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .product_container .product_inner {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+  .product_container .product_inner:nth-child(3n + 1) {
+    margin-left: 0;
+  }
+  .product_container .product_inner + .product_inner {
+    margin-left: 0;
   }
 }
 

@@ -344,6 +344,12 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .also_buy .product_inner {
+    width: 100%;
+  }
+}
+
 .buy_container {
   display: -webkit-box;
   display: -ms-flexbox;
