@@ -173,6 +173,12 @@
   transition: background-color 180ms, box-shadow 180ms, -webkit-box-shadow 180ms;
 }
 
+@media all and (max-width: 767px) {
+  .year_partners .year_partners_slide {
+    padding-bottom: 0;
+  }
+}
+
 .year_partners .year_partners_slide .img_wrap {
   height: 304px;
   margin-bottom: 20px;
@@ -269,7 +275,7 @@
 
 @media all and (max-width: 767px) {
   .your_trademark .title_h2 {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -338,9 +344,12 @@
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     max-width: 100%;
+    padding: 25px;
+    margin-left: 26px;
+    margin-right: 26px;
   }
   .your_trademark .mark_benefits .one_benefit + .one_benefit {
-    margin-left: 0;
+    margin-left: 26px;
     margin-bottom: 40px;
   }
 }

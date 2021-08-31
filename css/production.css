@@ -106,6 +106,7 @@
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
     width: 100%;
+    height: auto;
     background-color: transparent;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -134,6 +135,12 @@
   margin-bottom: 75px;
 }
 
+@media all and (max-width: 767px) {
+  .main_activities .one img {
+    margin-bottom: 20px;
+  }
+}
+
 .main_activities .one + .one {
   margin-left: 16px;
 }
@@ -141,6 +148,7 @@
 @media all and (max-width: 767px) {
   .main_activities .one + .one {
     margin-left: 0;
+    margin-top: 70px;
   }
 }
 
@@ -243,6 +251,12 @@
 
 .guaranty .title_h2 {
   margin-bottom: 90px;
+}
+
+@media all and (max-width: 767px) {
+  .guaranty .title_h2 {
+    margin-bottom: 45px;
+  }
 }
 
 .guaranty .one_download {
