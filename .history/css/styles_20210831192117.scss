@@ -1089,10 +1089,6 @@ main {
     .info {
       padding: 20px 15px 42px;
 
-      @media all and (max-width: 767px) {
-        padding: 10px 10px 0;
-      }
-
       &:after {
         content: "";
         position: absolute;
@@ -1139,10 +1135,6 @@ main {
       font-weight: 400;
       line-height: 20px;
       margin-bottom: 25px;
-
-      @media all and (max-width: 767px) {
-        margin-bottom: 0;
-      }
     }
 
     .link {
