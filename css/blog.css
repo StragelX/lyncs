@@ -67,4 +67,10 @@
 .bottom_text_block {
   padding-bottom: 0;
 }
+
+@media all and (max-width: 767px) {
+  .pagination {
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=blog.css.map */

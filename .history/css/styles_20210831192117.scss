@@ -20,7 +20,7 @@ h1 {
 
   @media all and (max-width: 767px) {
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    font-size: 38px;
+    font-size: 40px;
     letter-spacing: 1.13px;
     line-height: normal;
   }
@@ -1079,7 +1079,6 @@ main {
 
       & + .one_link {
         margin-left: 0;
-        margin-top: 60px;
       }
     }
 
@@ -1089,10 +1088,6 @@ main {
 
     .info {
       padding: 20px 15px 42px;
-
-      @media all and (max-width: 767px) {
-        padding: 10px 10px 0;
-      }
 
       &:after {
         content: "";
@@ -1140,10 +1135,6 @@ main {
       font-weight: 400;
       line-height: 20px;
       margin-bottom: 25px;
-
-      @media all and (max-width: 767px) {
-        margin-bottom: 0;
-      }
     }
 
     .link {
@@ -2190,12 +2181,6 @@ footer {
     letter-spacing: normal;
     line-height: normal;
     text-align: left;
-  }
-}
-
-.s_none_footer {
-  @media all and (max-width: 767px) {
-    display: none;
   }
 }
 

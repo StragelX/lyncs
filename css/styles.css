@@ -1658,7 +1658,7 @@ h1 {
 @media all and (max-width: 767px) {
   h1 {
     text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    font-size: 40px;
+    font-size: 38px;
     letter-spacing: 1.13px;
     line-height: normal;
   }
@@ -2933,6 +2933,7 @@ main {
   }
   .ukr_prod .one_link + .one_link {
     margin-left: 0;
+    margin-top: 60px;
   }
 }
 
@@ -2942,6 +2943,12 @@ main {
 
 .ukr_prod .one_link .info {
   padding: 20px 15px 42px;
+}
+
+@media all and (max-width: 767px) {
+  .ukr_prod .one_link .info {
+    padding: 10px 10px 0;
+  }
 }
 
 .ukr_prod .one_link .info:after {
@@ -2995,6 +3002,12 @@ main {
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 25px;
+}
+
+@media all and (max-width: 767px) {
+  .ukr_prod .one_link .text {
+    margin-bottom: 0;
+  }
 }
 
 .ukr_prod .one_link .link {
