@@ -401,7 +401,7 @@ header {
       height: 43px;
 
       @media all and (max-width: 767px) {
-        height: 40px;
+        padding-top: 15px;
       }
     }
   }
@@ -489,10 +489,6 @@ header {
     justify-content: flex-end;
     height: 46px;
 
-    @media all and (max-width: 767px) {
-      height: 40px;
-    }
-
     .desctop_burger {
       display: flex;
       align-items: center;
@@ -524,19 +520,11 @@ header {
         &:before {
           opacity: 1;
           transition: opacity 180ms;
-
-          @media all and (max-width: 767px) {
-            opacity: 0;
-          }
         }
 
         &:after {
           transform: rotate(90deg);
           transition: transform 180ms;
-
-          @media all and (max-width: 767px) {
-            transform: none;
-          }
         }
       }
 
@@ -563,7 +551,7 @@ header {
     border-bottom: 1px solid #fff;
 
     @media all and (max-width: 767px) {
-      padding-top: 15px;
+      margin-top: 20px;
     }
   }
 
@@ -1039,12 +1027,6 @@ main {
 
     @media all and (max-width: 1025px) {
       margin-bottom: 60px;
-    }
-
-    @media all and (max-width: 767px) {
-      br {
-        display: none;
-      }
     }
   }
 
