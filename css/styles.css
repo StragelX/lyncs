@@ -4255,6 +4255,12 @@ footer .footer_logo {
   text-align: left;
 }
 
+@media all and (max-width: 767px) {
+  .s_none_footer {
+    display: none;
+  }
+}
+
 .pagination {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -2192,6 +2192,12 @@ footer {
   }
 }
 
+.s_none_footer {
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+}
+
 .pagination {
   display: flex;
   align-items: center;
