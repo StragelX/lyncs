@@ -58,6 +58,14 @@ body {
   padding-bottom: 30px;
 }
 
+@media all and (max-width: 767px) {
+  .mistake_wrap .title_small {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
 .mistake_wrap .title_big {
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -74,6 +82,15 @@ body {
 @media all and (max-width: 1400px) {
   .mistake_wrap .title_big {
     padding-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .mistake_wrap .title_big {
+    padding-bottom: 5px;
+    font-size: 104px;
+    letter-spacing: 2.6px;
+    line-height: normal;
   }
 }
 
@@ -100,5 +117,12 @@ body {
   text-align: left;
   padding-left: 19px;
   border-left: 1px solid #fff;
+}
+
+@media all and (max-width: 767px) {
+  .mistake_wrap .wrap_text .text {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 /*# sourceMappingURL=404.css.map */
