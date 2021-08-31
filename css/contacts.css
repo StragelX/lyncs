@@ -16,6 +16,13 @@
   padding-bottom: 106px;
 }
 
+@media all and (max-width: 767px) {
+  .office,
+  .management {
+    padding-bottom: 60px;
+  }
+}
+
 .office::after {
   content: "";
   position: absolute;
