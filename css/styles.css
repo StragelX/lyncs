@@ -5195,6 +5195,12 @@ footer .footer_logo {
   display: none;
 }
 
+@media all and (max-width: 767px) {
+  .modal_overlay .modal {
+    padding: 50px 20px;
+  }
+}
+
 .modal_overlay .modal.active {
   display: block;
   opacity: 1;
@@ -5214,6 +5220,13 @@ footer .footer_logo {
   -webkit-transition: opacity 180ms;
   transition: opacity 180ms;
   background: url("../img/modal_close_icon.svg") no-repeat center/contain;
+}
+
+@media all and (max-width: 767px) {
+  .modal_overlay .modal .close_btn {
+    top: 60px;
+    right: 20px;
+  }
 }
 
 .modal_overlay .modal .close_btn:hover {
@@ -5252,8 +5265,21 @@ footer .footer_logo {
           justify-content: space-between;
 }
 
+@media all and (max-width: 767px) {
+  .modal_overlay .modal .line {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .modal_overlay .modal .line + .line {
   margin-top: 26px;
+}
+
+@media all and (max-width: 767px) {
+  .modal_overlay .modal .line + .line {
+    margin-top: 0;
+  }
 }
 
 .modal_overlay .modal .input_line {
@@ -5282,6 +5308,12 @@ footer .footer_logo {
 
 .modal_overlay .modal .input_line + .input_line {
   margin-left: 25px;
+}
+
+@media all and (max-width: 767px) {
+  .modal_overlay .modal .input_line + .input_line {
+    margin-left: 0;
+  }
 }
 
 .modal_overlay .modal .btn_inner2 {
