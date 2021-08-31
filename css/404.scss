@@ -27,6 +27,12 @@ body {
     @media all and (max-width: 768px) {
       width: 615px;
     }
+
+    @media all and (max-width: 767px) {
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
   }
 }
 
