@@ -2224,6 +2224,10 @@ menu .menu_socials.xl_hide {
   margin-bottom: 50px;
 }
 
+menu .menu_socials.s_hide {
+  margin-top: 190px;
+}
+
 menu .menu_socials a + a {
   margin-left: 30px;
 }
