@@ -3302,6 +3302,7 @@ main {
 @media all and (max-width: 767px) {
   .products .products_carousel .img {
     height: 300px;
+    margin-bottom: 30px;
   }
 }
 
@@ -3422,7 +3423,7 @@ main {
 
 @media all and (max-width: 768px) {
   .forms {
-    background: url("../img/Path_38353.svg") no-repeat top 10px right 10px/75px auto, url("../img/form_bg_blur.png") no-repeat bottom -4px left -11%;
+    background: url("../img/Path_38353.svg") no-repeat top 10px right 10px/75px auto, url("../img/form_bg_blur.png") no-repeat bottom -4px left -11%, #fff;
   }
 }
 
@@ -4304,6 +4305,27 @@ footer .footer_logo {
   margin-top: 90px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media all and (max-width: 767px) {
+  .about_our_work .btn_inner2 {
+    margin-top: 30px;
+  }
+}
+
+.guaranty .guaranty_carousel .one_download {
+  width: 192px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.guaranty .guaranty_carousel .one_download:after {
+  top: 105%;
+  color: #242424;
+  opacity: 1;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .stores_top_wrap {

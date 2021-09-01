@@ -341,6 +341,10 @@
     padding-bottom: 100px;
   }
 
+  @media all and (max-width: 767px) {
+    padding-top: 100px;
+  }
+
   &:before,
   &:after {
     content: "";
@@ -372,13 +376,17 @@
 
   .title_h2 {
     margin-bottom: 150px;
+
+    @media all and (max-width: 767px) {
+      margin-bottom: 60px;
+    }
   }
 
   .private_carousel {
     .owl-nav {
       position: absolute;
       left: -31px;
-      top: 290px;
+      top: 230px;
       display: flex;
       justify-content: space-between;
       width: calc(100% + 62px);
@@ -387,6 +395,14 @@
       @media all and (max-width: 1400px) {
         left: -15px;
         width: calc(100% + 30px);
+      }
+
+      @media all and (max-width: 1025px) {
+        left: 0;
+        width: 100%;
+      }
+
+      @media all and (max-width: 767px) {
         top: 200px;
       }
 
@@ -429,6 +445,10 @@
       margin-top: 50px;
       opacity: 0;
       transition: opacity 180ms;
+
+      @media all and (max-width: 767px) {
+        opacity: 1;
+      }
     }
 
     .img {
@@ -438,59 +458,104 @@
         height: 450px;
       }
 
+      @media all and (max-width: 769px) {
+        height: 350px;
+      }
+
+      @media all and (max-width: 767px) {
+        height: 300px;
+        margin-bottom: 30px;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 60px;
+        bottom: 15px;
+        z-index: 0;
+        background: url("../img/product_shadow.png") no-repeat center / contain;
+        left: 32%;
+
+        @media all and (max-width: 1400px) {
+          left: 25%;
+        }
+      }
+
       img {
         height: 550px;
         z-index: 1;
+        transform: rotate(0deg);
         transition: transform 180ms;
-        width: auto;
-        margin-left: auto;
-        margin-right: auto;
 
         @media all and (max-width: 1400px) {
           height: 350px;
+          width: auto;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @media all and (max-width: 769px) {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
         }
       }
     }
 
     .owl-item {
       opacity: 0.5;
-      transition: opacity 180ms, transform 180ms;
+      transition: opacity 500ms, transform 500ms;
       transform: scale(0.5);
 
       &.active {
         opacity: 0.5;
-        transition: opacity 180ms, transform 180ms;
+        transition: opacity 500ms, transform 500ms;
         transform: scale(0.5);
+
+        @media all and (max-width: 767px) {
+          opacity: 1;
+          transform: scale(1);
+        }
 
         & + .active {
           opacity: 1;
-          transition: opacity 180ms, transform 180ms;
+          transition: opacity 500ms, transform 500ms;
           transform: scale(1);
-
-          .btn_inner2 {
-            opacity: 1;
-            transition: opacity 180ms;
-          }
 
           .img {
             img {
-              transition: transform 180ms;
+              transform: rotate(-10deg);
+              transition: transform 500ms;
+            }
+
+            &:after {
+              left: 37%;
+
+              @media all and (max-width: 1400px) {
+                left: 35%;
+              }
             }
           }
 
           & + .active {
             opacity: 0.5;
-            transition: opacity 180ms, transform 180ms;
+            transition: opacity 500ms, transform 500ms;
             transform: scale(0.5);
-
-            .btn_inner2 {
-              opacity: 0;
-              transition: opacity 180ms;
-            }
 
             .img {
               img {
-                transition: transform 180ms;
+                transform: rotate(0deg);
+                transition: transform 500ms;
+              }
+
+              &:after {
+                left: 32%;
+
+                @media all and (max-width: 1400px) {
+                  left: 25%;
+                }
               }
             }
           }

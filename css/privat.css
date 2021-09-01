@@ -363,6 +363,12 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .your_brand_here {
+    padding-top: 100px;
+  }
+}
+
 .your_brand_here:before, .your_brand_here:after {
   content: "";
   display: block;
@@ -395,10 +401,16 @@
   margin-bottom: 150px;
 }
 
+@media all and (max-width: 767px) {
+  .your_brand_here .title_h2 {
+    margin-bottom: 60px;
+  }
+}
+
 .your_brand_here .private_carousel .owl-nav {
   position: absolute;
   left: -31px;
-  top: 290px;
+  top: 230px;
   display: flex;
   justify-content: space-between;
   width: calc(100% + 62px);
@@ -409,6 +421,18 @@
   .your_brand_here .private_carousel .owl-nav {
     left: -15px;
     width: calc(100% + 30px);
+  }
+}
+
+@media all and (max-width: 1025px) {
+  .your_brand_here .private_carousel .owl-nav {
+    left: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .your_brand_here .private_carousel .owl-nav {
     top: 200px;
   }
 }
@@ -453,6 +477,12 @@
   transition: opacity 180ms;
 }
 
+@media all and (max-width: 767px) {
+  .your_brand_here .private_carousel .btn_inner2 {
+    opacity: 1;
+  }
+}
+
 .your_brand_here .private_carousel .img {
   height: 650px;
 }
@@ -463,60 +493,119 @@
   }
 }
 
+@media all and (max-width: 769px) {
+  .your_brand_here .private_carousel .img {
+    height: 350px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .your_brand_here .private_carousel .img {
+    height: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+.your_brand_here .private_carousel .img:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  bottom: 15px;
+  z-index: 0;
+  background: url("../img/product_shadow.png") no-repeat center/contain;
+  left: 32%;
+}
+
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .img:after {
+    left: 25%;
+  }
+}
+
 .your_brand_here .private_carousel .img img {
   height: 550px;
   z-index: 1;
+  transform: rotate(0deg);
   transition: transform 180ms;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media all and (max-width: 1400px) {
   .your_brand_here .private_carousel .img img {
     height: 350px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media all and (max-width: 769px) {
+  .your_brand_here .private_carousel .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
   }
 }
 
 .your_brand_here .private_carousel .owl-item {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
 }
 
 .your_brand_here .private_carousel .owl-item.active {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
+}
+
+@media all and (max-width: 767px) {
+  .your_brand_here .private_carousel .owl-item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active {
   opacity: 1;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(1);
 }
 
-.your_brand_here .private_carousel .owl-item.active + .active .btn_inner2 {
-  opacity: 1;
-  transition: opacity 180ms;
+.your_brand_here .private_carousel .owl-item.active + .active .img img {
+  transform: rotate(-10deg);
+  transition: transform 500ms;
 }
 
-.your_brand_here .private_carousel .owl-item.active + .active .img img {
-  transition: transform 180ms;
+.your_brand_here .private_carousel .owl-item.active + .active .img:after {
+  left: 37%;
+}
+
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .owl-item.active + .active .img:after {
+    left: 35%;
+  }
 }
 
 .your_brand_here .private_carousel .owl-item.active + .active + .active {
   opacity: 0.5;
-  transition: opacity 180ms, transform 180ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
 }
 
-.your_brand_here .private_carousel .owl-item.active + .active + .active .btn_inner2 {
-  opacity: 0;
-  transition: opacity 180ms;
+.your_brand_here .private_carousel .owl-item.active + .active + .active .img img {
+  transform: rotate(0deg);
+  transition: transform 500ms;
 }
 
-.your_brand_here .private_carousel .owl-item.active + .active + .active .img img {
-  transition: transform 180ms;
+.your_brand_here .private_carousel .owl-item.active + .active + .active .img:after {
+  left: 32%;
+}
+
+@media all and (max-width: 1400px) {
+  .your_brand_here .private_carousel .owl-item.active + .active + .active .img:after {
+    left: 25%;
+  }
 }
 /*# sourceMappingURL=privat.css.map */

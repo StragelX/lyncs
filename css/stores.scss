@@ -175,8 +175,13 @@
   @media all and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 70px;
+
+    .block_with_bottom_hover .content p {
+      color: #fff;
+    }
   }
 }
+
 .cooperation_wrap {
   padding-bottom: 140px;
 
@@ -292,12 +297,24 @@
         position: absolute;
         top: -45px;
         left: 75px;
+
+        @media all and (max-width: 767px) {
+          top: 35px;
+          left: 0px;
+          width: 80px;
+        }
       }
 
       .number2 {
         position: absolute;
         top: -45px;
         left: 180px;
+
+        @media all and (max-width: 767px) {
+          top: 35px;
+          left: 0px;
+          width: 80px;
+        }
       }
 
       .number3 {
@@ -307,6 +324,12 @@
 
         @media all and (max-width: 1025px) {
           left: 140px;
+        }
+
+        @media all and (max-width: 767px) {
+          top: 35px;
+          left: 0px;
+          width: 80px;
         }
       }
 

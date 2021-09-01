@@ -20,7 +20,7 @@ $( document ).ready(function() {
         })
     });
 
-    $('.modal_overlay .close, .modal_overlay .color_btn').click(function(){
+    $('.modal_overlay .close, .modal_overlay .close_btn').click(function(){
         $(this).closest('.modal_overlay').removeClass('active');
         $(this).closest('.modal').removeClass('active');
         $('body').removeClass('no_scroll');
@@ -63,6 +63,8 @@ $( document ).ready(function() {
 
     if ( $('.strategy_gallery') ) {
         $(".strategy_gallery.owl-carousel").owlCarousel({
+            loop: true,
+
             responsive:{
                 0:{
                     items: 1.1,
@@ -134,7 +136,6 @@ $( document ).ready(function() {
 
     if ( $('.private_carousel') ) {
         $(".private_carousel.owl-carousel").owlCarousel({
-            
             margin: 0,
             loop: true,
             nav: true,
@@ -156,13 +157,14 @@ $( document ).ready(function() {
     if ( $('.year_partners_carousel') ) {
         $(".year_partners_carousel.owl-carousel").owlCarousel({
             navText: ['', ''],
+            loop: true,
 
             responsive:{
                 0:{
                     dots: false,
-                    items: 1,
+                    items: 1.1,
                     nav: false,
-                    margin: 0,
+                    margin: 16,
                 },
                 600:{
                     dots: true,
@@ -174,20 +176,54 @@ $( document ).ready(function() {
         });
     }
 
+    // wrapper_info
+
+    if ( $('.wrapper_info') && $(document).width() <= 767 ) {
+        $(".wrapper_info.owl-carousel").owlCarousel({
+            loop: true,
+
+            responsive:{
+                0:{
+                    items: 1.1,
+                    margin: 16
+                }
+            }
+        });
+    }
+
+    if ( $('.guaranty_carousel') ) {
+        $(".guaranty_carousel.owl-carousel").owlCarousel({
+            loop: true,
+
+            responsive:{
+                0:{
+                    items: 1,
+                    margin: 0
+                },
+                400:{
+                    items: 2.1,
+                    margin: 15,
+                }
+            }
+        });
+    }
+
     if ($('.small_picture_box') && $('.small_picture_box .img').length > 2) {
         $(".small_picture_box.owl-carousel").owlCarousel({
             navText: ['', ''],
+            loop: true,
+            margin: 10,
 
             responsive:{
                 0:{
                     items: 2.2,
-                    margin: 10,
+                    
                     nav: false,
                 },
                 600:{
                     items: 2,
                     nav: true,
-                    margin: 10,
+                    
                 }
             }
         });
