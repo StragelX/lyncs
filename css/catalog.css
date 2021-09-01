@@ -16,8 +16,7 @@
   left: -70px;
   width: 339px;
   height: 252px;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
+  transform: rotate(120deg);
   background: url("../img/form_bg.png") no-repeat center/contain;
 }
 
@@ -26,8 +25,7 @@
   left: 439px;
   width: 266px;
   height: 259px;
-  -webkit-transform: rotate(-110deg);
-          transform: rotate(-110deg);
+  transform: rotate(-110deg);
   background: url("../img/form_bg_blur.png") no-repeat center/contain;
 }
 
@@ -52,25 +50,16 @@
 }
 
 .product_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 @media all and (max-width: 1025px) {
   .product_container:after {
     content: "";
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 33%;
-            flex: 1 1 33%;
+    flex: 1 1 33%;
     margin-left: 20px;
   }
 }
@@ -83,9 +72,7 @@
 @media all and (max-width: 1400px) {
   .product_container .product_inner {
     margin-bottom: 50px;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
+    flex: 1 1 29%;
   }
   .product_container .product_inner + .product_inner {
     margin-left: 20px;
@@ -97,9 +84,7 @@
 
 @media all and (max-width: 1025px) {
   .product_container .product_inner {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 33%;
-            flex: 1 1 33%;
+    flex: 1 1 33%;
     margin-bottom: 20px;
   }
   .product_container .product_inner:nth-child(3n + 1) {
@@ -109,9 +94,7 @@
 
 @media all and (max-width: 767px) {
   .product_container .product_inner {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 100%;
-            flex: 1 1 100%;
+    flex: 1 1 100%;
   }
   .product_container .product_inner:nth-child(3n + 1) {
     margin-left: 0;
@@ -163,7 +146,6 @@
 .filter_wrap .line .inner {
   overflow: hidden;
   max-height: 0;
-  -webkit-transition: max-height 180ms;
   transition: max-height 180ms;
 }
 
@@ -196,7 +178,6 @@
 }
 
 .filter_wrap .line.active .inner {
-  -webkit-transition: max-height 180ms;
   transition: max-height 180ms;
   max-height: 500px;
 }

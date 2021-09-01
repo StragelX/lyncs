@@ -1598,7 +1598,51 @@ main {
     margin-bottom: 140px;
   }
 
+  .bg_logo_wrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    img {
+      position: absolute;
+      width: 350px;
+      height: 462px;
+      top: 10%;
+      left: 40%;
+      transition: transform 250ms;
+
+      &.translsted {
+        transform: translate(-220%, -100%) rotate(-90deg) scale(0);
+        transition: transform 250ms;
+      }
+
+      &.active {
+        transform: translate(0, 0) rotate(0) scale(1);
+        transition: transform 250ms;
+      }
+
+      &.totranslate {
+        transform: translate(220%, -100%) rotate(90deg) scale(0);
+        transition: transform 250ms;
+      }
+
+      .img_1 {
+      }
+
+      .img_2 {
+      }
+
+      .img_3 {
+      }
+    }
+  }
+
   .products_carousel {
+    z-index: 1;
+
     &:before,
     &:after {
       content: "";
@@ -1625,17 +1669,17 @@ main {
       transform: rotate(95deg);
     }
 
-    .bg_logo {
-      z-index: 0;
-      position: absolute;
-      top: 10%;
-      left: 25%;
-      width: 350px;
-      height: 462px;
-      transform: rotate(0deg);
-      transform-origin: center;
-      transition: transform 250ms;
-    }
+    // .bg_logo {
+    //   z-index: 0;
+    //   position: absolute;
+    //   top: 10%;
+    //   left: 25%;
+    //   width: 350px;
+    //   height: 462px;
+    //   transform: rotate(0deg);
+    //   transform-origin: center;
+    //   transition: transform 250ms;
+    // }
 
     &.translated {
       &:before {
@@ -1785,22 +1829,22 @@ main {
         transition: opacity 250ms, transform 250ms;
         transform: scale(0.5);
 
-        .bg_logo {
-          transform: translate(-220%, -120%);
-          transition: transform 250ms;
-          opacity: 0;
-        }
+        // .bg_logo {
+        //   transform: translate(-220%, -120%);
+        //   transition: transform 250ms;
+        //   opacity: 0;
+        // }
 
         & + .active {
           opacity: 1;
           transition: opacity 250ms, transform 250ms;
           transform: scale(1);
 
-          .bg_logo {
-            opacity: 1;
-            transform: translate(0);
-            transition: transform 250ms, opacity 250ms;
-          }
+          // .bg_logo {
+          //   opacity: 1;
+          //   transform: translate(0);
+          //   transition: transform 250ms, opacity 250ms;
+          // }
 
           .img {
             img {
@@ -1822,11 +1866,11 @@ main {
             transition: opacity 250ms, transform 250ms;
             transform: scale(0.5);
 
-            .bg_logo {
-              transform: translate(220%, -110%);
-              transition: transform 250ms;
-              opacity: 0;
-            }
+            // .bg_logo {
+            //   transform: translate(220%, -110%);
+            //   transition: transform 250ms;
+            //   opacity: 0;
+            // }
 
             .img {
               img {

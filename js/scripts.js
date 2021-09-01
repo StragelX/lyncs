@@ -112,6 +112,15 @@ $( document ).ready(function() {
 
     function translatedFunc() {
         $('.products_carousel').toggleClass('translated');
+        $('.products .bg_logo_wrap img').each(function(){
+            if($(this).hasClass('active')) {
+                $(this).removeClass('active').addClass('translsted');
+            } else if ($(this).hasClass('totranslate')) {
+                $(this).removeClass('totranslate').addClass('active');
+            } else if ($(this).hasClass('translsted')) {
+                $(this).removeClass('translsted').addClass('totranslate');
+            }
+        })
     }
 
     if ( $('.private_carousel') ) {
