@@ -4,6 +4,12 @@
   vertical-align: -3px;
 }
 
+@media all and (max-width: 1400px) {
+  .main_title img {
+    height: 61px;
+  }
+}
+
 @media all and (max-width: 767px) {
   .main_title img {
     height: 37px;

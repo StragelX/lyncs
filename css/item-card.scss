@@ -119,6 +119,10 @@
   width: 108%;
   pointer-events: none;
 
+  @media all and (max-width: 1400px) {
+    top: 60px;
+  }
+
   @media all and (max-width: 1025px) {
     top: 50px;
   }

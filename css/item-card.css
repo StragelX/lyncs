@@ -119,6 +119,12 @@
   pointer-events: none;
 }
 
+@media all and (max-width: 1400px) {
+  .owl-nav {
+    top: 60px;
+  }
+}
+
 @media all and (max-width: 1025px) {
   .owl-nav {
     top: 50px;

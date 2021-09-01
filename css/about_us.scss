@@ -3,6 +3,10 @@
     height: 81px;
     vertical-align: -3px;
 
+    @media all and (max-width: 1400px) {
+      height: 61px;
+    }
+
     @media all and (max-width: 767px) {
       height: 37px;
     }
