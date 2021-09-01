@@ -350,6 +350,12 @@
     @media all and (max-width: 767px) {
       width: 100%;
     }
+
+    @media all and (max-width: 769px) {
+      &:nth-child(4) {
+        display: flex;
+      }
+    }
   }
 }
 
@@ -472,6 +478,10 @@
 
       .inner_img {
         max-width: 414px;
+
+        @media all and (max-width: 769px) {
+          max-width: 100%;
+        }
       }
 
       & + .link {

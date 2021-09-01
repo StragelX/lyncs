@@ -948,6 +948,13 @@ main {
     @media all and (max-width: 1400px) {
       padding-top: 130px;
     }
+
+    @media all and (max-width: 769px) {
+      height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
   }
 
   .upper_test {
@@ -1260,6 +1267,7 @@ main {
 
   @media all and (max-width: 1025px) {
     width: 98.2%;
+    padding-left: 50px;
   }
 
   @media all and (max-width: 767px) {
@@ -1598,7 +1606,7 @@ main {
 
   @media all and (max-width: 767px) {
     padding-top: 100px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
   }
 
   .above_title,
@@ -1608,6 +1616,10 @@ main {
 
   .title_h2 {
     margin-bottom: 140px;
+
+    @media all and (max-width: 769px) {
+      margin-bottom: 60px;
+    }
   }
 
   .bg_logo_wrap {
@@ -1631,6 +1643,17 @@ main {
         height: 320px;
         top: 10%;
         left: 39%;
+      }
+
+      @media all and (max-width: 769px) {
+        width: 180px;
+        height: auto;
+        top: 11%;
+        left: 37%;
+      }
+
+      @media all and (max-width: 767px) {
+        left: 27%;
       }
 
       &.translsted {
@@ -1669,6 +1692,14 @@ main {
       left: 0;
       bottom: 0;
       transform: rotate(346deg);
+
+      @media all and (max-width: 769px) {
+        width: 150px;
+      }
+
+      @media all and (max-width: 769px) {
+        width: 80px;
+      }
     }
 
     &:after {
@@ -1677,6 +1708,14 @@ main {
       width: 282px;
       height: 245px;
       transform: rotate(95deg);
+
+      @media all and (max-width: 769px) {
+        width: 150px;
+      }
+
+      @media all and (max-width: 769px) {
+        width: 80px;
+      }
     }
 
     &.translated {
@@ -1690,6 +1729,10 @@ main {
         top: 70%;
         transform: rotate(5deg);
         transition: all 500ms;
+
+        @media all and (max-width: 769px) {
+          top: 59%;
+        }
       }
     }
 
@@ -1710,6 +1753,10 @@ main {
       @media all and (max-width: 1025px) {
         left: 0;
         width: 100%;
+      }
+
+      @media all and (max-width: 767px) {
+        top: 200px;
       }
 
       button {
@@ -1787,6 +1834,14 @@ main {
         height: 450px;
       }
 
+      @media all and (max-width: 769px) {
+        height: 350px;
+      }
+
+      @media all and (max-width: 767px) {
+        height: 300px;
+      }
+
       &:after {
         content: "";
         position: absolute;
@@ -1814,6 +1869,13 @@ main {
           margin-left: auto;
           margin-right: auto;
         }
+
+        @media all and (max-width: 769px) {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center;
+        }
       }
     }
 
@@ -1826,6 +1888,11 @@ main {
         opacity: 0.5;
         transition: opacity 500ms, transform 500ms;
         transform: scale(0.5);
+
+        @media all and (max-width: 767px) {
+          opacity: 1;
+          transform: scale(1);
+        }
 
         & + .active {
           opacity: 1;
@@ -1994,9 +2061,16 @@ textarea {
   flex-direction: column;
   flex: 1 1 100%;
 
+  @media all and (max-width: 769px) {
+    & + .form_inner {
+      margin-left: 40px;
+    }
+  }
+
   @media all and (max-width: 767px) {
     & + .form_inner {
       margin-top: 40px;
+      margin-left: 0;
     }
   }
 
@@ -2007,11 +2081,7 @@ textarea {
       width: 230px;
     }
 
-    @media all and (max-width: 768px) {
-      width: 250px;
-    }
-
-    @media all and (max-width: 767px) {
+    @media all and (max-width: 769px) {
       width: 100%;
     }
   }

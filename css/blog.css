@@ -3,7 +3,7 @@
   background: url("../img/blog_main_foto.jpg") no-repeat bottom center/cover;
 }
 
-@media all and (max-width: 767px) {
+@media all and (max-width: 769px) {
   .blog_top {
     min-height: 405px;
     height: 405px;
