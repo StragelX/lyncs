@@ -301,4 +301,8 @@ $( document ).ready(function() {
     $('menu .menu_links .submenu').click(function(){
         $(this).toggleClass('active');
     })
+
+    $('.call_filter').click(function(){
+        $('.filter_wrap').toggleClass('active');
+    })
 });
