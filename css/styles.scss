@@ -1618,19 +1618,26 @@ main {
       left: 40%;
       transition: transform 250ms;
 
+      @media all and (max-width: 1400px) {
+        width: 300px;
+    height: 320px;
+    top: 10%;
+    left: 39%;
+      }
+
       &.translsted {
         transform: translate(-220%, -100%) rotate(-90deg) scale(0);
-        transition: transform 250ms;
+        transition: transform 500ms;
       }
 
       &.active {
         transform: translate(0, 0) rotate(0) scale(1);
-        transition: transform 250ms;
+        transition: transform 500ms;
       }
 
       &.totranslate {
         transform: translate(220%, -100%) rotate(90deg) scale(0);
-        transition: transform 250ms;
+        transition: transform 500ms;
       }
     }
   }
@@ -1645,7 +1652,7 @@ main {
       z-index: 0;
       background: url("../img/form_bg.png") no-repeat center / contain;
       transform: translateY(0);
-      transition: all 250ms;
+      transition: all 500ms;
     }
 
     &:before {
@@ -1664,29 +1671,17 @@ main {
       transform: rotate(95deg);
     }
 
-    // .bg_logo {
-    //   z-index: 0;
-    //   position: absolute;
-    //   top: 10%;
-    //   left: 25%;
-    //   width: 350px;
-    //   height: 462px;
-    //   transform: rotate(0deg);
-    //   transform-origin: center;
-    //   transition: transform 250ms;
-    // }
-
     &.translated {
       &:before {
         bottom: 70%;
         transform: rotate(255deg);
-        transition: all 250ms;
+        transition: all 500ms;
       }
 
       &:after {
         top: 70%;
         transform: rotate(5deg);
-        transition: all 250ms;
+        transition: all 500ms;
       }
     }
 
@@ -1816,35 +1811,23 @@ main {
 
     .owl-item {
       opacity: 0.5;
-      transition: opacity 250ms, transform 250ms;
+      transition: opacity 500ms, transform 500ms;
       transform: scale(0.5);
 
       &.active {
         opacity: 0.5;
-        transition: opacity 250ms, transform 250ms;
+        transition: opacity 500ms, transform 500ms;
         transform: scale(0.5);
-
-        // .bg_logo {
-        //   transform: translate(-220%, -120%);
-        //   transition: transform 250ms;
-        //   opacity: 0;
-        // }
 
         & + .active {
           opacity: 1;
-          transition: opacity 250ms, transform 250ms;
+          transition: opacity 500ms, transform 500ms;
           transform: scale(1);
-
-          // .bg_logo {
-          //   opacity: 1;
-          //   transform: translate(0);
-          //   transition: transform 250ms, opacity 250ms;
-          // }
 
           .img {
             img {
               transform: rotate(-10deg);
-              transition: transform 250ms;
+              transition: transform 500ms;
             }
 
             &:after {
@@ -1858,19 +1841,13 @@ main {
 
           & + .active {
             opacity: 0.5;
-            transition: opacity 250ms, transform 250ms;
+            transition: opacity 500ms, transform 500ms;
             transform: scale(0.5);
-
-            // .bg_logo {
-            //   transform: translate(220%, -110%);
-            //   transition: transform 250ms;
-            //   opacity: 0;
-            // }
 
             .img {
               img {
                 transform: rotate(0deg);
-                transition: transform 250ms;
+                transition: transform 500ms;
               }
 
               &:after {

@@ -101,6 +101,7 @@ $( document ).ready(function() {
             loop: true,
             nav: true,
             navText: ['', ''],
+            smartSpeed: 500,
 
             onTranslate: translatedFunc,
 

@@ -3048,19 +3048,28 @@ main {
   transition: transform 250ms;
 }
 
+@media all and (max-width: 1400px) {
+  .products .bg_logo_wrap img {
+    width: 300px;
+    height: 320px;
+    top: 10%;
+    left: 39%;
+  }
+}
+
 .products .bg_logo_wrap img.translsted {
   transform: translate(-220%, -100%) rotate(-90deg) scale(0);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .products .bg_logo_wrap img.active {
   transform: translate(0, 0) rotate(0) scale(1);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .products .bg_logo_wrap img.totranslate {
   transform: translate(220%, -100%) rotate(90deg) scale(0);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .products .products_carousel {
@@ -3073,7 +3082,7 @@ main {
   z-index: 0;
   background: url("../img/form_bg.png") no-repeat center/contain;
   transform: translateY(0);
-  transition: all 250ms;
+  transition: all 500ms;
 }
 
 .products .products_carousel:before {
@@ -3095,13 +3104,13 @@ main {
 .products .products_carousel.translated:before {
   bottom: 70%;
   transform: rotate(255deg);
-  transition: all 250ms;
+  transition: all 500ms;
 }
 
 .products .products_carousel.translated:after {
   top: 70%;
   transform: rotate(5deg);
-  transition: all 250ms;
+  transition: all 500ms;
 }
 
 .products .products_carousel .owl-nav {
@@ -3240,25 +3249,25 @@ main {
 
 .products .products_carousel .owl-item {
   opacity: 0.5;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active {
   opacity: 0.5;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active + .active {
   opacity: 1;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(1);
 }
 
 .products .products_carousel .owl-item.active + .active .img img {
   transform: rotate(-10deg);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .products .products_carousel .owl-item.active + .active .img:after {
@@ -3273,13 +3282,13 @@ main {
 
 .products .products_carousel .owl-item.active + .active + .active {
   opacity: 0.5;
-  transition: opacity 250ms, transform 250ms;
+  transition: opacity 500ms, transform 500ms;
   transform: scale(0.5);
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img img {
   transform: rotate(0deg);
-  transition: transform 250ms;
+  transition: transform 500ms;
 }
 
 .products .products_carousel .owl-item.active + .active + .active .img:after {
