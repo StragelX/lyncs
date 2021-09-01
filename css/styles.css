@@ -1906,7 +1906,7 @@ header.active {
 
 menu {
   padding-top: 160px;
-  z-index: 10;
+  z-index: 11;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -2226,6 +2226,12 @@ menu .menu_socials.xl_hide {
 
 menu .menu_socials.s_hide {
   margin-top: 190px;
+}
+
+@media all and (max-width: 1400px) {
+  menu .menu_socials.s_hide {
+    margin-top: 50px;
+  }
 }
 
 menu .menu_socials a + a {
@@ -2658,6 +2664,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+@media all and (max-width: 1025px) {
+  .counters_wrap {
+    width: 98.2%;
+  }
 }
 
 @media all and (max-width: 767px) {

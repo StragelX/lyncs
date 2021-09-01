@@ -576,7 +576,7 @@ header {
 
 menu {
   padding-top: 160px;
-  z-index: 10;
+  z-index: 11;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -838,6 +838,10 @@ menu {
 
     &.s_hide {
       margin-top: 190px;
+
+      @media all and (max-width: 1400px) {
+        margin-top: 50px;
+      }
     }
 
     a {
@@ -1254,6 +1258,10 @@ main {
   align-items: center;
   justify-content: space-around;
 
+  @media all and (max-width: 1025px) {
+    width: 98.2%;
+  }
+
   @media all and (max-width: 767px) {
     position: relative;
     top: 0;
@@ -1620,9 +1628,9 @@ main {
 
       @media all and (max-width: 1400px) {
         width: 300px;
-    height: 320px;
-    top: 10%;
-    left: 39%;
+        height: 320px;
+        top: 10%;
+        left: 39%;
       }
 
       &.translsted {
