@@ -2,11 +2,19 @@
   img {
     height: 81px;
     vertical-align: -3px;
+
+    @media all and (max-width: 767px) {
+      height: 37px;
+    }
   }
 }
 
 .stores_top {
   height: 850px;
+
+  @media all and (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .stores_top_wrap .box_about .box_about_img {
@@ -20,6 +28,10 @@
 
 .stores_top_wrap .box_about_text {
   padding: 60px 75px;
+
+  @media all and (max-width: 767px) {
+    padding: 20px;
+  }
 }
 
 .about_counter {
@@ -29,10 +41,21 @@
     padding-top: 570px;
   }
 
+  @media all and (max-width: 767px) {
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+  }
+
   .team_counters_wrap {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media all and (max-width: 767px) {
+      flex-wrap: wrap;
+    }
 
     .one {
       flex: none;
@@ -51,8 +74,21 @@
         height: 385px;
       }
 
+      @media all and (max-width: 767px) {
+        flex: 1 1 100%;
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+      }
+
       & + .one {
         margin-left: 16px;
+
+        @media all and (max-width: 767px) {
+          margin-left: 0;
+          margin-top: 72px;
+        }
       }
     }
 
@@ -66,6 +102,11 @@
 
       @media all and (max-width: 769px) {
         font-size: 60px;
+      }
+
+      @media all and (max-width: 767px) {
+        font-size: 45px;
+        margin-bottom: 0;
       }
 
       &.plus {
@@ -97,6 +138,11 @@
   padding-top: 200px;
   padding-bottom: 120px;
   overflow: hidden;
+
+  @media all and (max-width: 767px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 
   .above_title,
   .title_h2 {
@@ -156,6 +202,11 @@
       opacity: 0.05;
       margin-left: 94px;
       margin-bottom: -22px;
+
+      @media all and (max-width: 767px) {
+        margin-left: 64px;
+        margin-bottom: -2px;
+      }
     }
 
     .year {
@@ -171,6 +222,7 @@
     }
 
     .dot {
+      flex: none;
       opacity: 0.05;
       transition: opacity 180ms, background-color 180ms;
       width: 10px;
@@ -179,6 +231,11 @@
       border-radius: 50%;
       margin-left: 40px;
       margin-right: 60px;
+
+      @media all and (max-width: 767px) {
+        margin-left: 10px;
+        margin-right: 20px;
+      }
 
       &:after {
         position: absolute;
@@ -237,6 +294,12 @@
       padding-top: 30px;
       padding-left: 53px;
       padding-bottom: 0;
+
+      @media all and (max-width: 767px) {
+        margin-left: 64px;
+        margin-top: 0px;
+        padding-left: 13px;
+      }
     }
 
     .info_block {
@@ -246,8 +309,13 @@
       width: 400px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.16);
       border-radius: 11px;
-      background-color: #ffffff;
+      background-color: #fff;
       overflow: hidden;
+
+      @media all and (max-width: 767px) {
+        width: auto;
+        z-index: 1;
+      }
 
       p {
         color: #242424;
@@ -365,6 +433,11 @@
     padding-bottom: 100px;
   }
 
+  @media all and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+
   .above_title,
   .title_h2 {
     color: #fff;
@@ -395,6 +468,11 @@
       height: 238px;
     }
 
+    @media all and (max-width: 767px) {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
     .img_wrap {
       z-index: 0;
       position: absolute;
@@ -420,6 +498,16 @@
         opacity: 0;
         transition: opacity 180ms;
       }
+
+      @media all and (max-width: 767px) {
+        bottom: auto;
+
+        position: relative;
+
+        img {
+          height: 169px;
+        }
+      }
     }
 
     h6 {
@@ -437,6 +525,15 @@
       @media all and (max-width: 1400px) {
         top: 260px;
       }
+
+      @media all and (max-width: 767px) {
+        position: relative;
+        opacity: 1;
+        top: 0;
+        padding-left: 5px;
+        left: 0;
+        padding-top: 10px;
+      }
     }
 
     p {
@@ -453,6 +550,17 @@
 
       @media all and (max-width: 1400px) {
         bottom: 40px;
+      }
+
+      @media all and (max-width: 767px) {
+        opacity: 1;
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 8px;
       }
     }
 
@@ -482,6 +590,12 @@
       @media all and (max-width: 1025px) {
         padding: 20px;
       }
+
+      @media all and (max-width: 767px) {
+        font-size: 16px;
+        line-height: 29px;
+        text-align: center;
+      }
     }
 
     &:hover {
@@ -505,6 +619,11 @@
     &.modal_call {
       background: #f2312a url("../img/team_hover_modal.svg") no-repeat center /
         auto 245px;
+
+      @media all and (max-width: 767px) {
+        background: url("../img/team_hover_modal.svg") no-repeat center /
+          contain;
+      }
 
       &:after {
         content: "ЗАПОВНИТИ ФОРМУ";

@@ -102,6 +102,13 @@
   display: block;
   padding-bottom: 20px;
   max-width: 800px;
+  line-height: 0;
+}
+
+@media all and (max-width: 767px) {
+  .main_picture {
+    padding-bottom: 10px;
+  }
 }
 
 .small_picture_box {
@@ -190,6 +197,13 @@
   }
 }
 
+@media all and (max-width: 767px) {
+  .box_info {
+    margin-top: 84px;
+    padding: 0 15px;
+  }
+}
+
 .box_info .tm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,6 +275,17 @@
   padding-bottom: 70px;
 }
 
+@media all and (max-width: 767px) {
+  .box_info .explain_degrees .wrap {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .box_info .explain_degrees .wrap + .wrap {
+    margin-left: 16px;
+  }
+}
+
 .box_info .explain_degrees .wrap > p {
   color: rgba(36, 36, 36, 0.3);
   font-family: "Roboto", sans-serif;
@@ -274,6 +299,13 @@
 .box_info .explain_degrees .wrap .inner {
   border-radius: 5px;
   border: 1px solid rgba(36, 36, 36, 0.3);
+  padding: 10px 30px;
+}
+
+@media all and (max-width: 767px) {
+  .box_info .explain_degrees .wrap .inner {
+    padding: 10px;
+  }
 }
 
 .box_info .explain_degrees .wrap .inner p {
@@ -284,8 +316,7 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: normal;
-  text-align: right;
-  padding: 10px 30px;
+  text-align: center;
 }
 
 .box_info .explain_degrees .wrap .inner img {
@@ -293,6 +324,19 @@
   top: 3px;
   right: 15px;
   width: 15px;
+}
+
+@media all and (max-width: 767px) {
+  .box_info .explain_degrees .wrap .inner img {
+    right: 3px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .buy_products_btn .btn_inner2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .also_buy {
@@ -341,6 +385,12 @@
 @media all and (max-width: 1025px) {
   .also_buy .product_inner {
     margin-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .also_buy .product_inner {
+    width: 100%;
   }
 }
 
@@ -493,6 +543,12 @@
 
 .about_our_work .img_container .link .inner_img {
   max-width: 414px;
+}
+
+@media all and (max-width: 767px) {
+  .about_our_work .img_container .link + .link {
+    margin-top: 60px;
+  }
 }
 
 .wrap_text {
