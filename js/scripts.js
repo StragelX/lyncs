@@ -78,10 +78,18 @@ $( document ).ready(function() {
                     margin: 18,
                 },
                 1000:{
-                    items: 3
+                    items: 3,
+                    nav: true,
+                    dots: true,
+                    navText: ['', ''],
+                    margin: 18,
                 },
                 1300:{
-                    items: 4
+                    items: 4,
+                    nav: true,
+                    dots: true,
+                    navText: ['', ''],
+                    margin: 18,
                 }
             }
         });
@@ -160,8 +168,6 @@ $( document ).ready(function() {
                     items: 3,
                     nav: true,
                     margin: 60,
-                },
-                1000:{
                 }
             }
         });
@@ -180,8 +186,7 @@ $( document ).ready(function() {
                 600:{
                     items: 2,
                     nav: true,
-                },
-                1000:{
+                    margin: 10,
                 }
             }
         });
