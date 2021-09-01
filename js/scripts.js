@@ -297,4 +297,8 @@ $( document ).ready(function() {
     $('.product, .our_products.menu').mouseout(function(){
         $('.our_products.menu, .product').removeClass('active');
     })
+
+    $('menu .menu_links .submenu').click(function(){
+        $(this).toggleClass('active');
+    })
 });

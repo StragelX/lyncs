@@ -2122,6 +2122,14 @@ menu .menu_links .submenu {
   }
 }
 
+@media all and (max-width: 767px) {
+  menu .menu_links > a,
+  menu .menu_links .submenu {
+    text-transform: none;
+    font-size: 30px;
+  }
+}
+
 menu .menu_links > a:after,
 menu .menu_links .submenu:after {
   bottom: -4px;
@@ -2133,16 +2141,17 @@ menu .menu_links .submenu:after {
   transition: width 180ms;
 }
 
-menu .menu_links > a:hover,
-menu .menu_links .submenu:hover {
-  color: #f2312a;
-  transition: color 180ms;
-}
-
-menu .menu_links > a:hover:after,
-menu .menu_links .submenu:hover:after {
-  width: 100%;
-  transition: width 180ms;
+@media all and (min-width: 767px) {
+  menu .menu_links > a:hover,
+  menu .menu_links .submenu:hover {
+    color: #f2312a;
+    transition: color 180ms;
+  }
+  menu .menu_links > a:hover:after,
+  menu .menu_links .submenu:hover:after {
+    width: 100%;
+    transition: width 180ms;
+  }
 }
 
 menu .menu_links > a + a,
@@ -2165,6 +2174,35 @@ menu .menu_links .submenu {
   cursor: default;
 }
 
+@media all and (max-width: 767px) {
+  menu .menu_links .submenu:after {
+    display: none;
+  }
+  menu .menu_links .submenu::before {
+    display: block;
+    height: 15px;
+    width: 15px;
+    content: "+";
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    font-weight: 100;
+  }
+  menu .menu_links .submenu.active {
+    color: #f2312a;
+  }
+  menu .menu_links .submenu.active:before {
+    content: "-";
+  }
+  menu .menu_links .submenu.active .sub_drop {
+    position: relative;
+    opacity: 1;
+    transition: none;
+  }
+}
+
 menu .menu_links .submenu .sub_drop {
   position: absolute;
   right: 0;
@@ -2174,6 +2212,15 @@ menu .menu_links .submenu .sub_drop {
   opacity: 0;
   transition: opacity 180ms, padding-top 180ms;
   pointer-events: none;
+}
+
+@media all and (max-width: 767px) {
+  menu .menu_links .submenu .sub_drop {
+    transition: none;
+    top: 15px;
+    right: 10px;
+    padding-bottom: 10px;
+  }
 }
 
 menu .menu_links .submenu .sub_drop a {
@@ -2191,22 +2238,29 @@ menu .menu_links .submenu .sub_drop a {
   }
 }
 
+@media all and (max-width: 767px) {
+  menu .menu_links .submenu .sub_drop a {
+    text-transform: none;
+  }
+}
+
 menu .menu_links .submenu .sub_drop a + a {
   margin-top: 15px;
 }
 
-menu .menu_links .submenu:hover {
-  z-index: 2;
+@media all and (min-width: 767px) {
+  menu .menu_links .submenu:hover {
+    z-index: 2;
+  }
+  menu .menu_links .submenu:hover .sub_drop {
+    padding-top: 75px;
+    opacity: 1;
+    transition: opacity 180ms, padding-top 180ms;
+    pointer-events: all;
+  }
 }
 
-menu .menu_links .submenu:hover .sub_drop {
-  padding-top: 75px;
-  opacity: 1;
-  transition: opacity 180ms, padding-top 180ms;
-  pointer-events: all;
-}
-
-@media all and (max-width: 1400px) {
+@media all and (min-width: 767px) and (max-width: 1400px) {
   menu .menu_links .submenu:hover .sub_drop {
     padding-top: 50px;
   }
@@ -3096,7 +3150,10 @@ main {
 
 @media all and (max-width: 767px) {
   .products .bg_logo_wrap img {
-    left: 27%;
+    width: 270px;
+    height: auto;
+    top: -20px;
+    left: 11%;
   }
 }
 
@@ -3212,7 +3269,7 @@ main {
 
 @media all and (max-width: 767px) {
   .products .products_carousel .owl-nav {
-    top: 200px;
+    top: 280px;
   }
 }
 
@@ -3302,7 +3359,7 @@ main {
 @media all and (max-width: 767px) {
   .products .products_carousel .img {
     height: 300px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
   }
 }
 
@@ -3423,7 +3480,7 @@ main {
 
 @media all and (max-width: 768px) {
   .forms {
-    background: url("../img/Path_38353.svg") no-repeat top 10px right 10px/75px auto, url("../img/form_bg_blur.png") no-repeat bottom -4px left -11%, #fff;
+    background: url("../img/Path_38353.svg") no-repeat top 30px right 10px/75px auto, url("../img/form_bg_blur.png") no-repeat bottom -4px left -11%, #fff;
   }
 }
 
