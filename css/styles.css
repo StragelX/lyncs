@@ -5119,4 +5119,9 @@ footer .footer_logo {
   transition: transform 180ms;
   transform: scale(1.4);
 }
+
+.maps {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 /*# sourceMappingURL=styles.css.map */
