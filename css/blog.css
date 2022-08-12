@@ -2,7 +2,6 @@
   min-height: 986px;
   background: url("../img/blog_main_foto.jpg") no-repeat bottom center/cover;
 }
-
 @media all and (max-width: 769px) {
   .blog_top {
     min-height: 405px;
@@ -23,7 +22,6 @@
   top: -442px;
   z-index: 1;
 }
-
 @media all and (max-width: 768px) {
   .container_info {
     position: relative;
@@ -37,7 +35,6 @@
 .about_our_work .img_container {
   flex-wrap: wrap;
 }
-
 @media all and (max-width: 1400px) {
   .about_our_work .img_container .link {
     max-width: 30%;
@@ -48,7 +45,6 @@
     margin-left: 0 !important;
   }
 }
-
 @media all and (max-width: 768px) {
   .about_our_work .img_container {
     flex-wrap: nowrap;
@@ -67,5 +63,4 @@
   .pagination {
     margin-bottom: 0;
   }
-}
-/*# sourceMappingURL=blog.css.map */
+}/*# sourceMappingURL=blog.css.map */

@@ -3,20 +3,17 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 @media all and (max-width: 1400px) {
   .franchise {
     padding-bottom: 150px;
   }
 }
-
 @media all and (max-width: 767px) {
   .franchise {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-
 .franchise::before, .franchise:after {
   z-index: 0;
   pointer-events: none;
@@ -25,18 +22,15 @@
   display: block;
   background: url("../img/form_bg_blur.png") no-repeat center/contain;
 }
-
 .franchise > * {
   z-index: 2;
 }
-
 .franchise::before {
   width: 136px;
   height: 130px;
   top: 560px;
   left: 105px;
 }
-
 .franchise::after {
   width: 231px;
   height: 289px;
@@ -53,13 +47,11 @@
   color: #242424;
   text-align: center;
 }
-
 .franchise_wrap .title_h2 {
   color: #242424;
   text-align: center;
   text-transform: uppercase;
 }
-
 .franchise_wrap .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -67,13 +59,11 @@
   align-items: stretch;
   margin-top: 120px;
 }
-
 @media all and (max-width: 767px) {
   .franchise_wrap .wrapper {
     margin-top: 45px;
   }
 }
-
 .franchise_wrap .wrapper .inner {
   max-width: 414px;
   box-shadow: 0 8px 15px rgba(36, 36, 36, 0.1);
@@ -82,7 +72,6 @@
   padding: 30px;
   margin-bottom: 120px;
 }
-
 @media all and (max-width: 1400px) {
   .franchise_wrap .wrapper .inner {
     flex: 1 1 29%;
@@ -95,7 +84,6 @@
     margin-left: 0;
   }
 }
-
 @media all and (max-width: 770px) {
   .franchise_wrap .wrapper .inner {
     flex: 1 1 35%;
@@ -107,7 +95,6 @@
     margin-left: 0;
   }
 }
-
 @media all and (max-width: 767px) {
   .franchise_wrap .wrapper .inner {
     margin-left: 26px;
@@ -118,15 +105,12 @@
     margin-left: 26px;
   }
 }
-
 .franchise_wrap .wrapper .inner .box_logo {
   display: flex;
 }
-
 .franchise_wrap .wrapper .inner .box_logo img {
   padding-right: 20px;
 }
-
 .franchise_wrap .wrapper .inner .box_logo .title {
   padding-top: 10px;
   color: #242424;
@@ -137,7 +121,6 @@
   letter-spacing: normal;
   text-transform: uppercase;
 }
-
 .franchise_wrap .wrapper .inner .text {
   color: #242424;
   font-family: "Roboto", sans-serif;
@@ -150,18 +133,15 @@
   padding-left: 17px;
   border-left: 2px solid #f2312a;
 }
-
 .franchise_wrap .franchise_btn .btn_inner2 {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media all and (max-width: 1400px) {
   .franchise_wrap .franchise_btn .btn_inner2 {
     margin-top: 90px;
   }
 }
-
 @media all and (max-width: 767px) {
   .franchise_wrap .franchise_btn .btn_inner2 {
     margin-top: 10px;
@@ -172,13 +152,11 @@
   padding: 126px 0 200px 0;
   background-color: #242424;
 }
-
 @media all and (max-width: 1025px) {
   .cooperation_top {
     padding: 100px 0 100px 0;
   }
 }
-
 @media all and (max-width: 767px) {
   .cooperation_top {
     padding-top: 60px;
@@ -192,24 +170,20 @@
 .cooperation_wrap {
   padding-bottom: 140px;
 }
-
 @media all and (max-width: 1025px) {
   .cooperation_wrap {
     padding-top: 60px;
   }
 }
-
 @media all and (max-width: 767px) {
   .cooperation_wrap {
     padding-top: 0;
     padding-bottom: 45px;
   }
 }
-
 .cooperation_wrap .above_title {
   color: #ffffff;
 }
-
 .cooperation_wrap .title_h2 {
   color: #ffffff;
   text-transform: uppercase;
@@ -219,13 +193,11 @@
   background-color: #f5f5f5;
   padding: 100px 0 150px 0;
 }
-
 @media all and (max-width: 1025px) {
   .cooperation_bottom {
     padding: 100px 0;
   }
 }
-
 .cooperation_bottom:before, .cooperation_bottom:after {
   z-index: 0;
   pointer-events: none;
@@ -233,18 +205,15 @@
   position: absolute;
   background: url("../img/form_bg_blur.png") no-repeat center/contain;
 }
-
 .cooperation_bottom > * {
   z-index: 2;
 }
-
 .cooperation_bottom:before {
   width: 229px;
   height: 221px;
   top: 128px;
   left: 128px;
 }
-
 .cooperation_bottom:after {
   width: 231px;
   height: 289px;
@@ -257,7 +226,6 @@
   color: #242424;
   text-align: center;
 }
-
 .cooperation_box .title_h2 {
   color: #242424;
   text-align: center;
@@ -271,20 +239,17 @@
   align-items: stretch;
   padding-bottom: 150px;
 }
-
 @media all and (max-width: 768px) {
   .wrapper_info {
     flex-direction: column;
   }
 }
-
 .wrapper_info .stand {
   max-width: 398px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 @media all and (max-width: 1400px) {
   .wrapper_info .stand {
     flex: 1 1 29%;
@@ -293,13 +258,11 @@
     margin-left: 30px;
   }
 }
-
 @media all and (max-width: 1400px) and (max-width: 768px) {
   .wrapper_info .stand + .stand {
     margin-left: 0;
   }
 }
-
 @media all and (max-width: 768px) {
   .wrapper_info .stand {
     max-width: none;
@@ -308,17 +271,14 @@
     margin-bottom: 60px;
   }
 }
-
 .wrapper_info .stand .stand_title_wrap {
   padding-bottom: 54px;
 }
-
 .wrapper_info .stand .stand_title_wrap .number1 {
   position: absolute;
   top: -45px;
   left: 75px;
 }
-
 @media all and (max-width: 767px) {
   .wrapper_info .stand .stand_title_wrap .number1 {
     top: 35px;
@@ -326,13 +286,11 @@
     width: 80px;
   }
 }
-
 .wrapper_info .stand .stand_title_wrap .number2 {
   position: absolute;
   top: -45px;
   left: 180px;
 }
-
 @media all and (max-width: 767px) {
   .wrapper_info .stand .stand_title_wrap .number2 {
     top: 35px;
@@ -340,19 +298,16 @@
     width: 80px;
   }
 }
-
 .wrapper_info .stand .stand_title_wrap .number3 {
   position: absolute;
   top: -45px;
   left: 245px;
 }
-
 @media all and (max-width: 1025px) {
   .wrapper_info .stand .stand_title_wrap .number3 {
     left: 140px;
   }
 }
-
 @media all and (max-width: 767px) {
   .wrapper_info .stand .stand_title_wrap .number3 {
     top: 35px;
@@ -360,7 +315,6 @@
     width: 80px;
   }
 }
-
 .wrapper_info .stand .stand_title_wrap h4 {
   color: #242424;
   font-family: "Lato", sans-serif;
@@ -372,26 +326,24 @@
   text-align: left;
   z-index: 1;
 }
-
 .wrapper_info .stand .box_img {
   max-width: 398px;
   max-height: 460px;
 }
-
 @media all and (max-width: 768px) {
   .wrapper_info .stand .box_img {
     max-width: none;
     max-height: none;
   }
 }
-
 .wrapper_info .stand .box_img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
-
 .wrapper_info .stand .text {
   color: #242424;
   font-family: "Roboto", sans-serif;
@@ -410,5 +362,4 @@
 .stores_btn .btn_inner2 {
   margin-left: auto;
   margin-right: auto;
-}
-/*# sourceMappingURL=stores.css.map */
+}/*# sourceMappingURL=stores.css.map */

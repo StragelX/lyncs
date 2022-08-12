@@ -6,13 +6,11 @@ body {
   padding-top: 310px;
   padding-left: 20px;
 }
-
 @media all and (max-width: 1400px) {
   .mistake {
     padding-top: 150px;
   }
 }
-
 .mistake::before {
   content: "";
   position: absolute;
@@ -23,19 +21,16 @@ body {
   width: 667px;
   height: 901px;
 }
-
 @media all and (max-width: 1400px) {
   .mistake::before {
     height: 80vh;
   }
 }
-
 @media all and (max-width: 768px) {
   .mistake::before {
     width: 615px;
   }
 }
-
 @media all and (max-width: 767px) {
   .mistake::before {
     width: 100%;
@@ -57,7 +52,6 @@ body {
   text-transform: none;
   padding-bottom: 30px;
 }
-
 @media all and (max-width: 767px) {
   .mistake_wrap .title_small {
     font-size: 30px;
@@ -65,7 +59,6 @@ body {
     text-transform: uppercase;
   }
 }
-
 .mistake_wrap .title_big {
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
   color: #ffffff;
@@ -78,13 +71,11 @@ body {
   text-align: left;
   padding-bottom: 60px;
 }
-
 @media all and (max-width: 1400px) {
   .mistake_wrap .title_big {
     padding-bottom: 20px;
   }
 }
-
 @media all and (max-width: 767px) {
   .mistake_wrap .title_big {
     padding-bottom: 5px;
@@ -93,17 +84,14 @@ body {
     line-height: normal;
   }
 }
-
 .mistake_wrap .wrap_text {
   padding-bottom: 80px;
 }
-
 @media all and (max-width: 1400px) {
   .mistake_wrap .wrap_text {
     padding-bottom: 30px;
   }
 }
-
 .mistake_wrap .wrap_text .text {
   max-width: 375px;
   text-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -118,11 +106,9 @@ body {
   padding-left: 19px;
   border-left: 1px solid #fff;
 }
-
 @media all and (max-width: 767px) {
   .mistake_wrap .wrap_text .text {
     font-size: 12px;
     line-height: 18px;
   }
-}
-/*# sourceMappingURL=404.css.map */
+}/*# sourceMappingURL=404.css.map */

@@ -1,0 +1,37 @@
+.main_top {
+  background: url("../img/privat_product_top_bg.jpg") no-repeat center/cover;
+}
+
+.year_partners {
+  padding-top: 50px;
+  padding-bottom: 205px;
+}
+.year_partners .above_title,
+.year_partners .title_h2 {
+  text-align: center;
+}
+.year_partners .title_h2 {
+  margin-bottom: 90px;
+}
+.year_partners .year_partners_slide {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  background-color: transparent;
+  transition: background-color 180ms, box-shadow 180ms;
+}
+.year_partners .year_partners_slide .img_wrap {
+  height: 304px;
+  margin-bottom: 20px;
+}
+.year_partners .year_partners_slide .client_logo {
+  max-height: 37px;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.year_partners .year_partners_slide:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  transition: background-color 180ms, box-shadow 180ms;
+}/*# sourceMappingURL=privat_20210818150803.css.map */

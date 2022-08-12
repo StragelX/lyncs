@@ -1,0 +1,62 @@
+.main_top {
+  background: url("../img/privat_product_top_bg.jpg") no-repeat center/cover;
+}
+
+.year_partners {
+  padding-top: 50px;
+  padding-bottom: 205px;
+}
+.year_partners .above_title,
+.year_partners .title_h2 {
+  text-align: center;
+}
+.year_partners .title_h2 {
+  margin-bottom: 90px;
+}
+.year_partners .year_partners_slide {
+  display: block;
+  padding-bottom: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+  background-color: transparent;
+  transition: background-color 180ms, box-shadow 180ms;
+}
+.year_partners .year_partners_slide .img_wrap {
+  height: 304px;
+  margin-bottom: 20px;
+}
+.year_partners .year_partners_slide .client_logo {
+  max-height: 37px;
+  display: inline-block;
+  text-align: left;
+  width: auto;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.year_partners .year_partners_slide p {
+  opacity: 0;
+  transition: opacity 180ms;
+  color: #242424;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.year_partners .year_partners_slide .read_more {
+  opacity: 0;
+  transition: opacity 180ms;
+  margin-left: 20px;
+}
+.year_partners .year_partners_slide:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+  transition: background-color 180ms, box-shadow 180ms;
+}
+.year_partners .year_partners_slide:hover p,
+.year_partners .year_partners_slide:hover .read_more {
+  opacity: 1;
+  transition: opacity 180ms;
+}/*# sourceMappingURL=privat_20210818151331.css.map */
